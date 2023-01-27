@@ -1,87 +1,59 @@
 # Final Project
 
 
-This week I worked on defining my final project idea and started to getting used to the documentation process.
+My participation in Fab Academy 2023 is sponsored by Eurepean Union  (EU funding: 101033646).
+One of the goals of my OPTIshell research project is to build a prototype of the timber solar canopy structure covered with the PV material.
+More about the project [optishell.io](https://optishell.io/).
+During Fab Academy I would like to build a stiffness-scaled model in 1:10 or 1:18 scale. 
+![Final Project Visualization](../images/finalprojectidea.webp)
 
-## Research
+## Weekly notes
 
-"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+### Week 01
+Base idea:a 1:10 model from laser cut thin plywood, filling the spaces with the plate panels, 3D print the foundation structures.
 
-> "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+IO additions and difficulty level (+++):
+:	add PV elements on some of the plates, connect to battery and show the level of the battery (++);create a sensor at the bottom to remotely display if the place is occupied (+);create a simple machine to erect the structure e.g. an extendable tube in the middle(+++);add sensor of the wind to inform if the wind is too strong (alternatively dismount) (+++)
 
-## 2D and 3D Modeling
+## Spiral Development
+![](../images/spiral.png)
 
-Add here your modeling and design.
+### Spiral 01
+**01.1 Objectives:**
 
+- [ ] 1) static 1:10 stiffness-scaled model from laser cut thin plywood - single layer laths,
 
-## Some other section
+- [ ] 2) filling the spaces with the plate panels
 
-This is an updated text.
+- [ ] 3) 3D printed the foundation structures
 
-
-
-## Materials
-
-| Qty |  Description    |  Price  |           Link           | Notes  |
-|-----|-----------------|---------|--------------------------|--------|
-| 1   | Material one    |  22.00 $| http://amazon.com/test   |    Order many    |
-| 1   | Material two    |  22.00 $| http://amazon.com/test   |        |
-| 1   | Material three  |  22.00 $| http://amazon.com/test   |        |
-| 1   | Material five   |  22.00 $| http://amazon.com/test   |        |
-| 1   | Material eight  |  22.00 $| http://amazon.com/test   |        |
-| 1   | Material twelve |  22.00 $| http://amazon.com/test   |        |
-| 1   | Material eleven |  22.00 $| http://amazon.com/test   |        |
-
-## Useful links
-
-- [Jekyll](http://jekyll.org)
-- [Google](http://google.com)
-- [Markdown](https://en.wikipedia.org/wiki/Markdown)
+- [ ] 4) IO - a sensor showing if the space is occupied (remotely)?
 
 
-## Code Example
+### Spiral 02
 
-Use the three backticks to separate code.
+**02.1 Objectives:**
 
-```
-// the setup function runs once when you press reset or power the board
-void setup() {
-  // initialize digital pin LED_BUILTIN as an output.
-  pinMode(LED_BUILTIN, OUTPUT);
-}
+- [ ] 1) a static 1:10 stiffness-scaled model from laser cut thin plywood - double layer laths,
 
-// the loop function runs over and over again forever
-void loop() {
-  digitalWrite(LED_BUILTIN, HIGH);   // turn the LED on (HIGH is the voltage level)
-  delay(1000);                       // wait for a second
-  digitalWrite(LED_BUILTIN, LOW);    // turn the LED off by making the voltage LOW
-  delay(1000);                       // wait for a second
-}
-```
+- [ ] 2) filling the spaces with the plate panels + cover with small solar cells
+
+- [ ] 3) 3D printed the foundation structures + installed batteries
+
+- [ ] 4) IO - a sensor showing if the space is occupied (remotely)? + level of battery display
+
+### Spiral 03
+
+** 03.1 Objectives:**
+
+- [ ] 1) a KINETIC 1:10 stiffnes-scaled model from laser cut thin plywood 
+
+- [ ] 2) filling the spaces with the plate panels + cover with small solar cells
+
+- [ ] 3) 3D printed the foundation structures + installed batteries
+
+- [ ] 4) IO - a sensor showing if the space is occupied (remotely)? + level of battery display
+
+- [ ] 5) a small machine for self-assembly
 
 
-## Gallery
-
-![](../images/sample-photo.jpg)
-
-## Video
-
-### From Vimeo
-
-<iframe src="https://player.vimeo.com/video/10048961" width="640" height="480" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-<p><a href="https://vimeo.com/10048961">Sound Waves</a> from <a href="https://vimeo.com/radarboy">George Gally (Radarboy)</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
-
-### From Youtube
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/jjNgJFemlC4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-
-## 3D Models
-
-<div class="sketchfab-embed-wrapper"><iframe width="640" height="480" src="https://sketchfab.com/models/658c8f8a2f3042c3ad7bdedd83f1c915/embed" frameborder="0" allow="autoplay; fullscreen; vr" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
-
-<p style="font-size: 13px; font-weight: normal; margin: 5px; color: #4A4A4A;">
-    <a href="https://sketchfab.com/models/658c8f8a2f3042c3ad7bdedd83f1c915?utm_medium=embed&utm_source=website&utm_campaign=share-popup" target="_blank" style="font-weight: bold; color: #1CAAD9;">Dita&#39;s Gown</a>
-    by <a href="https://sketchfab.com/francisbitontistudio?utm_medium=embed&utm_source=website&utm_campaign=share-popup" target="_blank" style="font-weight: bold; color: #1CAAD9;">Francis Bitonti Studio</a>
-    on <a href="https://sketchfab.com?utm_medium=embed&utm_source=website&utm_campaign=share-popup" target="_blank" style="font-weight: bold; color: #1CAAD9;">Sketchfab</a>
-</p>
-</div>
