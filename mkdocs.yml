@@ -11,13 +11,13 @@ extra:
   social:
     # For other social icons at https://squidfunk.github.io/mkdocs-material/setup/adding-social-links/
     - icon: fontawesome/brands/instagram
-      link: https://instagram.com/fabacademany
+      link: https://www.instagram.com/judycurie/
     - icon: fontawesome/brands/facebook
-      link: https://facebook.com/fabacademany
+      link: https://www.facebook.com/judyta.cichocka
     - icon: fontawesome/brands/twitter
-      link: https://twitter.com/fabacademany
+      link: https://twitter.com/judycurie
     - icon: fontawesome/brands/linkedin
-      link: "https://linkedin.com/in/academany"
+      link: https://www.linkedin.com/in/judyta-cichocka-6992a854/
 
 theme:
   name: material
