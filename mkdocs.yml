@@ -20,7 +20,7 @@ extra:
       link: https://www.linkedin.com/in/judyta-cichocka-6992a854/
 
 theme:
-  name: material
+  name: simple-blog
   palette:
     # try other colors https://squidfunk.github.io/mkdocs-material/getting-started/#primary-colors
     primary: deep

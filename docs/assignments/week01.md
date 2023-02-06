@@ -41,3 +41,13 @@ pip install mkdocs-git-revision-date-localized-plugin
 
 - git pull : server -> local
 
+- question question marks
+
+![](../images/meme01.png)
+
+
+
+## Problems/Questions/Dilemas
+1. Why does sometimes "commit" command runs, do not stop and not let me prograss in Git Bash?
+2. Does pushing local repo with no docs deletes existing file in gitlab repo?
+3. Should I do add command if I only modify files?git

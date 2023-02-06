@@ -1,6 +1,7 @@
 # Home
 
-![](./images/main.jpg)
+![](./images/week01/main.jpg)
+Fig. Inframe pavilion. Boston. 2019. @judycurie
 
 ## Hello, digital world! | Hello, physical world! 
 by
