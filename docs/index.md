@@ -1,11 +1,11 @@
 # Home
 
 ![](./images/week01/main.jpg)
-Fig. Inframe pavilion. Boston. 2019. @judycurie
+**Fig.1.** Inframe pavilion. Boston. 2019. @judycurie
 
-## Hello, digital world! | Hello, physical world! 
+## **Hello, digital world!** | Hello, physical world! 
 by
-### Judy Curie | Judyta Cichocka
+### **Judy Curie** | Judyta Cichocka
 
 
 ## Fab Foundation Poland

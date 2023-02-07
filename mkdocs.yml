@@ -1,10 +1,10 @@
 # Replace the text below to customize your site
 site_name: Judy Curie - Fab Academy
-site_description: Fab Academy documentation site for Your Name
+site_description: Fab Academy documentation site for Judy Curie
 site_author: Judy Curie
 copyright: Copyright 2023 Judy Curie - Creative Commons Attribution Non Commercial
 
-site_url: http://fibasile.fabcloud.io/fabacademy-student-template/
+site_url: http://fibasile.fabcloud.io/fabacademy-student-judycurie/
 
 extra:
   # Set your own social media below (or remove)
@@ -20,18 +20,19 @@ extra:
       link: https://www.linkedin.com/in/judyta-cichocka-6992a854/
 
 theme:
-  name: simple-blog
+  name: material
   palette:
     # try other colors https://squidfunk.github.io/mkdocs-material/getting-started/#primary-colors
-    primary: deep
-    accent: indigo
+    primary: white
+    accent: cyan
   font:
-    # See available fonts at https://fonts.google.com/
-    text: Ubuntu
+    # See available fonts at https://fonts.google.com/  
+    # My favourites: Inconsolata,  IBM Plex Mono, Chakra Petch, Exo, Didact Gothic
+    text: Exo
     code: Ubuntu Mono
   icon:
     logo: material/school
-  favicon: images/favicon.svg
+  favicon: images/logo.png
   features:
     - navigation.tabs
     - navigation.instant

@@ -5,7 +5,8 @@ My participation in Fab Academy 2023 is sponsored by Eurepean Union  (EU funding
 One of the goals of my OPTIshell research project is to build a prototype of the timber solar canopy structure covered with the PV material.
 More about the project [optishell.io](https://optishell.io/).
 During Fab Academy I would like to build a stiffness-scaled model in 1:10 or 1:18 scale. 
-![Final Project Visualization](../images/finalprojectidea.webp)
+![Final Project Visualization](../images/concept.jpg)
+**Fig.1.** Conceptual model.
 
 ## Weekly notes
 

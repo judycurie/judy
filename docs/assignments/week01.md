@@ -1,12 +1,14 @@
-# Week01. Principles and practices
+# **Week01.** Principles and practices
 
-This week I worked on defining my final project idea and started to getting used to the documentation process.
+## Assignment
 
+ *plan and sketch a potential final project* 
+and put it on your personal website :)
 
 ## Photo of the week
 
-![](../images/week01-meme.jpg)
-
+![](../images/week01/meme01.jpg)
+**Fig.1.** First week of Fab Academy working from Poland. Lviv Crossaint. Wroclaw.
 
 
 ## MkDocs Website
