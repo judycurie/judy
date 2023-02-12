@@ -1,7 +1,7 @@
 # Home
 
 ![](./images/week01/main.jpg)
-**Fig.1.** Inframe pavilion. Boston. 2019. @judycurie
+**Fig.1.** Inframe pavilion. Boston. 2019. Credit @judycurie. [**Read more**](https://judytacichocka.wixsite.com/inframe)
 
 ## **Hello, digital world!** | Hello, physical world! 
 by
