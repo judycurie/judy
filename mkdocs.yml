@@ -1,0 +1,54 @@
+# Replace the text below to customize your site
+site_name: Judy Curie - Fab Academy
+site_description: Fab Academy documentation site for Judy Curie
+site_author: Judy Curie
+copyright: Copyright 2023 Judy Curie - Creative Commons Attribution Non Commercial
+
+site_url: http://fibasile.fabcloud.io/fabacademy-student-judycurie/
+
+extra:
+  # Set your own social media below (or remove)
+  social:
+    # For other social icons at https://squidfunk.github.io/mkdocs-material/setup/adding-social-links/
+    - icon: fontawesome/brands/instagram
+      link: https://www.instagram.com/judycurie/
+    - icon: fontawesome/brands/facebook
+      link: https://www.facebook.com/judyta.cichocka
+    - icon: fontawesome/brands/twitter
+      link: https://twitter.com/judycurie
+    - icon: fontawesome/brands/linkedin
+      link: https://www.linkedin.com/in/judyta-cichocka-6992a854/
+
+theme:
+  name: material
+  palette:
+    # try other colors https://squidfunk.github.io/mkdocs-material/getting-started/#primary-colors
+    primary: white
+    accent: cyan
+  font:
+    # See available fonts at https://fonts.google.com/  
+    # My favourites: Inconsolata,  IBM Plex Mono, Chakra Petch, Exo, Didact Gothic, Exo
+    text: Exo
+    code: Ubuntu Mono
+  icon:
+    logo: material/school
+  favicon: images/logo.png
+  features:
+    - navigation.tabs
+    - navigation.instant
+
+plugins:
+  - search
+  - git-revision-date-localized:
+      fallback_to_build_date: true
+      # Read more: https://timvink.github.io/mkdocs-git-revision-date-localized-plugin/options/#enabled
+      enabled: !ENV [ENABLED_GIT_REVISION_DATE, False]
+
+markdown_extensions:
+  - extra
+  - smarty
+  - admonition
+  - codehilite:
+      guess_lang: false
+  - toc:
+      permalink: true
