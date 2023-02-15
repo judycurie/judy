@@ -30,9 +30,9 @@ theme:
     # My favourites: Inconsolata,  IBM Plex Mono, Chakra Petch, Exo, Didact Gothic, Exo
     text: Exo
     code: Ubuntu Mono
-  icon:
-    logo: material/school
-  favicon: images/logo.png
+  
+  logo: images/logo.svg
+  favicon: images/logoW.svg
   features:
     - navigation.tabs
     - navigation.instant
