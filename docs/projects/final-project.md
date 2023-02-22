@@ -107,3 +107,9 @@ Two proposal V1 and V2 can be built as a stand-alone structures. However for the
 ![](../images//V1V2-ISO.jpg)
 **Fig 3.** Modular arrangements - isometry.
 
+## **Week 04**
+
+
+Assembly Mechanism Ideas
+![](../images//FabAcademy2023 - page 41.png)
+The inflatable one seems like one that could be multi-scale: reseable quite fine the real properties in the scaled model.
