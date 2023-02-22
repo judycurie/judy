@@ -109,6 +109,10 @@ while True:
             utime.sleep(1)
 ```
 
+<video width="960"  controls>
+  <source src="../../images/week04/WhatsApp Video 2023-02-21 at 11.26.44.mp4" type="video/mp4">
+</video>
+
 
 ## Conclusions/Problems/Questions/Dilemas
 - double click on reset button to reset?
