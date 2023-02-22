@@ -9,7 +9,8 @@
 
 
 ## Photo of the week
-
+Reading the morse light signals from RP2040.
+![](../images/week04/WhatsApp Image 2023-02-22 at 07.11.34.jpeg)
 
 
 ##Intro to electronics
@@ -45,6 +46,52 @@ I took the following steps:
 
 5. Therefore, I used board Raspberry Pi Pico and the example codes worked as expected for the user LED.
 6. For blinkng the RGB LED, the library “Adafruit_NeoPixel”. The operationed worked. 
+
+Blinking LED ARDUINO IDE
+
+```
+#include <Adafruit_NeoPixel.h>
+ 
+int Power = 11;
+int PIN  = 12;
+#define NUMPIXELS 1
+ 
+Adafruit_NeoPixel pixels(NUMPIXELS, PIN, NEO_GRB + NEO_KHZ800);
+ 
+void setup() {
+  pixels.begin();
+  pinMode(Power,OUTPUT);
+  digitalWrite(Power, HIGH);
+ 
+}
+ 
+void loop() { 
+  pixels.clear();
+  pixels.setPixelColor(0, pixels.Color(15, 25, 205));
+  delay(400);
+  pixels.show();
+  pixels.clear();
+  pixels.setPixelColor(0, pixels.Color(103, 25, 205));
+  delay(400);
+  pixels.show();
+  pixels.clear();
+  pixels.setPixelColor(0, pixels.Color(233, 242, 205));
+  delay(400);
+  pixels.show();
+  pixels.clear();
+  pixels.setPixelColor(0, pixels.Color(233, 23, 23));
+  delay(400);
+  pixels.show();
+  pixels.clear();
+  pixels.setPixelColor(0, pixels.Color(12, 66, 101));
+  delay(400);
+  pixels.show();
+  delay(500);
+ 
+}
+
+
+```
 ![](../images/week04/WhatsApp Image 2023-02-21 at 11.20.58.jpeg)
 
 
@@ -61,6 +108,35 @@ source: https://wiki.seeedstudio.com/XIAO-RP2040-with-MicroPython/
 
 5. For blinking  LED the ws2812.py library has to be downloaded, opened with Tonny and saved as RaspberryPi file "ws2812.py".Blinking LED works correctly. 
 ![](../images/week04/Screenshot 2023-02-20 204107x.png)
+
+Blinking LED MicroPython
+
+```
+from ws2812 import WS2812
+import utime
+import machine
+power = machine.Pin(11,machine.Pin.OUT)
+power.value(1)
+BLACK = (0, 0, 0)
+RED = (255, 0, 0)
+YELLOW = (255, 150, 0)
+GREEN = (0, 255, 0)
+CYAN = (0, 255, 255)
+BLUE = (0, 0, 255)
+PURPLE = (180, 0, 255)
+WHITE = (255, 255, 255)
+COLORS = (BLACK, RED, YELLOW, GREEN, CYAN, BLUE, PURPLE, WHITE)
+ 
+led = WS2812(12,1)#WS2812(pin_num,led_count)
+ 
+while True:
+    print("Beautiful color")
+    for color in COLORS: 
+        led.pixels_fill(color)
+        led.pixels_show()
+        utime.sleep(0.2)
+
+```
 
 Loading the code in MircoPython is much faster than through Arduiono IDE. 
 
@@ -113,8 +189,20 @@ while True:
   <source src="../../images/week04/WhatsApp Video 2023-02-21 at 11.26.44.mp4" type="video/mp4">
 </video>
 
+![](../images/week04/WhatsApp Image 2023-02-22 at 07.04.35.jpeg)
+
+##RP2040 wireless
+
+I tried to connect the wireless module to the RP2040 to try the remote communication. I prepared first the connection scheme (based on the arduino uno board r3 scheme). However, after a few trials I got some little smoke from the module :)
+ ![](../images/week04/rp2040-wireless.jpg)
+
+![](../images/week04/WhatsApp Image 2023-02-22 at 07.06.32.jpeg)
 
 ## Conclusions/Problems/Questions/Dilemas
-- double click on reset button to reset?
+- double click on reset button to reset on rp2040?
 - Loading the code in MircoPython is much faster than through Arduiono IDE. 
 - Reset Button & Boot Button 
+- The components can be burnt :)
+- After connecting to Thonny, I had problems to send the code through the Arduino IDE again the device. 
+![](../images/week04/Screenshot 2023-02-21 210916.png)
+
