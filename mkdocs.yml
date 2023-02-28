@@ -52,3 +52,9 @@ markdown_extensions:
       guess_lang: false
   - toc:
       permalink: true
+  - tables
+  - pymdownx.critic
+  - pymdownx.caret
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.tilde

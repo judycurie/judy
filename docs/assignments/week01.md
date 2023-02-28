@@ -8,7 +8,8 @@
 
 ## Photo of the week
 
-![](../images/week01/meme01x.jpg)
+![](../images/week01/photo-of-the-week.png)
+
 **Fig.1.** First week of Fab Academy working from Poland. Lviv Crossaint. Wroclaw.
 
 

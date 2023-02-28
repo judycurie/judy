@@ -9,9 +9,10 @@
 
 
 ## Photo of the week
-When the reality matches simulation.
 
-![](../images/week03/week03.jpg)
+![](../images/week03/photo-of-the-week3.png)
+
+## Simulation & Reality
 
 <iframe width="960" height="315" src="https://youtube.com/embed/Mqb7dUGRLO0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 

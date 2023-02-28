@@ -10,7 +10,7 @@
 
 ## Photo of the week
 
-
+![](../images/week05/photo-of-the-week5.png)
 
 ## 3D Kinetic Joint Design
 
@@ -124,7 +124,52 @@ I prepered a custom Python script for the generation of the 3D joint model. I ge
 ![](../images/week05/v6x-fab.jpg)
 ![](../images/week05/v7x-fab.jpg)
 
-I prepared the file for printing exporting the .stl files directly from Rhino. The pairs of connectors and the matchinh laths were marked for recognistion. The final fabrication model.
+I prepared the file for printing exporting the .stl files directly from Rhino. The pairs of connectors and the matchinh laths were marked for recognistion. The final fabrication model contains the 3 versions of the kinetic joints printed in vertical and horizontal positions - to test what works better for the joint geometry.
+
+### Printer and Settings
+
+**Printer Model:** 3DWOX 3DWOX1 | Sidoh 3D Printer
+
+**Material:** PLA grey
+
+**Printer Settings:** (Default): [exact settings](week05-print.md)
+
+**Printing file:** as in the below picture. 
+
+![](../images/week05/week5-gcode.png)
+**Fig.** 1- the .stl file, 2 - the gcode.
+
+### Printing results.
+
+![](../images/week05/week5-prints2x.png)
+**Fig.** The printed joints in the vertical and horizontal orientation. 1 - the perspective of the prints out from the printer, 2 - left view, 3- top view, 4- front view, 5 - bottom view, 6 - right view. 
+
+
+| Feature     | Vertical Print       |Horizontal Print    |
+| ----------- | -------------------- |--------------------|
+| ease to remove from bottom material       | +    | -    |
+| support material easy to remove      | + |na|
+|screw fit   | + (a bit tighter compared to horizontal print & in same samples the bottom-bed material was making it hard to push through) |++ just right for the rotation|  |signature/stamp visibility| +|+|
+|fit to the lath (click part)| + (sometimes support material not removed correctly causes misfit)| ++ fitting is smooth as designed|
+| visual drawbacks | bottom not visible part (however it can cause friction while rotating)| side part - without effect on mechanism|
+
+In general despite visual drawback as the right side of the joint is visible after mounting and difficulty from detaching horizontally printed parts from the bottom-bed material, ^^the horizontal orientation is more accurate for the purpose of the design^^. The difficulty of disattaching the part from unnecessary bottom-bed material can be easely overcome by moving the mesh a little bit above the horizontal plane (causing adding some easily removable support material) or adding some thin legs (also resulting with easy to remove support material added).
+
+
+## 3D scanning
+
+As I arrived to the Mexico City, my luggage lost one of the small plastic legs (Fig. below). I intended to make a scan of one of the remaining elements and produce a digitally-fabricated replica. 
+![](../images/week05/week5-scanx.png)
+**Fig.** 1 - the object for scanning idea, 2 - the object to be scanned with markers, 3- scannig setup, 4 - the scanning result. 
+
+<video width="960"  controls>
+  <source src="../../images/week05/scanningx.mp4" type="video/mp4">
+</video>
+**Video.** Scanning process.
+
+The result of the 3D scan was not enough to make a print out of it. I was trying to increase the scan quality by increasing the resolution to 1mm and power of the laser to 100%. Despite the efforts still the resulting mesh was too rought to be used as input for printing. 
+
+ 
 
 
 ## Further work
@@ -139,6 +184,7 @@ I prepared the file for printing exporting the .stl files directly from Rhino. T
 - Testing of the clip joint should be conducted on scaled- model, as with the stress caused by bending the stripes around 2 axis can casue that the lamella simply jumps out of the joint.
 
 - Writing the script directly with rhinosyntax. 
+
 
 
 ## Conclusions
@@ -160,3 +206,7 @@ I prepared the file for printing exporting the .stl files directly from Rhino. T
 |tolerance horizontal lamella  `thl`| 0.1mm from each side worked perfectly|
 
 ## Problems/Questions/Dilemas
+
+- The scanner was scanning also the background, therefore aquiring the mesh of the scanned object some "manual" post-processing was required.
+
+- Printing such small elements as a kinetic joint on FDM-PLA printer is a bit tricky.

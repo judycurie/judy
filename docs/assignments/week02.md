@@ -5,6 +5,8 @@
 | *group*       |  na
 | *individual*      | model (raster, vector, 2D, 3D, render, animate, simulate, ...) a possible final project,compress your images and videos, and post a description with your design files on your class page |
 
+## Photo of the week
+![](../images/week02/photo-of-the-week2.png)
 
 ## Model
 I wanted to find geometry concept, that is a cut out of the minimal surface which can be a roofing for 2 cars or a little garden party.
