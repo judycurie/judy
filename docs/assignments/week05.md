@@ -174,6 +174,8 @@ The result of the 3D scan was not enough to make a print out of it. I was trying
 
 ## Further work
 
+![](../images/week05/week5-next.png)
+**Fig.** 1 - introducing the blocking possibility, 2 - joint without a screw- top part, 3 - joint without a screw- bottom part, 4 - joint without a screw. 
 
 - It would be great if the joint would allow to block it at 90 deg (to stop the kinetic behaviour and keep the final shape in place). 
 
