@@ -31,6 +31,7 @@ Stop war.
 
 ## Digital Fabrication
 ![](../images/katipo.png)
+
 **Multi-material 3D printed eyewear - model Katipo**
 
 honourable mention in Wearable Technology 

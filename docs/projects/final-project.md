@@ -107,9 +107,22 @@ Two proposal V1 and V2 can be built as a stand-alone structures. However for the
 ![](../images//V1V2-ISO.jpg)
 **Fig 3.** Modular arrangements - isometry.
 
+## **Week 03**
+
+I prepared the first model from the thin plywood to test the unrolling script.
+
+
+<iframe width="960" height="315" src="https://youtube.com/embed/Y_U2DWwXKLk" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
 ## **Week 04**
 
 
 Assembly Mechanism Ideas
 ![](../images//FabAcademy2023 - page 41.png)
 The inflatable one seems like one that could be multi-scale: reseable quite fine the real properties in the scaled model.
+
+## **Week 05**
+
+I developed the kineteic joints. 
+
+![](../images/week05/v5x-fab.jpg)
