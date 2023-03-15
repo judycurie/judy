@@ -7,6 +7,43 @@
 | *individual*      | cut something on the vinylcutter; design, lasercut, and document a parametric construction kit, accounting for the lasercutter kerf,which can be assembled in multiple ways, and for extra credit include elements that aren't flat |
 
 
+# Define the available joint types and their dimensions
+joint_types = {
+    'Butt Joint': {
+        'thickness': [10, 20, 30],
+        'length': [30, 40, 50],
+    },
+    'Lap Joint': {
+        'thickness': [10, 20],
+        'length': [20, 30],
+        'lap_depth': [5, 10],
+    },
+    'Mortise and Tenon Joint': {
+        'thickness': [20, 30, 40],
+        'length': [40, 50, 60],
+        'mortise_depth': [10, 15, 20],
+        'tenon_length': [10, 15, 20],
+    },
+    'Dovetail Joint': {
+        'thickness': [20, 30, 40],
+        'length': [40, 50, 60],
+        'dovetail_angle': [10, 15, 20],
+    },
+}
+
+# Define the material thickness
+material_thickness = 30
+
+# Iterate over the joint types and find the appropriate joint based on the material thickness
+for joint_type, joint_details in joint_types.items():
+    if material_thickness in joint_details['thickness']:
+        print(f"{joint_type} is suitable for material thickness {material_thickness} mm")
+        print(f"Joint dimensions: {joint_details}")
+        break
+else:
+    print(f"No joint type is available for material thickness {material_thickness} mm")
+
+
 
 ## Photo of the week
 
