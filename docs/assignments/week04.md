@@ -45,27 +45,27 @@ I took the following steps:
 
 
 5. Therefore, I used board Raspberry Pi Pico and the example codes worked as expected for the user LED.
-6. For blinkng the RGB LED, the library “Adafruit_NeoPixel”. The operationed worked. 
+6. For blinkng the RGB LED, the library “Adafruit_NeoPixel”. The operationed worked.
 
 Blinking LED ARDUINO IDE
 
 ```
 #include <Adafruit_NeoPixel.h>
- 
+
 int Power = 11;
 int PIN  = 12;
 #define NUMPIXELS 1
- 
+
 Adafruit_NeoPixel pixels(NUMPIXELS, PIN, NEO_GRB + NEO_KHZ800);
- 
+
 void setup() {
   pixels.begin();
   pinMode(Power,OUTPUT);
   digitalWrite(Power, HIGH);
- 
+
 }
- 
-void loop() { 
+
+void loop() {
   pixels.clear();
   pixels.setPixelColor(0, pixels.Color(15, 25, 205));
   delay(400);
@@ -87,7 +87,7 @@ void loop() {
   delay(400);
   pixels.show();
   delay(500);
- 
+
 }
 
 
@@ -102,11 +102,11 @@ source: https://wiki.seeedstudio.com/XIAO-RP2040-with-MicroPython/
 
 1. Step 1. Download and Install the latest version of Thonny according to your operating system
 2. Step 2. Launch the Arduino application.
-3. Step 3. Add Seeed Studio XIAO RP2040 board package to your Thonny - navigate to Tools > Options > Choose MicroPython (Raspberry Pi Pico), Port: <Try to detect port automatically >, 
-4. Click Install or updat MircoPython, to have the Seeed Studio XIAO RP2040 board detected, you need to double-tap the reset buttom.
+3. Step 3. Add Seeed Studio XIAO RP2040 board package to your Thonny - navigate to Tools > Options > Interpreter > Choose MicroPython (Raspberry Pi Pico), Port: <Try to detect port automatically >,
+4. Click Install or update MircoPython, to have the Seeed Studio XIAO RP2040 board detected, you need to double-tap the reset Button.
 ![](../images/week04/WhatsApp Image 2023-02-21 at 11.52.47.jpeg)
 
-5. For blinking  LED the ws2812.py library has to be downloaded, opened with Tonny and saved as RaspberryPi file "ws2812.py".Blinking LED works correctly. 
+5. For blinking  LED the ws2812.py library has to be downloaded, opened with Tonny and saved as RaspberryPi file "ws2812.py".Blinking LED works correctly.
 ![](../images/week04/Screenshot 2023-02-20 204107x.png)
 
 Blinking LED MicroPython
@@ -126,19 +126,19 @@ BLUE = (0, 0, 255)
 PURPLE = (180, 0, 255)
 WHITE = (255, 255, 255)
 COLORS = (BLACK, RED, YELLOW, GREEN, CYAN, BLUE, PURPLE, WHITE)
- 
+
 led = WS2812(12,1)#WS2812(pin_num,led_count)
- 
+
 while True:
     print("Beautiful color")
-    for color in COLORS: 
+    for color in COLORS:
         led.pixels_fill(color)
         led.pixels_show()
         utime.sleep(0.2)
 
 ```
 
-Loading the code in MircoPython is much faster than through Arduiono IDE. 
+Loading the code in MircoPython is much faster than through Arduiono IDE.
 
 ##The Morse Code in MicoroPython
 I wanted to blink the LED light as the morse code communicator.
@@ -174,7 +174,7 @@ word = "CLASS TIME "
 CLASSTIME = (C,L,A,S,S, WORDPAUSE, T, I, M,E, WORDPAUSE)
 
 led = WS2812(12,1)#WS2812(pin_num,led_count)
- 
+
 while True:
     for i in range(len(word)):
         print (word[i])
@@ -200,9 +200,8 @@ I tried to connect the wireless module to the RP2040 to try the remote communica
 
 ## Conclusions/Problems/Questions/Dilemas
 - double click on reset button to reset on rp2040?
-- Loading the code in MircoPython is much faster than through Arduiono IDE. 
-- Reset Button & Boot Button 
+- Loading the code in MircoPython is much faster than through Arduiono IDE.
+- Reset Button & Boot Button
 - The components can be burnt :)
-- After connecting to Thonny, I had problems to send the code through the Arduino IDE again the device. 
+- After connecting to Thonny, I had problems to send the code through the Arduino IDE again the device.
 ![](../images/week04/Screenshot 2023-02-21 210916.png)
-
