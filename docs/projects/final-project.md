@@ -4,14 +4,14 @@
 My participation in Fab Academy 2023 is sponsored by Eurepean Union  (EU funding: 101033646).
 One of the goals of my OPTIshell research project is to build a prototype of the timber solar canopy structure covered with the PV material.
 More about the project [optishell.io](https://optishell.io/).
-During Fab Academy I would like to build a stiffness-scaled model in 1:10 or 1:18 scale. 
+During Fab Academy I would like to build a stiffness-scaled model in 1:10 or 1:18 scale.
 ![Final Project Visualization](../images/concept.jpg)
 **Fig.1.** Conceptual model.
 
 ![Final Project Visualization](../images/final.jpg)
 **Fig.2.** Final project dilema.
 
-## Weekly notes
+
 
 ## **Week 01**
 Base idea:a 1:10 model from laser cut thin plywood, filling the spaces with the plate panels, 3D print the foundation structures.
@@ -19,7 +19,7 @@ Base idea:a 1:10 model from laser cut thin plywood, filling the spaces with the 
 IO additions and difficulty level (+++):
 :	add PV elements on some of the plates, connect to battery and show the level of the battery (++);create a sensor at the bottom to remotely display if the place is occupied (+);create a simple machine to erect the structure e.g. an extendable tube in the middle(+++);add sensor of the wind to inform if the wind is too strong (alternatively dismount) (+++)
 
-### Spiral Development
+**Spiral Development**
 ![](../images/spiral.png)
 
 **Spiral 01 Objectives:**
@@ -45,7 +45,7 @@ IO additions and difficulty level (+++):
 
 **Spiral 03: Objectives:**
 
-- [ ] 1) a KINETIC 1:10 stiffnes-scaled model from laser cut thin plywood 
+- [ ] 1) a KINETIC 1:10 stiffnes-scaled model from laser cut thin plywood
 
 - [ ] 2) filling the spaces with the plate panels + cover with small solar cells
 
@@ -72,11 +72,11 @@ I reviewed some research papers about asymptotic gridshells.
 
  “if surface is completely minimal, the asymptotics in the gridshell will coincide perfectly perpendicular, which result in torsion-free nodes and straight strips” (Eike Schling, 2018)
 
-### Design goal
+**Design goal**
 
 A small scale roof structure/ a canopy, which can be built without a building permit, providing a sheltered space from the rain and the sun.
 
-- [ ] 1) timber gridshell from flat straight planks 
+- [ ] 1) timber gridshell from flat straight planks
 
 - [ ] 2) covered with watertight matter
 
@@ -85,13 +85,13 @@ A small scale roof structure/ a canopy, which can be built without a building pe
 - [ ] 4) approx. coverage area 35m2
 
 
-### Geometric Requirements
+**Geometric Requirements**
 
 ![](../images/MSCA-table.jpg)
 
 **Table 1.** Geometric requirements for asymtotic gridshell.
 
-### Proposals V1 V2
+**Proposals V1 V2**
 
 Taking into consideration the geometric requirements, 2 subsurfaces were cut out of the minimal surface Enneper 3. The asymptotic curves were found with the custom-scripted component for Grasshopper.
 
@@ -119,10 +119,147 @@ I prepared the first model from the thin plywood to test the unrolling script.
 
 Assembly Mechanism Ideas
 ![](../images//FabAcademy2023 - page 41.png)
-The inflatable one seems like one that could be multi-scale: reseable quite fine the real properties in the scaled model.
+The inflatable one seems like one that could be multi-scale: resemble quite fine the real properties in the scaled model.
 
 ## **Week 05**
 
-I developed the kineteic joints. 
+I developed a kinetic 3D printed joint that doesn't need glue.
+![](../images//WhatsApp Image 2023-02-26 at 22.32.21.jpeg)
 
 ![](../images/week05/v5x-fab.jpg)
+**Fig.** The best working dimensions for the joint model for the lath in scale 1:18 (1cm width).
+
+
+Please see the [3D Scanning and Printing Assigment](../assignments/week05.md) for further details.
+## **Week 06**
+
+**Design Workflow**
+Realizing the complexity of the asymptotic gridshell design enabling erection from a flat grid.
+
+![](../images//eikeworkflow.png)
+
+source: <div class="csl-entry">Schling, E., &#38; Schikore, J. (2022). Morphology of Kinetic Asymptotic Grids. In C. Gengnagel (Ed.), <i>DMS 2022, Towards Radical Regeneration</i> (pp. 374–393). Springer Nature Switzerland.</div>
+**Structural Analysis**
+
+Lath: 10cm width, 2x6.5mm thickness (double)
+
+Material: wood 'birch' E:910[kN/cm2] G12:360[kN/cm2] G3:360[kN/cm2] gamma:4.5[kN/m3] alphaT:5.0E-6[1/C°] ft:3.8[kN/cm2] fc:-3.8[kN/cm2]
+
+Total mass: 131.504203kg
+
+<video width="960"  controls>
+  <source src="../../images/230329_analysis.mp4" type="video/mp4">
+</video>
+**Video**Double layer: Deformation of the structure factorized 0-20: Left - gravity, Right: Wind.
+
+|Analysis|    Gravity                      | Wind 0.365kN/m2|
+| ----------- | ------------------------------------ |--|
+|Load Case| 1.4D | 0.9D + 1.0W|
+| displacement [cm]     | 1.8 | 2.87|
+| Buckling Factor    | 79| 49|
+
+Lath: 10cm width, 6.5mm thickness (single)
+
+Material: wood 'birch' E:910[kN/cm2] G12:360[kN/cm2] G3:360[kN/cm2] gamma:4.5[kN/m3] alphaT:5.0E-6[1/C°] ft:3.8[kN/cm2] fc:-3.8[kN/cm2]
+
+Total mass: 65.752102kg
+
+<video width="960"  controls>
+  <source src="../../images/230329_analysis6.5.mp4" type="video/mp4">
+</video>
+**Video** Single layer: Deformation of the structure factorized 0-20: Left - gravity, Right: Wind.
+
+|Analysis|    Gravity                      | Wind 0.365kN/m2|
+| ----------- | ------------------------------------ |--|
+|Load Case| 1.4D | 0.9D + 1.0W|
+| displacement [cm]     | 5.7 | 17.8|
+| Buckling Factor    | 25| 8|
+|Energy|0.009754 |0.087255|
+
+Key take aways:
+
+ - double-layer necessary for timber structures
+
+ - the stiffness scaled model should account for double layer thickness in real pavilion
+
+
+
+## **Week 07**
+Simulation of assembly-disassembly with different rotation DOF at joints.
+
+![](../images//final3.png)
+
+Key take aways:
+
+ - the angle between joints change more further from the center -> joints closer to legs(supports) need more rotational freedom
+
+ - the joints should allow movement 75-90 deg (more is not necessary e.g most right example)
+
+
+
+## **Week08**
+
+Small research on artifiial muscles - dielectric actuators.
+
+https://fab.cba.mit.edu/classes/865.18/motion/dielectric/index.html
+
+Shape memory wire:
+https://www.youtube.com/watch?v=2YVwpBAiA1A&t=39s
+
+![](../images//final4.png)
+
+|Line Segments    |1|2|3|4|5|6|7|8|
+| -----------   |---|---|---|---|---|----|----|----|
+| **Set1-3D**   |0.75|0.88|0.70|0.62|0.60|0.59|0.60|0.36|
+| **Set2-Flat** |0.84|0.91|0.72|0.63|0.61|0.62|0.65|0.41|
+| **Differance Set1-Set2**| +0.09|+0.03|+0.02|+0.01|+0.01|+0.03|+0.05|+0.08|
+
+Trying to find a function of the geodesic wire extension:
+
+- Linear regression: set2 = 0.184 + 0.977 * set1
+
+- Polynomial regression: set2 = -0.221 + 3.776 * set1 - 12.416 * set1^2 + 16.306 * set1^3 - 8.350 * set1^4 + 1.647 * set1^5
+
+- Pearson correlation coefficient (-1 (perfect negative correlation) to 1 (perfect positive correlation)):  0.962
+
+
+Key take aways:
+
+ - if the artificial muscle is a geodesic can be a "tape" (wide), if is not a geodesic curve should be a wire with rotational cross section
+
+ - the artifitial muscle should shrink about 5% (for the flat structure 75-90 angle at joints)
+
+ - middle cell of the structure moves only vertically during assembly and almost doesnt change the shape between flat (dissamble state) and erected (assemble state) -> possibility to mount one stiff panel
+
+
+
+
+## **Week 09**
+![](../images//joints10.jpg)
+![](../images//WhatsApp Image 2023-03-28 at 21.56.35 (13).jpeg)
+
+Material: PET, 1.18mm
+The laser either didnt cut through or removed the bumps. The pocket size made a differance in the possible rotations at joints.
+
+The best worked the cut on the small machine with:
+cut - s4.0, 75p
+engrave - s80 p65
+
+with the kerf:
+
+- clear - **0.8** - 1.45, 1.28 (0.4-0.65mm kerf - slower on arc)
+
+- pocket - **1,65** - 1.76, 1.81 (0.1-0.15mm kerf - line cut)
+
+big machine:
+cut: s3.0, p90
+engrave: s80 p70
+
+- clear - **0.8** - 1.47, 1.52 (0.67-0.72mm kerf - slower on arc)
+
+- pocket - **1.65** - 1.87, 1.95 (0.22-0.30mm kerf - line cut)
+
+Key take aways:
+
+ - the scaled model needs to be larger than scale 1:18 or 1:10 to be cut with laser and these joints
+ - the bump needs to be bigger than kerf on arc cut

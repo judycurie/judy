@@ -9,7 +9,7 @@
 
 ## Photo of the week
 
-![](../images/week09/photo-of-the-week8.png)
+![](../images/week09/photo-of-the-week9.png)
 
 
 ## Lecture Notes
@@ -27,6 +27,7 @@
 
 
 ## Output devices
+I have started with preparing the below illustration (photo of the week) to have better understaning of the pin layout.
 
 ![](../images/week09/week9.png)
 **Fig.** The schematic of the pin connection of the board to connect OI devices.
@@ -34,9 +35,11 @@
 ### Step motor
 
 
-Servo Futaba S3003 [producent specification](https://www.fishfun.nl/index.php/modelbouw/servo-s/servo-futaba-s3003.html)
+**Servo Futaba S3003**[producent specification](https://www.fishfun.nl/index.php/modelbouw/servo-s/servo-futaba-s3003.html)
+Voltage range: 4.8V - 6.0V
 
-
+SG90 digital servo[producent specification](https://www.towerpro.com.tw/product/sg90-7/)
+Operating voltage: 4.8v
 
 ### Code MicroPython
 
@@ -108,11 +111,31 @@ During testing the board produced in week08 I noticed that the swith button does
 
 
 
+## The button works!
+With help of my Instructor Rodrigo Shiordia, the button was fixed, and it works without the resistor connected before the button (?)
 
 
+MicroPython Bliking LED with a Button
 
+```
+from machine import Pin
 
+button = Pin(1, Pin.IN, Pin.PULL_UP) #setup pin where the button is connected
+button.irq(lambda pin: InterruptsButton(),Pin.IRQ_FALLING)
+led = Pin(0, Pin.OUT) #pins for RP2040 LED: 17- RED, 16- GREEN, 25- BLUE
+tmp = 0
 
+def InterruptsButton():
+    global tmp
+    tmp = ~tmp
+    led.value(tmp)
+while True:  
+    pass
+```
+<video width="960"  controls>
+  <source src="../../images/week09/WhatsApp Video 2023-03-28 at 20.44.26.mp4" type="video/mp4">
+</video>
 
 ## Problems/Questions/Dilemas
-1. The motor stops at some frequances
+1. The motor vibirates and not rotates at some frequancies. Why?
+2. Does the swith button really need a resitor?
