@@ -20,11 +20,19 @@
 ![](../images/week09/week9n4.png)
 
 ## Take aways from the group Assignment
+The power consumption measured with method described:
+
 [Group Assignment](https://fabacademy.org/2023/labs/ciudadmexico/group%20assignments/output-devices).
 
- - more W more power consumption
+ - the higher rotation speed - more power consumption
 
+- Power (Watts) = Voltage (Volts) x Current (Amps)
 
+-  S3003 servo: low freq: 5.0V x 0.125A = 0.625W, high freq: 5.0V x 0.3A = 1.5W
+max. 5.0V x 0.7A = 3.5W
+
+-  SG90 digital servo: low freq: 5.0V x 0.1A = 0.5W, high freq: 5.0V x 0.3A = 1.5W
+max. 5.0V x 0.5A = 2.5W
 
 ## Output devices
 I have started with preparing the below illustration (photo of the week) to have better understaning of the pin layout.
@@ -37,10 +45,12 @@ I have started with preparing the below illustration (photo of the week) to have
 
 **Servo Futaba S3003**[producent specification](https://www.fishfun.nl/index.php/modelbouw/servo-s/servo-futaba-s3003.html)
 Voltage range: 4.8V - 6.0V
+ maximum current draw: 700mA at 4.8V and 830mA at 6V.
 
-SG90 digital servo[producent specification](https://www.towerpro.com.tw/product/sg90-7/)
+
+**SG90 digital servo** [producent specification](https://www.towerpro.com.tw/product/sg90-7/)
 Operating voltage: 4.8v
-
+ maximum current draw: 500mA at 4.8V
 ### Code MicroPython
 
 MicroPython Stepper Motor - rotate with specified angle - based on the examples
