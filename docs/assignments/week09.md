@@ -119,7 +119,10 @@ During testing the board produced in week08 I noticed that the swith button does
 ![](../images/week09/xino22.jpg)
 **Fig.** The schematic model and case for the new board.
 
-
+files
+![kicad_pcb](../files\xxino22c- bigger pads.kicad_pcb)
+![kicad_prl](../files\xxino22c- bigger pads.kicad_prl)
+![kicad_pro](../files\xxino22c- bigger pads.kicad_pro)
 
 ## The button works!
 With help of my Instructor Rodrigo Shiordia, the button was fixed, and it works without the resistor connected before the button (?)

@@ -1,14 +1,16 @@
 # Final Project
 
+## Assembly device for the asymptotic gridshell structure
 
 My participation in Fab Academy 2023 is sponsored by Eurepean Union  (EU funding: 101033646).
 One of the goals of my OPTIshell research project is to build a prototype of the timber solar canopy structure covered with the PV material.
 More about the project [optishell.io](https://optishell.io/).
-During Fab Academy I would like to build a stiffness-scaled model in 1:10 or 1:18 scale.
-![Final Project Visualization](../images/concept.jpg)
+During Fab Academy I would like to build a stiffness-scaled model and design a device for automated assembly.
+
+![Optishell Asymptotic Gridshell Structure Visualization](../images/concept.jpg)
 **Fig.1.** Conceptual model.
 
-![Final Project Visualization](../images/final.jpg)
+![Final Project Ideas](../images/final.jpg)
 **Fig.2.** Final project dilema.
 
 
@@ -199,13 +201,27 @@ Key take aways:
 
 ## **Week08**
 
-Small research on artifiial muscles - dielectric actuators.
+Small research on artifiial muscles - dielectric elastomer actuators ( Electroactive Polymers)
+
+[paper1](https://link.springer.com/article/10.1007/s42558-019-0005-1)
+[paper2](https://www.science.org/doi/10.1126/science.1246906)
 
 https://fab.cba.mit.edu/classes/865.18/motion/dielectric/index.html
 
+nylon liner material actuators (NLMAs):
+
+[artifitial muscle at home](https://www.instructables.com/Fabricating-Fishing-Line-Artificial-Muscle-at-Home/)
 Shape memory wire:
 https://www.youtube.com/watch?v=2YVwpBAiA1A&t=39s
+https://fab.cba.mit.edu/classes/863.22/doc/ArtificialMuscles/artificialmuscles.html
+http://fab.cba.mit.edu/classes/863.10/people/jie.qi/jieweek10.html
 
+Manufacturers:
+https://www.pi-usa.us/en/products/piezo-actuators-stacks-benders-tubes/
+
+
+*Application fields: Industry and research. Can also be applied to curved surfaces or used for integration in structures. For adaptive systems, energy harvesting, structural health monitoring.*
+[link](https://www.pi-usa.us/en/products/piezo-actuators-stacks-benders-tubes/p-876-duraact-patch-transducer-101790#downloads)
 ![](../images//final4.png)
 
 |Line Segments    |1|2|3|4|5|6|7|8|
@@ -235,11 +251,14 @@ Key take aways:
 
 
 ## **Week 09**
+
+As for one-time assembly the kinetic joints might not be necessary and it will be enough to account for the rotation between flat adn fully asssembled state providing adequate tolerances in slots. However, as the slots are bigger to allow some rotation they also cause the problem of elements sliding from each other in the flat state.
+
 ![](../images//joints10.jpg)
 ![](../images//WhatsApp Image 2023-03-28 at 21.56.35 (13).jpeg)
 
 Material: PET, 1.18mm
-The laser either didnt cut through or removed the bumps. The pocket size made a differance in the possible rotations at joints.
+The laser either didnt cut through or removed the bumps. The pocket size made a difference in the possible rotations at joints.
 
 The best worked the cut on the small machine with:
 cut - s4.0, 75p
