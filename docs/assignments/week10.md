@@ -108,13 +108,25 @@ To make sure we can finish assigment on time, I have to use the A4988 STEPPER MO
 
 ## Board design with A4988 STEPPER MOTOR DRIVER & SAMD11C
 
+
+
 ### Migration from Attiny44 to ATSAMD11C14A
 ![](../images/week10/week10-10.png)
 ![](../images/week10/week10-11.png)
 
-### PCB DESIGN
+### PCB DESIGN - FAILED
 ![](../images/week10/week10-12.png)
 files KiCAD ![kicad files](../files\N17SAMD11-GDN-USB-Edge_Cuts.zip)
+
+
+### FINAL PCB DESIGN
+![](../images/week10/week10-13.png)
+![](../images/week10/week10-132.png)
+![](../images/week10/week10-133.png)
+![](../images/week10/week10-134.png)
+<video width="960"  controls>
+  <source src="../../images/week10/WhatsApp Video 2023-04-12 at 06.23.37.mp4" type="video/mp4">
+</video>
 
 ### Parts
 ![](../images/week10/N17SAMDacaRodrigoGDN-USB-parts.png)
