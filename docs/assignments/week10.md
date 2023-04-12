@@ -42,20 +42,20 @@ The power consumption measured with method described:
 ## Board Examples for the external power supply
 I have reviewed examples of the PCB boards with external power supply:
 
-- http://archive.fabacademy.org/archives/2016/fablabtrivandrum/students/369/w13/output_device.html
+- [http://archive.fabacademy.org/archives/2016/fablabtrivandrum/students/369/w13/output_device.html](http://archive.fabacademy.org/archives/2016/fablabtrivandrum/students/369/w13/output_device.html)
 
-- http://fab.cba.mit.edu/classes/863.04/people/ztaylor/5/asst5.html
+- [http://fab.cba.mit.edu/classes/863.04/people/ztaylor/5/asst5.html](http://fab.cba.mit.edu/classes/863.04/people/ztaylor/5/asst5.html)
 
-- http://fab.cba.mit.edu/classes/863.04/people/ztaylor/5/asst5.html
+- [http://fab.cba.mit.edu/classes/863.04/people/ztaylor/5/asst5.html](http://fab.cba.mit.edu/classes/863.04/people/ztaylor/5/asst5.html)
 
-- https://fab.cba.mit.edu/classes/863.22/EECS/people/Noah/Week9.html
+- [https://fab.cba.mit.edu/classes/863.22/EECS/people/Noah/Week9.html](https://fab.cba.mit.edu/classes/863.22/EECS/people/Noah/Week9.html)
 
-- http://fab.cba.mit.edu/classes/863.15/section.Harvard/people/YLi/Week%2013%20-%20Final%20Project/Week%2013%20-%20Final%20Project.html
+
+- [http://fab.cba.mit.edu/classes/863.15/section.Harvard/people/YLi/Week%2013%20-%20Final%20Project/Week%2013%20-%20Final%20Project.html](http://fab.cba.mit.edu/classes/863.15/section.Harvard/people/YLi/Week%2013%20-%20Final%20Project/Week%2013%20-%20Final%20Project.html)
 
 The most useful for understanding general workflow of connecting power supply - notes in the figure below.
 
-https://fab.cba.mit.edu/classes/863.22/EECS/people/Noah/Week9.html
-
+[https://fab.cba.mit.edu/classes/863.22/EECS/people/Noah/Week9.html](https://fab.cba.mit.edu/classes/863.22/EECS/people/Noah/Week9.html)
 
 
 
@@ -81,11 +81,11 @@ https://fab.cba.mit.edu/classes/863.22/EECS/people/Noah/Week9.html
 Therefore, I came back to look for examples with control movement and a power supply.
 And I found this great example by Neil dedicated to the motor stepper we inteded to use.
 
-- hello.DRV8428-D11C-NEMA17:  http://academy.cba.mit.edu/classes/output_devices/DRV8428/hello.DRV8428-D11C-NEMA17.png
+- hello.DRV8428-D11C-NEMA17:  [http://academy.cba.mit.edu/classes/output_devices/DRV8428/hello.DRV8428-D11C-NEMA17.png](http://academy.cba.mit.edu/classes/output_devices/DRV8428/hello.DRV8428-D11C-NEMA17.png)
 
-- gitlab resources: https://gitlab.cba.mit.edu/neilg/urumbu/-/tree/master/serialstep
+- gitlab resources: [https://gitlab.cba.mit.edu/neilg/urumbu/-/tree/master/serialstep](https://gitlab.cba.mit.edu/neilg/urumbu/-/tree/master/serialstep)
 
-- python design interface: https://leomcelroy.com/svg-pcb/?file=hello.DRV8428-D11C-NEMA17.js
+- python design interface: [https://leomcelroy.com/svg-pcb/?file=hello.DRV8428-D11C-NEMA17.js](https://leomcelroy.com/svg-pcb/?file=hello.DRV8428-D11C-NEMA17.js)
 
 
 ![](../images/week10/week10-8.png)
@@ -116,10 +116,12 @@ To make sure we can finish assigment on time, I have to use the A4988 STEPPER MO
 
 ### PCB DESIGN - FAILED
 ![](../images/week10/week10-12.png)
-files KiCAD ![kicad files](../files\N17SAMD11-GDN-USB-Edge_Cuts.zip)
+![](../images/week10/N17SAMDacaRodrigoGDN-USB-parts.png)
+**files KiCAD download**: [kicad files](../files/N17SAMD11-GDN-USB-Edge_Cuts.zip){: download }
 
+**The CNC machining file with the 0.4 track width and 0.4 clearance (due to the Easter break I had to try to make it done on the machine outside Fab Lab at university). Moreover, meantime I dedected a mistake with the USB +/- connections to the SAMD11C)**
 
-### FINAL PCB DESIGN
+## FINAL PCB DESIGN
 ![](../images/week10/week10-13.png)
 ![](../images/week10/week10-132.png)
 ![](../images/week10/week10-133.png)
@@ -128,8 +130,21 @@ files KiCAD ![kicad files](../files\N17SAMD11-GDN-USB-Edge_Cuts.zip)
   <source src="../../images/week10/WhatsApp Video 2023-04-12 at 06.23.37.mp4" type="video/mp4">
 </video>
 
+**files KiCAD download**: [FINAL kicad files - produced board](../files/N17SAMDacaNeil.zip){: download }
+
+####Loading Bootloader
+
+To load bootloader I followed the instructions provided by Adrian Torres [here](http://fabacademy.org/2020/labs/leon/students/adrian-torres/samdino.html)
+
+#### Arduino hello Files
+As the diode was soldered in the oposite direction to the design.
+
+[Arduino-blink](../files/samd-blink.ino){: download }
+
+[Arduino-stepper-motor](../files/samd-stepper-motor.ino){: download }
+
 ### Parts
-![](../images/week10/N17SAMDacaRodrigoGDN-USB-parts.png)
+
 
 - Step Motor: Nema 17 External 48mm Stack 0.4A Lead 2mm/0.07874" Length 300mm [specification](https://www.oyostepper.com/goods-151-Nema-17-External-48mm-Stack-04A-Lead-2mm007874-Length-300mm.html)
 
