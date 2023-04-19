@@ -178,7 +178,7 @@ Total mass: 65.752102kg
 | Buckling Factor    | 25| 8|
 |Energy|0.009754 |0.087255|
 
-Key take aways:
+**Key take aways:**
 
  - double-layer necessary for timber structures
 
@@ -191,7 +191,7 @@ Simulation of assembly-disassembly with different rotation DOF at joints.
 
 ![](../images//final3.png)
 
-Key take aways:
+**Key take aways:**
 
  - the angle between joints change more further from the center -> joints closer to legs(supports) need more rotational freedom
 
@@ -239,7 +239,7 @@ Trying to find a function of the geodesic wire extension:
 - Pearson correlation coefficient (-1 (perfect negative correlation) to 1 (perfect positive correlation)):  0.962
 
 
-Key take aways:
+**Key take aways:**
 
  - if the artificial muscle is a geodesic can be a "tape" (wide), if is not a geodesic curve should be a wire with rotational cross section
 
@@ -255,7 +255,7 @@ Key take aways:
 As for one-time assembly the kinetic joints might not be necessary and it will be enough to account for the rotation between flat adn fully asssembled state providing adequate tolerances in slots. However, as the slots are bigger to allow some rotation they also cause the problem of elements sliding from each other in the flat state.
 
 ![](../images//joints10.jpg)
-![](../images//WhatsApp Image 2023-03-28 at 21.56.35 (13).jpeg)
+![](../images/final-project/230328-kinetic-joints.jpeg)
 
 Material: PET, 1.18mm
 The laser either didnt cut through or removed the bumps. The pocket size made a difference in the possible rotations at joints.
@@ -278,7 +278,32 @@ engrave: s80 p70
 
 - pocket - **1.65** - 1.87, 1.95 (0.22-0.30mm kerf - line cut)
 
-Key take aways:
+**Key take aways:**
 
  - the scaled model needs to be larger than scale 1:18 or 1:10 to be cut with laser and these joints
  - the bump needs to be bigger than kerf on arc cut
+
+##**Week 10**
+
+For the kinetic-actuated assembly with simple joints (cuts in the laths), I have to keep the structure of the asymptotic gridshell from a single layer of asymptotic laths. However, as the structural analyis shows above, the structure is too weak with the single layer plywood laths 6.5mm thick. Increasing thickness is not possible due to the bending (thicker material cannot bend that easily and can easily break- casuing structural failoure). The project assumption is to use kinetic movement for assembly (and maybe dissasembly), prefarably only once in the Life Cycle of the structure - to assemble it on the site. The assembly device should work as assembler of the sttucture and not as a kinetic actuator for the kinetic sculpture. Therefore to keep the single layer of the asymptotic grid (which can be easily assebmled from flat), I added a developable plates, which will be mounted between laths after assembly to check the structureal performance.
+
+![](../images/final-project/230401-optishell.png)
+![](../images/final-project/230401-optishell2.png)
+![](../images/final-project/230401-optishell3.png)
+![](../images/final-project/230401-optishell4.png)
+![](../images/final-project/230401-optishell5.png)
+![](../images/final-project/230401-optishell6.png)
+![](../images/final-project/230401-optishell7.png)
+
+**Key take aways:**
+
+ - assuming the 1:1 gridshell structure with filling developable plates the structural performance is
+
+ **Next steps:**
+
+  - calculation of the material thickness for 1:5 stiffnes scaled model  -> testing the kinetic joints with tolerances - > preparation of the fabrication files
+
+
+##**Week 11**
+Some Ideas of the Input Devices for OPTIshell:
+![](../images/final-project/final8.png)
