@@ -63,3 +63,12 @@ A PCB board based on
 
 Import the Footprint library to Kicad
 Go to Preference —> Manage Footprint Libraries
+
+
+## XINO remote - ideas with Battery
+
+![](../images/xino-remote/untitled.84.jpg)
+**Fig.** Conceptual Xino-remote.
+
+![](../images/xino-remote/xino-remote5.png)
+**Fig.** Conceptual 3 versions Xino-remote.
