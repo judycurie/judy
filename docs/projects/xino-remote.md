@@ -45,6 +45,8 @@ A PCB board based on
 
 - [Getting Started with Seeed Studio XIAO nRF52840 (Sense)](https://wiki.seeedstudio.com/XIAO_BLE)
 
+- [pet tracher](https://www.pcbway.com/project/shareproject/Pet_Activity_Tracker_using_XIAO_BLE_Sense_Edge_Impulse_786e857b.html)
+
 **Attention:All the I/O pins are 3.3V, please do not input more than 3.3V, otherwise, the CPU may be damaged.**
 
 ## XINO remote - Kicad

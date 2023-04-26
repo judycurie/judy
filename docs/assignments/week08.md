@@ -38,6 +38,9 @@ I had to improve the design of the PCB board from the week 6 *Electronics Design
 ![](../images/week08/week75.png)
 **Fig.** Final design -Exporting production graphics KiKad.
 
+files
+[kiCad files](../files/xino.zip){: download }
+
 
 ## Production
 The preparation of the tool path was prepared with MODS.
