@@ -56,8 +56,12 @@ esptool.py --chip esp32 --port /dev/ttyUSB0 write_flash -z 0x1000 esp32-20180511
 ### Software & Reference Project Links
 
 
+### Arduino Set up
+https://wiki.seeedstudio.com/XIAO_BLE/
 
+Step 3. Add Seeed Studio XIAO nRF52840 (Sense) board package to your Arduino IDE
 
+Navigate to File > Preferences, and fill "Additional Boards Manager URLs" with the url below: https://files.seeedstudio.com/arduino/package_seeeduino_boards_index.json
 
 ## Links:
 
