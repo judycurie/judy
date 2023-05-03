@@ -307,3 +307,11 @@ For the kinetic-actuated assembly with simple joints (cuts in the laths), I have
 ##**Week 11**
 Some Ideas of the Input Devices for OPTIshell:
 ![](../images/final-project/final8.png)
+
+##**Week 12**
+Xino-remote with battery concepts:
+![](../images/final-project/xino-remote7.png)
+
+##**Week 13**
+Setting up BLE communication with nRFN5240 (Sense) - reading the Accelerometer.
+![](../images/final-project/week1310.png)
