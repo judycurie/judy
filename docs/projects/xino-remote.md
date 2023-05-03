@@ -103,6 +103,8 @@ Go to Preference —> Manage Footprint Libraries
 ![](../images/xino-remote/xino-remote5.png)
 **Fig.** Conceptual 3 versions Xino-remote.
 
+## battery
+The red one is positive (+), the black one is negative (-). Never connect the red cable to the negative battery terminal or a vehicle with a dead battery.
 
 ## Setting Up Arduino IDE
 
@@ -116,3 +118,9 @@ https://how2electronics.com/getting-started-with-seeed-xiao-ble-nrf52840-sense/
 https://files.seeedstudio.com/arduino/package_seeeduino_boards_index.json
 
 4. Navigate to Tools > Board > Boards Manager, type the keyword “seeed nrf52” in the search box, select the latest version of Seeed nRF52 Boards, and install it.
+
+## Sensors
+
+Thermal Camera: https://www.seeedstudio.com/Grove-Thermal-Imaging-Camera-IR-Array-MLX90640-110-degree-p-4334.html
+
+Project :https://www.hackster.io/mithun-das/pet-activity-tracker-using-xiao-ble-sense-edge-impulse-858d73
