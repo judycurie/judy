@@ -162,7 +162,7 @@ void loop() {
   }
 }
 ```
-1. Install Application
+1. Install mobile Application
 2.  need to download a library called Arduino BLE.  [Github  LSM6DS3 Library.] (https://github.com/Seeed-Studio/Seeed_Arduino_LSM6DS3).From this GitHub repository - Code-> download ZIP
 
 3.  Add the Arduino BLE library to the Arduino Library folder using add zip option: Sketch->Inlude Librry->Add .ZIP library -> select the downloaded .zip file "ArduinoBLE-master.zip"
@@ -216,6 +216,9 @@ void loop() {
     delay(1000);
 }
 ```
+![](../images/week13/week1310.png)
+**Fig.** nRF52840 reading the Accelerometer.
+
 Some other helpful tutorials
 - https://www.youtube.com/watch?v=GsseX2rEjfw
 https://randomnerdtutorials.com/esp32-bluetooth-low-energy-ble-arduino-ide/
