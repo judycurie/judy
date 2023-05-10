@@ -25,8 +25,8 @@
 1. 2 nRF5240 (one Sense) communicating via BLE
 2. One remote with recharable battery reads the 6FOF IMU data and sends to the second connected to the computer.
 3. The data is visualize as geometry (Grasshopper, Thinker)
- - one way is to have the data on the XIAO host and read it
- - second way is to get the wirelessly from XIAO slave
+  - one way is to have the data on the XIAO host and read it
+  - second way is to get the wirelessly from XIAO slave
 4. Trying Tensor Flow and Tiny ML (https://wiki.seeedstudio.com/XIAO-BLE-Sense-TFLite-Mic)
 
 Some intresting links:
@@ -36,8 +36,9 @@ Some intresting links:
 
 
 ## Fails
-![](../images/week14/week145.png)
 ### Reading the IMU data with Grasshoper and Firefly
+![](../images/week14/week145.png)
+
 The run Firefly the File "Firefly Firmata" needs to be upload to the (Arduino) Board. You can find it after installing Firefly in Arduino IDE -> File -> Skechbook_> Firefly Firmata. As we are using XIAO, not the
 
 I tried to modify the code to make it compile and upload to XIAO board.  Below the result. **The file compiles and uploads to the XIAO board, but still in Grasshopper the serial port can not be read.**
@@ -46,19 +47,20 @@ Another problem to explore is to mannually finde the location of the arduino.exe
 
 ### Reading the IMU data with Grasshoper with other software
 ![](../images/week14/week146.png)
+**CoolTerm**: [tutorial](https://www.youtube.com/watch?v=RWgyCcnUxPY). Saving txt from com port  - desont work as you can not write and read at the same Time.
 ![](../images/week14/week147.png)
-![](../images/week14/week148.png)
-3. Savint txt from com port : https://www.youtube.com/watch?v=RWgyCcnUxPY - desont work as you can not write and read at the same Time
-4. https://circuitjournal.com/arduino-serial-to-spreadsheet
-5. Data steamaer excel - didnt really stream the data from COM port - > you need to upload specific file to the board and for now I founda only documentation on arduino. It worked though for the in-built sensors.
- - https://support.microsoft.com/en-us/office/enable-the-data-streamer-add-in-70052b28-3b00-41e7-8ab6-8a9f142dffeb
-### Reading data from the XIAO slave
+**PythonRemote**: not reading the remote Python file.
+**Arduino Plugin** [more](https://circuitjournal.com/arduino-serial-to-spreadsheet)
 
+![](../images/week14/week148.png)
+**Excel DataStreamer** - didnt really stream the data from COM port - > you need to upload specific file to the board and for now I founda only documentation on arduino. It worked though for the in-built sensors.
+ - https://support.microsoft.com/en-us/office/enable-the-data-streamer-add-in-70052b28-3b00-41e7-8ab6-8a9f142dffeb
+
+### Reading data from the XIAO slave
+![](../images/week14/week149.png)
 1. Download https://www.nordicsemi.com/Products/Development-tools/nRF-Connect-for-Desktop/Download#infotabs
 2. https://www.nordicsemi.com/Products/Bluetooth-Low-Energy/Development-software?lang=en#infotabs
 3. https://www.nordicsemi.com/Products/Development-tools/nRF-Command-Line-Tools/Download
-
-
 
 
 ## HOST: Reading the IMU data for serial communication
@@ -174,6 +176,8 @@ void loop() {
 ![](../images/week14/Screenshot 2023-05-09 14.33.08.png)
 **Fig.** nRF52840 reading the Gyroscope.
 
+## Reading the IMU data with Python with Panda and GH
+![](../images/week14/week1410.png)
 ## Reading the IMU data with Python and Taichi
 
 I had a problem to install packages through regular pip command. It turned out I had to do it though PyPackages.
