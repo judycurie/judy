@@ -23,7 +23,7 @@ After figuring out that I need a new MkDocs template for a personal website, rat
 
 To get the mkdocs template working locally I had to:
 
-1. Install mkdocs theme material, using the following commands (source:  [squidfunk](https://squidfunk.github.io/mkdocs-material/getting-started/))
+**1.** Install mkdocs theme material, using the following commands (source:  [squidfunk](https://squidfunk.github.io/mkdocs-material/getting-started/))
 
 ```
 pip install mkdocs-material
@@ -32,7 +32,7 @@ pip install -e mkdocs-material
 
 ```
 
-2. Install the missing plugin, using the following command (source: [pypi](https://pypi.org/project/mkdocs-git-revision-date-localized-plugin/))
+**2.** Install the missing plugin, using the following command (source: [pypi](https://pypi.org/project/mkdocs-git-revision-date-localized-plugin/))
 
 
 ```
@@ -42,8 +42,10 @@ pip install mkdocs-git-revision-date-localized-plugin
 
 
 ## Uploading to GIT repository
+I followed the instruction for the week 1 - [FabAcademy - Tutorials](http://pub.fabcloud.io/tutorials/week01_principles_practices_project_management/git_simple.html).
+
+In the Git Bash I used the following commands:
 For individual repository:
-In the Git Bash:
 ```
 git add .
 git commit -m "some string"
@@ -58,6 +60,8 @@ git add .
 git commit -m "some string"
 git push
 ```
+
+![](../images/week1/Screenshot 2023-05-17 080434.png)
 **git commit -m "..." - works, git commit -m '...' - doesn't work for me**
 
 ![](../images/meme01.png)

@@ -2,7 +2,7 @@
 
 |Assignment    |                          |
 | ----------- | ------------------------------------ |
-| *group*       |  use the test equipment in your lab to observe the operation of a microcontroller circuit board |
+| *group*       |  use the test equipment in your lab to observe the operation of a microcontroller circuit board [link](https://fabacademy.org/2023/labs/ciudadmexico/group%20assignments/electronics%20design/)|
 | *individual*      |design a development board to interact and communicate with an embedded microcontroller, extra credit: try another design workflow, extra credit: make a case for it, extra credit: simulate its operation|
 
 
@@ -14,7 +14,7 @@
 ## Basic Knowledge Refreshement
 
 As I had last physics classes 15 years ago, I had to start with refreshing the basics. I watched the
-[https://www.khanacademy.org/science/physics/circuits-topic](https://www.khanacademy.org/science/physics/circuits-topic). You can find my notes below. 
+[https://www.khanacademy.org/science/physics/circuits-topic](https://www.khanacademy.org/science/physics/circuits-topic). You can find my notes below.
 
 ![](../images/week06/week6n.png)
 ![](../images/week06/week6n2.png)
@@ -28,7 +28,7 @@ I have followed the KiCAD tutorial available at: [KiCAD 7.0 Tutorial](https://do
 **The typical workflow in KiCad consists of two main tasks: drawing a schematic and laying out a circuit board.** A KiCad project is a folder with a project file, a schematic, a board layout, and optionally other associated files such as symbol and footprint libraries, simulation data, purchasing information, etc.
 
 1. Typically, the schematic is drawn first.
-2. When the schematic is complete and the design has passed an electrical rules check (ERC), the design information in the schematic is transferred to the board editor and layout begins. Often the schematic will need to be updated after layout has begun. 
+2. When the schematic is complete and the design has passed an electrical rules check (ERC), the design information in the schematic is transferred to the board editor and layout begins. Often the schematic will need to be updated after layout has begun.
 3. Laying out a circuit board.
 4. When the board layout is complete and the board has passed the Design Rules Check (DRC), fabrication outputs are generated so that the board can be manufactured by a PCB fabricator.
 
@@ -47,7 +47,7 @@ I have followed the KiCAD tutorial available at: [KiCAD 7.0 Tutorial](https://do
 7. Adding Symbols to the Schematic: Add a Symbol button or press "a"
 	you can add elements e.g. LED - Led, R - Resistor, Battery_Cell - battery.
 8. Additional objects can be added to the selection with Shift+click, or removed with Ctrl+Shift+click. You can toggle an item’s selection state with Ctrl+click.
-9. M - move, R - rotate , G - drag, del  - delate objects. For moving unconnected symbols, G and M behave identically, but for symbols with wires attached, G moves the symbol and keeps the wires attached, while M moves the symbol and leaves the wires behind. 
+9. M - move, R - rotate , G - drag, del  - delate objects. For moving unconnected symbols, G and M behave identically, but for symbols with wires attached, G moves the symbol and keeps the wires attached, while M moves the symbol and leaves the wires behind.
 
 10. Add power and ground symbols to the schematic: Add a Power Symbol button or use the P hotkey. Add a VCC symbol and GND symbol and then connect them to the circuit with wires.
 11. Labeling wires:  Net Label button in the right toolbar (L), type a label name (led), and place the label into the schematic so that the square attachment point overlaps with the wire. Rotate and align the label as necessary.
@@ -58,7 +58,7 @@ I have followed the KiCAD tutorial available at: [KiCAD 7.0 Tutorial](https://do
 	 - Footprint Assignment:use the footprint assignment tool by clicking the icon button in the top toolbar. Footprints can be previewed by right-clicking a footprint and selecting View selected footprint.
 
 13. Electrical Rules Check (ERC): full list of electrical rules and to adjust their severity: File → Schematic Setup…​ → Electrical Rules → Violation Severity, to run the check: clicking the ERC button (erc 24) in the top toolbar and then clicking Run ERC.
-	- common KiCad ERC errors: "Input Power pin not driven by any Output Power pins". Power symbols are set up to require a power output pin, such as the output of a voltage regulator, on the same net; otherwise KiCad thinks the net is undriven. 
+	- common KiCad ERC errors: "Input Power pin not driven by any Output Power pins". Power symbols are set up to require a power output pin, such as the output of a voltage regulator, on the same net; otherwise KiCad thinks the net is undriven.
 
 14. Bill of Materials:Tools → Generate BOM.
 
@@ -77,7 +77,7 @@ To set the stackup, open the Board Stackup → Physical Stackup page of the Boar
  -  The board is defined by drawing a board outline on the Edge.Cuts layer.
  - Switch to a coarse grid by selecting 1mm in the Grid dropdown menu above the canvas.
   - To draw on the Edge.Cuts layer, click Edge.Cuts in the Layers tab of the Appearance panel at right
-22. Placing Footprints: Click it to select it, then press M to move it. Press F to flip it to the opposite side; 
+22. Placing Footprints: Click it to select it, then press M to move it. Press F to flip it to the opposite side;
 	Plaacing Rules:
 Some footprints may have exact requirements for their locations, such as connectors, indicators, or buttons and switches.
 
@@ -96,7 +96,7 @@ Some footprints may have exact requirements for their locations, such as connect
 	- File → Board Setup…​ → Design Rules → Violation Severity
 	- Run a DRC check with Inspect → Design Rules Checker, or use the button erc 24 in the top toolbar. Click Run DRC. When the checks are complete, no errors or warnings should be reported. Close the DRC window.
 
-26. Open the 3D viewer with View → 3D Viewer. 
+26. Open the 3D viewer with View → 3D Viewer.
 
 
 
@@ -115,7 +115,7 @@ I prepared the schematic desing reviewing [Samdino](http://fabacademy.org/2020/l
 I started preparing my first board design based on the schematic provided by Rodrigo Shiordia [Designing the board with ATSAMD11C14A(https://fabacademy.org/2020/labs/ciudadmexico/students/rodrigo-shiordia/week%206.html). The schematic was checked with the Electrical Rules Check (ERC).
 ![](../images/week06/week6.png)
 
-The design was prepared using default Design Rules and passed Design Rules Checker. 
+The design was prepared using default Design Rules and passed Design Rules Checker.
 ![](../images/week06/week62.png)
 The final project schematic and board presented below.
 ![](../images/week06/week6s.png)
@@ -129,7 +129,7 @@ The XIAO RP2040 can be replaced with XIAO ESP32-C3, as they have the same size a
 ![](../images/week06/week6-xiao.png)
 I prepared the schematic desing reviewing [Fab-XIAO](http://fabacademy.org/2020/labs/leon/students/adrian-torres/fabxiao.html).The schematic was checked with the Electrical Rules Check (ERC).
 ![](../images/week06/week64.png)
-This time I used different Desing Rules: Min.wire width = min.clearance = 0.3mm. I attempted to use 0.4mm, but with this parameters the wires can not go between pins and caused a lot of compliations with layout. 
+This time I used different Desing Rules: Min.wire width = min.clearance = 0.3mm. I attempted to use 0.4mm, but with this parameters the wires can not go between pins and caused a lot of compliations with layout.
 
 ![](../images/week06/week6v.png)
 **Fig.**The initial PCB board design with XIAO RP2040: left- wiring, right - complete design.
@@ -142,4 +142,4 @@ This time I used different Desing Rules: Min.wire width = min.clearance = 0.3mm.
 
 
 ## Problems/Questions/Dilemas
-1. Using 0.4mm clearance and wire width blocked the possibilite to have routes between pins. 
+1. Using 0.4mm clearance and wire width blocked the possibilite to have routes between pins.

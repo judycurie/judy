@@ -2,7 +2,7 @@
 
 |Assignment    |                          |
 | ----------- | ------------------------------------ |
-| *group*       |    review the safety data sheets for each of your molding and casting materials, then make and compare test casts with each of them; extra credit: try other molding and casting processes |
+| *group*       |    review the safety data sheets for each of your molding and casting materials, then make and compare test casts with each of them; extra credit: try other molding and casting processes [link](https://fabacademy.org/2023/labs/ciudadmexico/group%20assignments/molding%20and%20casting/)|
 | *individual*      |    design a mold around the stock and tooling that you'll be using, mill it (rough cut + three-axis finish cut), and use it to cast parts;  extra credit: use more then two mold parts|
 
 

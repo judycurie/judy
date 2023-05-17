@@ -3,7 +3,7 @@
 
 |Assignment    |                          |
 | ----------- | ------------------------------------ |
-| *group*       | characterize the design rules for your in-house PCB production process; extra credit: send a PCB out to a board house|
+| *group*       | characterize the design rules for your in-house PCB production process; extra credit: send a PCB out to a board house [link](https://fabacademy.org/2023/labs/ciudadmexico/group%20assignments/electronics-production/)|
 | *individual*      |  make and test the development board that you designed to interact and communicate with an embedded microcontroller; extra credit: make it with another process|
 
 

@@ -2,7 +2,7 @@
 
 |Assignment    |                          |
 | ----------- | ------------------------------------ |
-| *group*       |   probe an input device's analog levels and digital signals |
+| *group*       |   probe an input device's analog levels and digital signals [link](https://fabacademy.org/2023/labs/ciudadmexico/group%20assignments/input-devices/) |
 | *individual*      |    measure something: add a sensor to a microcontroller board that you have designed and read it|
 
 

@@ -3,7 +3,7 @@
 
 |Assignment    |                          |
 | ----------- | ------------------------------------ |
-| *group*       |  design a machine that includes mechanism+actuation+automation+application; build the mechanical parts and operate it manually; document the group project |
+| *group*       |  design a machine that includes mechanism+actuation+automation+application; build the mechanical parts and operate it manually; document the group project [link](https://fabacademy.org/2023/labs/ciudadmexico/group%20assignments/machine-design/) |
 | *individual*      |   document your individual contribution|
 
 

@@ -3,7 +3,7 @@
 
 |Assignment    |                          |
 | ----------- | ------------------------------------ |
-| *group*       |  characterize your lasercutter's focus, power, speed, rate, kerf, joint clearance and types 
+| *group*       |  characterize your lasercutter's focus, power, speed, rate, kerf, joint clearance and types [link](https://fabacademy.org/2023/labs/ciudadmexico/group%20assignments/computer%20controlled%20cutting/)|
 | *individual*      | cut something on the vinylcutter; design, lasercut, and document a parametric construction kit, accounting for the lasercutter kerf,which can be assembled in multiple ways, and for extra credit include elements that aren't flat |
 
 
@@ -61,19 +61,19 @@ The beauty of asymptotic gridhshell lies in the ease of fabrication. The 3D lath
 
 ![](../images/week03/w03-layoutbw.jpg)
 
-To produce below fabrication layout, I prepered a custom Python script for unrolling and labaling of the elements and joints. The code produces layout for the bottom layer of the assymptotics. 
+To produce below fabrication layout, I prepered a custom Python script for unrolling and labaling of the elements and joints. The code produces layout for the bottom layer of the assymptotics.
 
 ![](../images/week03/Screenshot 2023-02-13 205314x.png)
-The scipt accounts for the laser beam size (kerf), material thickness, width of the material and tolerances. 
+The scipt accounts for the laser beam size (kerf), material thickness, width of the material and tolerances.
 ![](../images/week03/Screenshot 2023-02-13 211725x.png)
-The joint connection shape can be rectacngular or defined by custom draw curve. 
+The joint connection shape can be rectacngular or defined by custom draw curve.
 
 ![](../images/week03/Screenshot 2023-02-13 210750x.png)
 ![](../images/week03/Screenshot 2023-02-13 210841x.png)
 
 ## Material Tests
 The material tests were conducted on 2 machines: Spirit GLS 12-100W CO2 (1) and Cromak LC5070Z (2,3,4).
-The sample were cut with constant speed and varying power. The chosen speed is the fastest speed for which with 100% power the material was cut. 
+The sample were cut with constant speed and varying power. The chosen speed is the fastest speed for which with 100% power the material was cut.
 ![](../images/week03/w0309.jpeg)
 
 The model was produces from the 0.8mm Birch Plywod. Based on the sample test the power of 40% was enought to cut the materia. As 5% power does nothing, for engraving the power of 7% was chosen.
@@ -84,8 +84,8 @@ The cut pieces were placed in assebmly order divided into Series A- bottom and S
 ![](../images/week03/week03x3.jpg)
 
 
-## Vinyl Cutter 
-I followed the classy Vinyl cut sticker for my laptop. The vector drawing was prepared in Rhino and scaled to 50mm. After cutting, the trnasculent background needs to be covered with the additional layer. 
+## Vinyl Cutter
+I followed the classy Vinyl cut sticker for my laptop. The vector drawing was prepared in Rhino and scaled to 50mm. After cutting, the trnasculent background needs to be covered with the additional layer.
 
 ![](../images/week03/week03x.jpg)
 
@@ -96,7 +96,7 @@ I followed the classy Vinyl cut sticker for my laptop. The vector drawing was pr
 A few materials were considered and their thickness  measured: PET: 1.15mm, proipropylen 0.51mm, and cardboarf 1.45mm. The sameple test was cut on the PET sample (1).
 ![](../images/week03/week03x2.jpg)
 
-A laser cutter's beam usually has a diameter between 0.1 and 0.3 mm. For the Spirit GLS 12-100W CO2 tested in the FabLab CDMX is 0.1mm (Laser Source, 10.6µm). 
+A laser cutter's beam usually has a diameter between 0.1 and 0.3 mm. For the Spirit GLS 12-100W CO2 tested in the FabLab CDMX is 0.1mm (Laser Source, 10.6µm).
 
 ## Python script
 
@@ -135,10 +135,10 @@ for a in curvesA:
             tA.append(t)
             i=curvesB.index(b)
             iB.append(namesB[i])
-            
+
     paramA.append(tA)
     indexB.append(iB)
-    
+
 paramA = nestedListToDataTree(paramA)
 indexB = nestedListToDataTree(indexB)
 
@@ -165,9 +165,9 @@ for i in xrange(paramA.BranchCount):
     pt3 = gh.ConstructPoint(s+0.5*width, lg, 0)
     pt4 = gh.ConstructPoint(s+0.5*width,0,0)
     outline = gh.PolyLine([pt1,pt2,pt3,pt4], True)
-    
+
     #create element name
-    name = namesA[i] 
+    name = namesA[i]
     midPt = gh.ConstructPoint(s, lg/2, 0)
 
     points = []
@@ -175,13 +175,13 @@ for i in xrange(paramA.BranchCount):
     cutlines = []
     tags = []
     tagsCrvs = []
-    
+
     # create intersection points with tags
     for j in range(len(paramA.Branch(i))):
         pt = gh.EvaluateCurve(line,paramA.Branch(i)[j])['point']
         ptX = gh.EvaluateCurve(curvesA[i],paramA.Branch(i)[j])['point']
         txt =  str(indexB.Branch(i)[j])
-        
+
         #create the cut outline
         cutaxis = gh.LineSDL(pt, gh.UnitX(1),0.5*width)
         cpt1 = gh.Move(pt, gh.ConstructPoint(0,0.5*thickness + 0.5*beamsize,0))['geometry']
@@ -191,13 +191,13 @@ for i in xrange(paramA.BranchCount):
         cpt3 = gh.EndPoints(cutline2)['end']
         cpt4 = gh.EndPoints(cutline2)['start']
         cutline = gh.PolyLine([cpt1,cpt2,cpt3,cpt4], True)
-      
+
         #add instances to the lists
         points.append(pt)
         pointsX.append(ptX)
         tags.append(txt)
         cutlines.append(cutline)
- 
+
 
     _curves.append(line)
     _points.append(points)
@@ -231,7 +231,7 @@ I tried add custom shape of the joints, however there was a problem with the uni
 
 Jumping out stripes
 
-While the laths were placed on the board directly to each other, they started to stick out from the bed while being cut. Not recommended layout for the stip cutting. 
+While the laths were placed on the board directly to each other, they started to stick out from the bed while being cut. Not recommended layout for the stip cutting.
 
 
 ![](../images/week03/w03-layoutbwno.jpg)

@@ -2,7 +2,7 @@
 
 |Assignment    |                          |
 | ----------- | ------------------------------------ |
-| *group*       |    send a message between two projects |
+| *group*       |    send a message between two projects [link](https://fabacademy.org/2023/labs/ciudadmexico/group%20assignments/networking-and-communications/) |
 | *individual*      |    design, build, and connect wired or wireless node(s) with network or bus addresses|
 
 

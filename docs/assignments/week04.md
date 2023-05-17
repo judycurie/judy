@@ -3,7 +3,7 @@
 
 |Assignment    |                          |
 | ----------- | ------------------------------------ |
-| *group*       |  compare the performance and development workflows for other architectures
+| *group*       |  compare the performance and development workflows for other architectures [link](https://fabacademy.org/2023/labs/ciudadmexico/group%20assignments/embeddedd%20programming/)
 | *individual*      | browse through the data sheet for your microcontroller; program a microcontroller development board; to interact (with local input &/or output) and communicate (remotely); extra credit: use different languages &/or development environments |
 
 

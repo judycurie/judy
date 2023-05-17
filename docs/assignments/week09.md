@@ -3,7 +3,7 @@
 
 |Assignment    |                          |
 | ----------- | ------------------------------------ |
-| *group*       |  measure the power consumption of an output device|
+| *group*       |  measure the power consumption of an output device [link](https://fabacademy.org/2023/labs/ciudadmexico/group%20assignments/output-devices/)|
 | *individual*      |   add an output device to a microcontroller board you've designed, and program it to do something|
 
 

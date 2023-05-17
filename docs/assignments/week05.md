@@ -3,7 +3,7 @@
 
 |Assignment    |                          |
 | ----------- | ------------------------------------ |
-| *group*       | test the design rules for your 3D printer(s)
+| *group*       | test the design rules for your 3D printer(s) [link](https://fabacademy.org/2023/labs/ciudadmexico/group%20assignments/3d%20scanning%20and%20printing/)
 | *individual*      | design and 3D print an object (small, few cm3, limited by printer time) that could not be made subtractively, 3D scan an object (and optionally print it) |
 
 
@@ -15,28 +15,28 @@
 ## 3D Kinetic Joint Design
 
 <iframe width="960" height="315" src="https://videopress.com/v/6qmRjpjx" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-**Video.** Morphology of kinetic asymptotic gridshells - research by Eike Schling. 
+**Video.** Morphology of kinetic asymptotic gridshells - research by Eike Schling.
 
-The assymptotic gridshells can work as kinetic structures, if the joint allows it. Inspired by work done by Eike Schling (video above), which I saw at the Design Symposium Modelling in September 2022,  I attempted to design my own kinetic joint for the model structure. 
+The assymptotic gridshells can work as kinetic structures, if the joint allows it. Inspired by work done by Eike Schling (video above), which I saw at the Design Symposium Modelling in September 2022,  I attempted to design my own kinetic joint for the model structure.
 
 ![](../images/week05/Screenshot 2023-02-26 150229a.png)
 **Fig.** The GRP lamellas were connected by hand (b) with 3d printed sleeves and M3 bolts (c). The sleeves are batch-printed (a) with a Form 3 Stereolithography (SLA) printer. A second, rigid sleeve ( d) is used as internal restraint. [(Eike & Schikore, 2022)](https://eikeschling.com/2022/09/23/morphology-of-kinetic-asymptotic-grids/)
 
-I started from reading more about preseted above project. The kinetic joints, which Schling named "sleeves", where printed with SLA and connected using 3M 20mm bolts: 
+I started from reading more about preseted above project. The kinetic joints, which Schling named "sleeves", where printed with SLA and connected using 3M 20mm bolts:
 
 *"The physical experimental models are designed and constructed from glass fibre reinforced plastic lamellas (1 x 10 mm) and joined laterally on two levels using 3D-printed sleeves. M3 steel bolts (20 mm) create the scissor joints, which allow rotation around the normal axis. The joints are located with a 3 mm offset to the theoretical intersection points due to the lateral connection. The positions are marked by hand and the 3D joints are threaded and glued onto the glass fibre lamella."* [(Eike & Schikore, 2022)](https://eikeschling.com/2022/09/23/morphology-of-kinetic-asymptotic-grids/)
 
 I found one drawback about this joint design - the positions of the joins had to be marked by hand and the sleeve-joints manually glued at the right place on the lamella. I came up with the idea to design a joint, which has "click", no glue connection (therefore can be also reused in the other models), and which is placed exactly in the cutout in the lamella - making it easy and precise to assemble. The first sketch of the solution below.
 
 ![](../images/week05/FabAcademy2023 - page 50.png)
-**Fig.** Click 3D-printed joint idea. 
+**Fig.** Click 3D-printed joint idea.
 
 First I made a few static models to test the idea in 3D.  
 
 ![](../images/week05/week5-joints-x.png)
 **Fig.** Development of the static model. 1 - the clips in the middle of the joint axis, 2 - clips made shorter, edge not touching the axis, 3- some more fillets added for smoother desing and easier fabricaiton, 4 - a model with more up to scale screw size :).
 
-Preparation of the static 3D models let me figure out the right parameters that should control the algoritmic model. 
+Preparation of the static 3D models let me figure out the right parameters that should control the algoritmic model.
 
 
 ![](../images/week05/dimsq200.jpg)
@@ -91,7 +91,7 @@ filletcrv = gh.Fillet(polyline,params[2],fi)['curve']
 for i in range(len(filletpts)-1):
     newparams = gh.Discontinuity(filletcrv,1)['parameters']
     filletcrv = gh.Fillet(filletcrv,newparams[0],fi)['curve']
-    
+
 if jw == None:
     jw = sd+2*mwt+2*ts
 srf2 = gh.BoundarySurfaces(filletcrv)
@@ -99,7 +99,7 @@ srf2 = gh.Move(srf2, gh.UnitX(0.5*sd+mwt+ts))['geometry']
 
 vec2 = gh.UnitX(jw)
 ext2 = gh.Extrude(srf2, -vec2)
-    
+
 geo = gh.SolidUnion([ext1,ext2])
 geom = gh.Mirror(geo, gh.XYPlane(point))['geometry']
 geo = gh.SolidUnion([geo,geom])
@@ -109,8 +109,8 @@ fabparams = ["sd "+str(sd), "ts "+ str(ts), "mwt "+ str(mwt), "mw "+ str(mw), "o
 ```
 
 **Why the joint cannot be made substractively?**
-The model of the kinetic joint cannot be made substarctively with a 3-axis machine. There is a little chance it could be made by the 5 or 6-axis robot arm, if the tool size would allow it. 
- 
+The model of the kinetic joint cannot be made substarctively with a 3-axis machine. There is a little chance it could be made by the 5 or 6-axis robot arm, if the tool size would allow it.
+
 
 
 
@@ -134,7 +134,7 @@ I prepared the file for printing exporting the .stl files directly from Rhino. T
 
 **Printer Settings:** (Default): [exact settings](week05-print.md)
 
-**Printing file:** as in the below picture. 
+**Printing file:** as in the below picture.
 
 ![](../images/week05/week5-gcode.png)
 **Fig.** 1- the .stl file, 2 - the gcode.
@@ -142,7 +142,7 @@ I prepared the file for printing exporting the .stl files directly from Rhino. T
 ### Printing results.
 
 ![](../images/week05/week5-prints2x.png)
-**Fig.** The printed joints in the vertical and horizontal orientation. 1 - the perspective of the prints out from the printer, 2 - left view, 3- top view, 4- front view, 5 - bottom view, 6 - right view. 
+**Fig.** The printed joints in the vertical and horizontal orientation. 1 - the perspective of the prints out from the printer, 2 - left view, 3- top view, 4- front view, 5 - bottom view, 6 - right view.
 
 
 | Feature     | Vertical Print       |Horizontal Print    |
@@ -158,26 +158,26 @@ In general despite visual drawback as the right side of the joint is visible aft
 
 ## 3D scanning
 
-As I arrived to the Mexico City, my luggage lost one of the small plastic legs (Fig. below). I intended to make a scan of one of the remaining elements and produce a digitally-fabricated replica. 
+As I arrived to the Mexico City, my luggage lost one of the small plastic legs (Fig. below). I intended to make a scan of one of the remaining elements and produce a digitally-fabricated replica.
 ![](../images/week05/week5-scanx.png)
-**Fig.** 1 - the object for scanning idea, 2 - the object to be scanned with markers, 3- scannig setup, 4 - the scanning result. 
+**Fig.** 1 - the object for scanning idea, 2 - the object to be scanned with markers, 3- scannig setup, 4 - the scanning result.
 
 <video width="960"  controls>
   <source src="../../images/week05/scanningx.mp4" type="video/mp4">
 </video>
 **Video.** Scanning process.
 
-The result of the 3D scan was not enough to make a print out of it. I was trying to increase the scan quality by increasing the resolution to 1mm and power of the laser to 100%. Despite the efforts still the resulting mesh was too rought to be used as input for printing. 
+The result of the 3D scan was not enough to make a print out of it. I was trying to increase the scan quality by increasing the resolution to 1mm and power of the laser to 100%. Despite the efforts still the resulting mesh was too rought to be used as input for printing.
 
- 
+
 
 
 ## Further work
 
 ![](../images/week05/week5-next.png)
-**Fig.** 1 - introducing the blocking possibility, 2 - joint without a screw- top part, 3 - joint without a screw- bottom part, 4 - joint without a screw. 
+**Fig.** 1 - introducing the blocking possibility, 2 - joint without a screw- top part, 3 - joint without a screw- bottom part, 4 - joint without a screw.
 
-- It would be great if the joint would allow to block it at 90 deg (to stop the kinetic behaviour and keep the final shape in place). 
+- It would be great if the joint would allow to block it at 90 deg (to stop the kinetic behaviour and keep the final shape in place).
 
 - Maybe it would be possible to create a model where the joint is composed of 2 parts which are already connected together (without a screw).
 
@@ -185,7 +185,7 @@ The result of the 3D scan was not enough to make a print out of it. I was trying
 
 - Testing of the clip joint should be conducted on scaled- model, as with the stress caused by bending the stripes around 2 axis can casue that the lamella simply jumps out of the joint.
 
-- Writing the script directly with rhinosyntax. 
+- Writing the script directly with rhinosyntax.
 
 
 

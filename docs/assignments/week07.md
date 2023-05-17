@@ -2,7 +2,7 @@
 
 |Assignment    |                          |
 | ----------- | ------------------------------------ |
-| *group*       | do your lab's safety training; test runout, alignment, fixturing, speeds, feeds, materials, and toolpaths for your machine|
+| *group*       | do your lab's safety training; test runout, alignment, fixturing, speeds, feeds, materials, and toolpaths for your machine [link](https://fabacademy.org/2023/labs/ciudadmexico/group%20assignments/machining/)|
 | *individual*      | make (design+mill+assemble) something big (~meter-scale); extra credit: don't use fasteners or glue; extra credit: include curved surfaces|
 
 
