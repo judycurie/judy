@@ -1,8 +1,8 @@
 # Final Project
 
-## Assembly device for the asymptotic gridshell structure
+## (A) device for the asymptotic gridshell structure
 
-My participation in Fab Academy 2023 is sponsored by Eurepean Union  (EU funding: 101033646).
+My participation in Fab Academy 2023 is sponsored by European Union  (EU funding: 101033646).
 One of the goals of my OPTIshell research project is to build a prototype of the timber solar canopy structure covered with the PV material.
 More about the project [optishell.io](https://optishell.io/).
 During Fab Academy I would like to build a stiffness-scaled model and design a device for automated assembly.
@@ -11,12 +11,12 @@ During Fab Academy I would like to build a stiffness-scaled model and design a d
 **Fig.1.** Conceptual model.
 
 ![Final Project Ideas](../images/final.jpg)
-**Fig.2.** Final project dilema.
+**Fig.2.** (A)ssembly device? - Final project dilemma.
 
 
 
 ## **Week 01**
-Base idea:a 1:10 model from laser cut thin plywood, filling the spaces with the plate panels, 3D print the foundation structures.
+Base idea: a 1:10 model from laser cut thin plywood, filling the spaces with the plate panels, 3D print the foundation structures.
 
 IO additions and difficulty level (+++):
 :	add PV elements on some of the plates, connect to battery and show the level of the battery (++);create a sensor at the bottom to remotely display if the place is occupied (+);create a simple machine to erect the structure e.g. an extendable tube in the middle(+++);add sensor of the wind to inform if the wind is too strong (alternatively dismount) (+++)
@@ -195,13 +195,13 @@ Simulation of assembly-disassembly with different rotation DOF at joints.
 
  - the angle between joints change more further from the center -> joints closer to legs(supports) need more rotational freedom
 
- - the joints should allow movement 75-90 deg (more is not necessary e.g most right example)
+ - the joints should allow movement 75-90 deg (more is not necessary e.g. most right example)
 
 
 
 ## **Week08**
 
-Small research on artifiial muscles - dielectric elastomer actuators ( Electroactive Polymers)
+Small research on artificial muscles - dielectric elastomer actuators ( Electroactive Polymers)
 
 [paper1](https://link.springer.com/article/10.1007/s42558-019-0005-1)
 [paper2](https://www.science.org/doi/10.1126/science.1246906)
@@ -210,7 +210,7 @@ https://fab.cba.mit.edu/classes/865.18/motion/dielectric/index.html
 
 nylon liner material actuators (NLMAs):
 
-[artifitial muscle at home](https://www.instructables.com/Fabricating-Fishing-Line-Artificial-Muscle-at-Home/)
+[artificial muscle at home](https://www.instructables.com/Fabricating-Fishing-Line-Artificial-Muscle-at-Home/)
 Shape memory wire:
 https://www.youtube.com/watch?v=2YVwpBAiA1A&t=39s
 https://fab.cba.mit.edu/classes/863.22/doc/ArtificialMuscles/artificialmuscles.html
@@ -228,7 +228,7 @@ https://www.pi-usa.us/en/products/piezo-actuators-stacks-benders-tubes/
 | -----------   |---|---|---|---|---|----|----|----|
 | **Set1-3D**   |0.75|0.88|0.70|0.62|0.60|0.59|0.60|0.36|
 | **Set2-Flat** |0.84|0.91|0.72|0.63|0.61|0.62|0.65|0.41|
-| **Differance Set1-Set2**| +0.09|+0.03|+0.02|+0.01|+0.01|+0.03|+0.05|+0.08|
+| **Difference Set1-Set2**| +0.09|+0.03|+0.02|+0.01|+0.01|+0.03|+0.05|+0.08|
 
 Trying to find a function of the geodesic wire extension:
 
@@ -243,16 +243,16 @@ Trying to find a function of the geodesic wire extension:
 
  - if the artificial muscle is a geodesic can be a "tape" (wide), if is not a geodesic curve should be a wire with rotational cross section
 
- - the artifitial muscle should shrink about 5% (for the flat structure 75-90 angle at joints)
+ - the artificial muscle should shrink about 5% (for the flat structure 75-90 angle at joints)
 
- - middle cell of the structure moves only vertically during assembly and almost doesnt change the shape between flat (dissamble state) and erected (assemble state) -> possibility to mount one stiff panel
+ - middle cell of the structure moves only vertically during assembly and almost doesn't change the shape between flat (dissemble state) and erected (assemble state) -> possibility to mount one stiff panel
 
 
 
 
 ## **Week 09**
 
-As for one-time assembly the kinetic joints might not be necessary and it will be enough to account for the rotation between flat adn fully asssembled state providing adequate tolerances in slots. However, as the slots are bigger to allow some rotation they also cause the problem of elements sliding from each other in the flat state.
+As for one-time assembly the kinetic joints might not be necessary and it will be enough to account for the rotation between flat and fully assembled state providing adequate tolerances in slots. However, as the slots are bigger to allow some rotation they also cause the problem of elements sliding from each other in the flat state.
 
 ![](../images//joints10.jpg)
 ![](../images/final-project/230328-kinetic-joints.jpeg)
@@ -301,7 +301,7 @@ For the kinetic-actuated assembly with simple joints (cuts in the laths), I have
 
  **Next steps:**
 
-  - calculation of the material thickness for 1:5 stiffnes scaled model  -> testing the kinetic joints with tolerances - > preparation of the fabrication files
+  - calculation of the material thickness for 1:5 stiffness scaled model  -> testing the kinetic joints with tolerances - > preparation of the fabrication files
 
 
 ##**Week 11**
@@ -313,5 +313,26 @@ Xino-remote with battery concepts:
 ![](../images/final-project/xino-remote7.png)
 
 ##**Week 13**
-Setting up BLE communication with nRFN5240 (Sense) - reading the Accelerometer.
-![](../images/final-project/week1310.png)
+Setting up BLE communication beetween two nRFN5240.
+
+<video width="960"  controls>
+  <source src="../../images/week13/WhatsApp Video 2023-05-03 at 12.55.21.mp4" type="video/mp4">
+</video>
+
+##**Week 14**
+Calculating the thickness of plywood for stiffness-scaled model 1:5.
+
+|Analysis Model|   1:1          | Wind 0.365kN/m2|
+| ----------- | ----------------- |--|
+|Load Case 1.4D|6.4mmx10cm, single, **5cm** | **1cm**, 0.5mm*2cm|
+|Load Case 1.4D|6.4mmx10cm, single + 0.5mm thick plates, **0.19cm** | **0.04cm**, xx|
+|Load Case 1.4D|6.4mmx10cm, double, **1.8cm** |1.0mm*2cm **0.34cm**|
+
+
+
+![](../images/final-project/final9.png)
+**Fig.**. Stiffness scaled model. Left: The real structue laths 6.5mmx100mm double layer, Birch plywood, Right: model 1:5 laths 1mmx20mm, single layer Birch.
+
+##**Week 15**
+Support design for the model.
+![](../images/week15/week153.png)
