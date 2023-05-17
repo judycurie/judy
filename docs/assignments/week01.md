@@ -25,20 +25,20 @@ To get the mkdocs template working locally I had to:
 
 1. Install mkdocs theme material, using the following commands (source:  [squidfunk](https://squidfunk.github.io/mkdocs-material/getting-started/))
 
-  ```
-  pip install mkdocs-material
-  git clone https://github.com/squidfunk/mkdocs-material.git
-  pip install -e mkdocs-material
+```
+pip install mkdocs-material
+git clone https://github.com/squidfunk/mkdocs-material.git
+pip install -e mkdocs-material
 
-  ```
+```
 
 2. Install the missing plugin, using the following command (source: [pypi](https://pypi.org/project/mkdocs-git-revision-date-localized-plugin/))
 
 
-  ```
-  pip install mkdocs-git-revision-date-localized-plugin
+```
+pip install mkdocs-git-revision-date-localized-plugin
 
-  ```
+```
 
 
 ## Uploading to GIT repository
@@ -49,6 +49,7 @@ git add .
 git commit -m "some string"
 git push
 ```
+**Remember that you cannot push more than 10Mb at once.**
 
 For group repository:
 ```
@@ -58,7 +59,7 @@ git commit -m "some string"
 git push
 ```
 **git commit -m "..." - works, git commit -m '...' - doesn't work for me**
-**Remember that you cannot push more than 10Mb at once.**
+
 ![](../images/meme01.png)
 
 ## Final Project Website and Personal
