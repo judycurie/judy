@@ -65,7 +65,7 @@ The most useful for understanding general workflow of connecting power supply - 
 **Fig.** Left: Board Properties. Right - schematic for plugin external power supply.
 
 
-- can use extenal power supply to one step motor
+- can use external power supply to one step motor
 
 - can be powered both by USB or external supply (switch?)
 
