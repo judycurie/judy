@@ -119,6 +119,9 @@ https://files.seeedstudio.com/arduino/package_seeeduino_boards_index.json
 
 4. Navigate to Tools > Board > Boards Manager, type the keyword “seeed nrf52” in the search box, select the latest version of Seeed nRF52 Boards, and install it.
 
+
+Sending BLE data to mobile:
+https://github.com/just4give/ei-blue/blob/master/firmware/xiao_ble_sense/imu_capture.ino
 ## Sensors
 
 Thermal Camera: https://www.seeedstudio.com/Grove-Thermal-Imaging-Camera-IR-Array-MLX90640-110-degree-p-4334.html
