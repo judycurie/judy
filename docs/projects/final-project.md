@@ -322,11 +322,11 @@ Setting up BLE communication beetween two nRFN5240.
 ##**Week 14**
 Calculating the thickness of plywood for stiffness-scaled model 1:5.
 
-|Analysis Model|   1:1          | Wind 0.365kN/m2|
+|Analysis Model|   1:1          | 1:5|
 | ----------- | ----------------- |--|
-|Load Case 1.4D|6.4mmx10cm, single, **5cm** | **1cm**, 0.5mm*2cm|
-|Load Case 1.4D|6.4mmx10cm, single + 0.5mm thick plates, **0.19cm** | **0.04cm**, xx|
-|Load Case 1.4D|6.4mmx10cm, double, **1.8cm** |1.0mm*2cm **0.34cm**|
+|Load Case 1.4D|6.4mm x 10cm, single, **5cm** | **1cm**, 0.5mm x 2cm|
+|Load Case 1.4D|6.4mm x 10cm, single + 0.5mm thick plates, **0.19cm** | **0.04cm**, xx|
+|Load Case 1.4D|6.4mmx10cm, double, **1.8cm** |1.0mm x 2cm, **0.34cm**|
 
 
 
