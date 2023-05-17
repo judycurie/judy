@@ -8,7 +8,7 @@
 
 ## Photo of the week
 
-![](../images/week14/photo-of-the-week14.png)
+![](../images/week15/photo-of-the-week15.png)
 
 
 ## Lecture Notes
