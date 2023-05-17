@@ -168,4 +168,6 @@ Bottom cone geometry generated with the script, with 5mm offset (XY distance bet
 
 - extruded plastic contracts a lot, linear elements almost impossible
 - avoid sharp corners
-- amount of extruded platic varies depending on the
+- amount of extruded platic varies depending on the speed of the robot arm (the extrusion speed constant)
+- below 240C temperature extrusion makes problems for extruder
+- if the lengt of consequitive layers is small (less than 10-15cm) with 20 or 40% of speed, the plastic is still to liquid to form base for the next layer
