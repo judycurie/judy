@@ -8,12 +8,13 @@ More about the project [optishell.io](https://optishell.io/).
 During Fab Academy I would like to build a stiffness-scaled model and design a device for automated assembly.
 
 ![Optishell Asymptotic Gridshell Structure Visualization](../images/concept.jpg)
-**Fig.1.** Conceptual model.
+**Fig.** Conceptual model.
 
 ![Final Project Ideas](../images/final.jpg)
-**Fig.2.** (A)ssembly device? - Final project dilemma.
+**Fig.** (A)ssembly device? - Final project dilemma.
 
-
+![Final Project Ideas](../images/final-project/final10.png)
+**Fig.** (A) sensing device that can work for the real pavilion and a scaled model.
 
 ## **Week 01**
 Base idea: a 1:10 model from laser cut thin plywood, filling the spaces with the plate panels, 3D print the foundation structures.
@@ -328,7 +329,7 @@ Calculating the thickness of plywood for stiffness-scaled model 1:5.
 |Load Case 1.4D|6.4mm x 10cm, single + 0.5mm thick plates, **0.19cm** | **0.04cm**, xx|
 |Load Case 1.4D|6.4mmx10cm, double, **1.8cm** |1.0mm x 2cm, **0.34cm**|
 
-
+**Grasshopper-Karamba Analysis**: [gh -file](../files/final/230510_V2_analysis.gh){: 230510_V2_analysis }
 
 ![](../images/final-project/final9.png)
 **Fig.**. Stiffness scaled model. Left: The real structue laths 6.5mmx100mm double layer, Birch plywood, Right: model 1:5 laths 1mmx20mm, single layer Birch.
