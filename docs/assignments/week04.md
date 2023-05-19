@@ -3,7 +3,7 @@
 
 |Assignment    |                          |
 | ----------- | ------------------------------------ |
-| *group*     |  compare the performance and development workflows for other architectures [**link**](https://fabacademy.org/2023/labs/ciudadmexico/group%20assignments/embeddedd%20programming/) 
+| *group*     |  compare the performance and development workflows for other architectures [**link**](https://fabacademy.org/2023/labs/ciudadmexico/group%20assignments/embeddedd%20programming/)
 | *individual*      | browse through the data sheet for your microcontroller; program a microcontroller development board; to interact (with local input &/or output) and communicate (remotely); extra credit: use different languages &/or development environments |
 
 
@@ -32,8 +32,7 @@ Rico also recommended a youtube video - A simple guide to electronic components 
 
 ##RP2040 with Arduino
 
-source: https://wiki.seeedstudio.com/XIAO-RP2040-with-Arduino/
-I took the following steps:
+I took the following steps following [this tutorial](https://wiki.seeedstudio.com/XIAO-RP2040-with-Arduino/):
 
 1. Step 1. Download and Install the latest version of Arduino IDE according to your operating system
 2. Step 2. Launch the Arduino application.
@@ -44,9 +43,12 @@ I took the following steps:
 5. Therefore, I used board Raspberry Pi Pico and the example codes worked as expected for the user LED.
 6. For blinkng the RGB LED, the library “Adafruit_NeoPixel”. The operationed worked.
 
-Blinking LED ARDUINO IDE
+
+Blinking LED ARDUINO IDE [source](https://wiki.seeedstudio.com/XIAO-RP2040-with-Arduino/)
 
 ```
+// Original code: https://wiki.seeedstudio.com/XIAO-RP2040-with-Arduino/
+
 #include <Adafruit_NeoPixel.h>
 
 int Power = 11;
@@ -94,8 +96,9 @@ void loop() {
 
 
 ##RP2040 with MicroPython
-source: https://wiki.seeedstudio.com/XIAO-RP2040-with-MicroPython/
+
 ![](../images/week04/Screenshot 2023-02-20 202832x.png)
+I took the following steps following [this tutorial](https://wiki.seeedstudio.com/XIAO-RP2040-with-MicroPython/) :
 
 1. Step 1. Download and Install the latest version of Thonny according to your operating system
 2. Step 2. Launch the Arduino application.
@@ -104,11 +107,19 @@ source: https://wiki.seeedstudio.com/XIAO-RP2040-with-MicroPython/
 ![](../images/week04/WhatsApp Image 2023-02-21 at 11.52.47.jpeg)
 
 5. For blinking  LED the ws2812.py library has to be downloaded, opened with Tonny and saved as RaspberryPi file "ws2812.py".Blinking LED works correctly.
+
 ![](../images/week04/Screenshot 2023-02-20 204107x.png)
 
-Blinking LED MicroPython
+Blinking LED MicroPython [source](https://wiki.seeedstudio.com/XIAO-RP2040-with-MicroPython/)
 
 ```
+"""
+############################################################################################
+Example sketch Light up RGB LED on the Seeed Studio XIAO RP2040
+from https://wiki.seeedstudio.com/XIAO-RP2040-with-MicroPython/
+############################################################################################
+"""
+
 from ws2812 import WS2812
 import utime
 import machine
@@ -138,17 +149,28 @@ while True:
 Loading the code in MircoPython is much faster than through Arduiono IDE.
 
 ##The Morse Code in MicoroPython
-I wanted to blink the LED light as the morse code communicator.
+I wanted to blink the LED light as the morse code communicator. I followed below rules (adopted from [source](https://the-daily-dabble.com/morse-code-light/)) to create the code:
+
 To symbolize dots, turn your light on for 1 second.
 To symbolize dashes, turn your light on for 3 seconds.
 The time gap between dots and dashes is 1 second with the light off.
 The time gap between full letters is 3 seconds with the light off.
-The pause between complete words is 7 seconds with the light off. source: https://the-daily-dabble.com/morse-code-light/
+The pause between complete words is 7 seconds with the light off.
 
-I followed below rules to create the code:
+
 ![](../images/week04/morse-code-chart.png)
 
+**MicroPython Code for blinking Morse code**
 ```
+"""
+############################################################################################
+Example sketch Light up RGB LED on the Seeed Studio XIAO RP2040
+from https://wiki.seeedstudio.com/XIAO-RP2040-with-MicroPython/
+
+Modified by Judy Curie, 23/02/2023
+############################################################################################
+"""
+
 from ws2812 import WS2812
 import utime
 import machine
