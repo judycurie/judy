@@ -3,7 +3,7 @@
 
 |Assignment    |                          |
 | ----------- | ------------------------------------ |
-| *group*       |  characterize your lasercutter's focus, power, speed, rate, kerf, joint clearance and types [link](https://fabacademy.org/2023/labs/ciudadmexico/group%20assignments/computer%20controlled%20cutting/)|
+| *group*       |  characterize your lasercutter's focus, power, speed, rate, kerf, joint clearance and types [**link**](https://fabacademy.org/2023/labs/ciudadmexico/group%20assignments/computer%20controlled%20cutting/)|
 | *individual*      | cut something on the vinylcutter; design, lasercut, and document a parametric construction kit, accounting for the lasercutter kerf,which can be assembled in multiple ways, and for extra credit include elements that aren't flat |
 
 
@@ -13,9 +13,18 @@
 
 ## Simulation & Reality
 
-<iframe width="960" height="315" src="https://youtube.com/embed/Mqb7dUGRLO0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+<video width="960"  controls>
+  <source src="../../files/week02/SimulationTD500.mp4" type="video/mp4">
+</video>
 
-<iframe width="960" height="315" src="https://youtube.com/embed/Y_U2DWwXKLk" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+<video width="960"  controls>
+  <source src="../../files/week03/WhatsApp Video 2023-02-13 at 19.02.52.mp4" type="video/mp4">
+</video>
+
+movies availeble on Youtube
+- [simulation](https://youtube.com/embed/Mqb7dUGRLO0)
+- [model folding](https://youtube.com/embed/Y_U2DWwXKLk)
+
 
 ## Design & Fabrication
 
@@ -197,3 +206,6 @@ While the laths were placed on the board directly to each other, they started to
 
 
 ![](../images/week03/w03-layoutbwno.jpg)
+__________________________________________
+
+**design files**: [V1V2-LinearUnroll - Rhino/GH](../files/week03/230213-V1V2-LinearUnroll.zip){: V1V2-LinearUnroll}
