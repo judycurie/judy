@@ -2,7 +2,7 @@
 
 |Assignment    |                          |
 | ----------- | ------------------------------------ |
-| *group*       |    compare as many tool options as possible |
+| *group*       |    compare as many tool options as possible [**link**](https://fabacademy.org/2023/labs/ciudadmexico/group%20assignments/interface-and-application-programming/)|
 | *individual*      |     write an application that interfaces a user with an  input &/or output device that you made|
 
 
@@ -10,6 +10,11 @@
 
 ![](../images/week14/photo-of-the-week14.png)
 
+## Take aways from the group Assignment
+[Group Assignment](https://fabacademy.org/2023/labs/ciudadmexico/group%20assignments/interface-and-application-programming/).
+
+ - the choice of tools depends on your application
+ - Firefly is oudated/not adjusted to the new microprocessors
 
 ## Lecture Notes
 
@@ -328,9 +333,9 @@ while gui.running:
 
 ## Problems
  - many problems with integration of data through systems
- - Taich is absolutely great but requires more timestamp
+ - Taich is absolutely great but requires more times to use it potential fully
  - Taichi is good for imported data as numbpy ndarrays (2,n), but if the ndarray has one dimension >3, Taichi requires ti.Vector.field
- - as the ti.Vector.field the data needs to be integer or a slice, cannot be external funtion (it makes it a bit harder to use live daata.)
+ - as the ti.Vector.field the data needs to be integer or a slice, cannot be external funtion (it makes it a bit harder to use live data.)
 
 ## Next steps
  - position data from the SLAVE xino thorugh BLE

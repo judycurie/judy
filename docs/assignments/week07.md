@@ -209,5 +209,5 @@ Before production the following steps had to be taken:
 7. Some of polylines should be connected to enable machine cut the whole layout as one step of depth.
 
 __________________________________________
-
+## Files
 **desing & production files**: [CNC-Deckchair - Rhino/GH](../files/week07/CNC-Deckchair.zip){: CNC-Deckchair}

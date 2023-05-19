@@ -138,7 +138,7 @@ I prepared the file for printing exporting the .stl files directly from Rhino. T
 
 **Material:** PLA grey
 
-**Printer Settings:** (Default): [exact settings](../files/week05-print.md)
+**Printer Settings:** (Default): [exact settings](../week05-print.md)
 
 **Printing file:** as in the below picture.
 
@@ -221,5 +221,5 @@ The result of the 3D scan was not enough to make a print out of it. I was trying
 - Printing such small elements as a kinetic joint on FDM-PLA printer is a bit tricky.
 
 __________________________________________
-
+## Files
 **design files for 3D print**: [Connector Models - Rhino/stl/gcode](../files/week05/230224_ConnectorModels.zip){: Connector Models}

@@ -1,4 +1,4 @@
-# **Week03.** Computer-Controlled Cutting
+#**Week03.** Computer-Controlled Cutting
 
 
 |Assignment    |                          |
@@ -213,5 +213,6 @@ While the laths were placed on the board directly to each other, they started to
 
 ![](../images/week03/w03-layoutbwno.jpg)
 __________________________________________
+## Files
 
 **design files**: [V1V2-LinearUnroll - Rhino/GH](../files/week03/230213-V1V2-LinearUnroll.zip){: V1V2-LinearUnroll}

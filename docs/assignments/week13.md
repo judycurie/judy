@@ -2,13 +2,19 @@
 
 |Assignment    |                          |
 | ----------- | ------------------------------------ |
-| *group*       |    send a message between two projects [link](https://fabacademy.org/2023/labs/ciudadmexico/group%20assignments/networking-and-communications/) |
+| *group*       |    send a message between two projects [**link**](https://fabacademy.org/2023/labs/ciudadmexico/group%20assignments/networking-and-communications/) |
 | *individual*      |    design, build, and connect wired or wireless node(s) with network or bus addresses|
 
 
 ## Photo of the week
 
 ![](../images/week13/photo-of-the-week13.png)
+
+## Take aways from the group Assignment
+[Group Assignment](https://fabacademy.org/2023/labs/ciudadmexico/group%20assignments/networking-and-communications/).
+
+ - the easiest communication between two projects wirelessly is possible when the projects use the same microprocessor
+ - we revied how to make communication through wifi  for ESP32C3 [here](https://www.hackster.io/donowak/esp32-to-esp32-communication-over-the-internet-9799df), its possible to make 2 ESP32C3 in seperate wifi networks through VPN
 
 
 ## Lecture Notes
@@ -34,9 +40,7 @@ To make a board where the plane is the GDN I followed the tutorial: [](https://y
 4. Select the zone and wait. The zone will appear, the GDN wire will lose the clearance and GDN pads will get a cross. Your GDN plane is ready -> Make sure it connects all the GDN pads (otherwise with the rule check you will get the error).
 ![](../images/week13/Screenshot 2023-05-02 220842.png)
 
-[board1 - with ground - kiCad + fabrication files](../files/230425-xino-remote-kicad-fabrication-files.zip){: 230425-xino-remote-kicad-fabrication-files }
 
-[board2 - with no ground - kiCad + fabrication files](../files/230426-xino-remote-kicad-fabrication-files.zip){: 230426-xino-remote-kicad-fabrication-files }
 
 ![](../images/week13/week135.png)
 **Fig.** Xino-remote pcb prototypes fabricated: left: with ground, right: without ground.
@@ -391,6 +395,13 @@ void system_control(BLEDevice peripheral) {
 
 ## Problems
 
-- there is no actual .bin files for ESP32C3 for MicroPython and the examples to make the server and scanner from ESP32 library dont work for ESP32C3
-- you need 2 the same board to make BLE/LE communitaction possible (or easier)
-- nRD5240 changes ports while compilining and uploading code with Arduino
+- there is no actual .bin files for ESP32C3 for MicroPython and the examples to make the server and scanner from ESP32 library dont work for ESP32C3 -> I used Arduino IDE this time instead MircoPython
+- although both ESP32C3 and nRF5240 use Bluethooth it was difficult to find any resources how to make them communicate with BLE/LE -> I used two nRF5240
+- nRD5240 changes ports while compilining and uploading code with Arduino -> I don't know how to fix it, I kept changing the port selection for the board, but later noticed that it uploads the code regardless this issue
+
+__________________________________________
+## Files
+
+**Xino Board 1 with ground wire** [board1 - with ground wire - kiCad + fabrication files](../files/230425-xino-remote-kicad-fabrication-files.zip){: 230425-xino-remote-kicad-fabrication-files }
+
+**Xino Board 2 with ground plane** [board2 - with  ground plane - kiCad + fabrication files](../files/230426-xino-remote-kicad-fabrication-files.zip){: 230426-xino-remote-kicad-fabrication-files }

@@ -2,7 +2,7 @@
 
 |Assignment    |                          |
 | ----------- | ------------------------------------ |
-| *group*       |   probe an input device's analog levels and digital signals [link](https://fabacademy.org/2023/labs/ciudadmexico/group%20assignments/input-devices/) |
+| *group*       |   probe an input device's analog levels and digital signals [**link**](https://fabacademy.org/2023/labs/ciudadmexico/group%20assignments/input-devices/) |
 | *individual*      |    measure something: add a sensor to a microcontroller board that you have designed and read it|
 
 
@@ -10,6 +10,11 @@
 
 ![](../images/week11/photo-of-the-week11.png)
 
+## Take aways from the group Assignment
+[Group Assignment](https://fabacademy.org/2023/labs/ciudadmexico/group%20assignments/input-devices/).
+
+ - digital inputs scale: 0-1
+ - analog inputs scale depends on the device but is not binary
 
 ## Lecture Notes
 
@@ -24,7 +29,7 @@
 ## Step Response
 
 Links:
-bending with step response[ShArc: A Geometric Technique for Multi-Bend/Shape Sensing](https://dl.acm.org/doi/abs/10.1145/3313831.3376269)
+- bending with step response[ShArc: A Geometric Technique for Multi-Bend/Shape Sensing](https://dl.acm.org/doi/abs/10.1145/3313831.3376269)
 
 ![](../images/week11/txrx_schematic.jpg)
 **Fig.** Tx-rx sensing. source:https://roberthart56.github.io/SCFAB/SC_lab/Sensors/tx_rx_sensors/index.html.
@@ -144,3 +149,9 @@ while True:
 <video width="960"  controls>
   <source src="../../images/week11/WhatsApp Video 2023-04-18 at 19.43.04_6.mp4" type="video/mp4">
 </video>
+
+__________________________________________
+## Files
+**desing files**: [Xino - Step Response KiCAD](../files/week11/xino-step-response-kicad.zip){: Xino - Step Response KiCAD}
+
+**production files**: [Xino - Step Response - SVG/PNG](../files/week11/xino-step-response-production.zip){: Xino - Step Response - SVG/PNG}

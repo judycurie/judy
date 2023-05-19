@@ -60,4 +60,5 @@ The network of asymptotics was created using a custom script. The surface itself
 ![](../images/week02/Screenshot 2023-02-11 221543x.png)
 ![](../images/week02/Screenshot 2023-02-11 221620x.png)
 __________________________________________
+## Files
 **design files**: [V1V2 - Rhino/GH](../files/week02/V1V2.zip){: V1V2}

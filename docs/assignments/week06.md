@@ -15,7 +15,7 @@
 
  - USB gives 5V current
  - continuity is the key
- 
+
 
 ## Basic Knowledge Refreshement
 
@@ -151,7 +151,7 @@ This time I used different Desing Rules: Min.wire width = min.clearance = 0.3mm.
 1. Using 0.4mm clearance and wire width blocked the possibilite to have routes between pins.
 
 __________________________________________
-
+## Files
 **samd11 KiCAD files**: [SAMD11 - KiCAD](../files/week06/samd11.zip){: samd11}
 
 **xino 6x6 KiCAD files**: [XINO 6x6 - KiCAD](../files/week06/xino6x6-onlyconnections0.4.zip){: xino6x6}

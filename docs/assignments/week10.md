@@ -3,7 +3,7 @@
 
 |Assignment    |                          |
 | ----------- | ------------------------------------ |
-| *group*       |  design a machine that includes mechanism+actuation+automation+application; build the mechanical parts and operate it manually; document the group project [link](https://fabacademy.org/2023/labs/ciudadmexico/group%20assignments/machine-design/) |
+| *group*       |  design a machine that includes mechanism+actuation+automation+application; build the mechanical parts and operate it manually; document the group project [**link**](https://fabacademy.org/2023/labs/ciudadmexico/group%20assignments/machine-design/) |
 | *individual*      |   document your individual contribution|
 
 
@@ -11,6 +11,10 @@
 
 ![](../images/week10/photo-of-the-week10.png)
 
+## My role in the group Assignment
+[Group Assignment](https://fabacademy.org/2023/labs/ciudadmexico/group%20assignments/machine-design/).
+
+ - design, make and integrate electronics for controlling stepper motor with external power supply
 
 ## Lecture Notes
 
@@ -71,7 +75,7 @@ The most useful for understanding general workflow of connecting power supply - 
 
 - can make 3 wires hot
 
-- optionally can connect air pump and pressure sensor (in case of the meachanical acturtor failure, can use )
+- optionally can connect air pump and pressure sensor (in case of the mechanical actuator failure, can use )
 
 **I realized that for the control of the direction the design requires the H-Bridge.**
 
@@ -79,7 +83,7 @@ The most useful for understanding general workflow of connecting power supply - 
 
 ## hello.DRV8428-D11C-NEMA17 &
 Therefore, I came back to look for examples with control movement and a power supply.
-And I found this great example by Neil dedicated to the motor stepper we inteded to use.
+And I found this great example by Neil dedicated to the motor stepper we intended to use.
 
 - hello.DRV8428-D11C-NEMA17:  [http://academy.cba.mit.edu/classes/output_devices/DRV8428/hello.DRV8428-D11C-NEMA17.png](http://academy.cba.mit.edu/classes/output_devices/DRV8428/hello.DRV8428-D11C-NEMA17.png)
 
@@ -94,17 +98,17 @@ And I found this great example by Neil dedicated to the motor stepper we inteded
 
 **This design was not possible, as the min. width of the tracks for the machines in local node - 0.4mm and the Neil's design is 0.1mm. Moreover driver DRV8428_HTSSOP was not in the stock.**
 
-For finding alternative ways of producing PCB with such thin wires: https://www.youtube.com/watch?v=5nXNK0cr5v. Anyhow without the all components in stock, it wouldnt be possible to make the board on time for this assigment.
+For finding alternative ways of producing PCB with such thin wires: https://www.youtube.com/watch?v=5nXNK0cr5v. Anyhow without the all components in stock, it wouldn't be possible to make the board on time for this assignment.
 
 
 ## Board design with A4988 STEPPER MOTOR DRIVER
-To make sure we can finish assigment on time, I have to use the A4988 STEPPER MOTOR DRIVER in the design of PCD. I reviewed the Rodrigio Shiordia design of the board for the Stepper Motor NEMA 17.
+To make sure we can finish assignment on time, I have to use the A4988 STEPPER MOTOR DRIVER in the design of PCD. I reviewed the Rodrigio Shiordia design of the board for the Stepper Motor NEMA 17.
 
 
 ![](../images/week10/week10-9.png)
 **Fig.** PCB with Attiny44 and A4988 STEPPER MOTOR DRIVER fitting to the step motor layout.
 
-**This design was possible,however it would be better to use SAMD11C and USB communication.**
+**This design was possible, however it would be better to use SAMD11C and USB communication.**
 
 ## Board design with A4988 STEPPER MOTOR DRIVER & SAMD11C
 
@@ -119,7 +123,7 @@ To make sure we can finish assigment on time, I have to use the A4988 STEPPER MO
 ![](../images/week10/N17SAMDacaRodrigoGDN-USB-parts.png)
 **files KiCAD download**: [kicad files](../files/N17SAMD11-GDN-USB-Edge_Cuts.zip){: download }
 
-**The CNC machining file with the 0.4 track width and 0.4 clearance (due to the Easter break I had to try to make it done on the machine outside Fab Lab at university). Moreover, meantime I dedected a mistake with the USB +/- connections to the SAMD11C)**
+**The CNC machining file with the 0.4 track width and 0.4 clearance (due to the Easter break I had to try to make it done on the machine outside Fab Lab at university). Moreover, meantime I detected a mistake with the USB +/- connections to the SAMD11C)**
 
 ## FINAL PCB DESIGN
 ![](../images/week10/week10-13.png)
@@ -130,22 +134,21 @@ To make sure we can finish assigment on time, I have to use the A4988 STEPPER MO
   <source src="../../images/week10/WhatsApp Video 2023-04-12 at 06.23.37.mp4" type="video/mp4">
 </video>
 
-**files KiCAD download**: [FINAL kicad files - produced board](../files/N17SAMDacaNeil.zip){: download }
+### Parts
+- Step Motor: Nema 17 External 48mm Stack 0.4A Lead 2mm/0.07874" Length 300mm [specification](https://www.oyostepper.com/goods-151-Nema-17-External-48mm-Stack-04A-Lead-2mm007874-Length-300mm.html)
+
+- Stepper Motor Driver: A4988 STEPPER MOTOR DRIVER CARRIER [specification](https://www.snapeda.com/parts/A4988%20STEPPER%20MOTOR%20DRIVER%20CARRIER/Pololu/view-part/)
+_________________________________________
+## Files
+**files KiCAD download**: [FINAL kicad files - produced board](../files/week10/N17SAMDacaNeil.zip){: FINAL kicad files - produced board }
 
 ####Loading Bootloader
 
 To load bootloader I followed the instructions provided by Adrian Torres [here](http://fabacademy.org/2020/labs/leon/students/adrian-torres/samdino.html)
 
 #### Arduino hello Files
-As the diode was soldered in the oposite direction to the design.
+As the diode was soldered in the opposite direction to the design.
 
-[Arduino-blink](../files/samd-blink.ino){: download }
+[Arduino-blink](../files/week10/samd-blink.ino){: Arduino-blink }
 
-[Arduino-stepper-motor](../files/samd-stepper-motor.ino){: download }
-
-### Parts
-
-
-- Step Motor: Nema 17 External 48mm Stack 0.4A Lead 2mm/0.07874" Length 300mm [specification](https://www.oyostepper.com/goods-151-Nema-17-External-48mm-Stack-04A-Lead-2mm007874-Length-300mm.html)
-
-- Stepper Motor Driver: A4988 STEPPER MOTOR DRIVER CARRIER [specification](https://www.snapeda.com/parts/A4988%20STEPPER%20MOTOR%20DRIVER%20CARRIER/Pololu/view-part/)
+[Arduino-stepper-motor](../files/week10/samd-stepper-motor.ino){: Arduino-stepper-motor}
