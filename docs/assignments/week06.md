@@ -2,7 +2,7 @@
 
 |Assignment    |                          |
 | ----------- | ------------------------------------ |
-| *group*       |  use the test equipment in your lab to observe the operation of a microcontroller circuit board [link](https://fabacademy.org/2023/labs/ciudadmexico/group%20assignments/electronics%20design/)|
+| *group*       |  use the test equipment in your lab to observe the operation of a microcontroller circuit board [**link**](https://fabacademy.org/2023/labs/ciudadmexico/group%20assignments/electronics%20design/)|
 | *individual*      |design a development board to interact and communicate with an embedded microcontroller, extra credit: try another design workflow, extra credit: make a case for it, extra credit: simulate its operation|
 
 
@@ -143,3 +143,11 @@ This time I used different Desing Rules: Min.wire width = min.clearance = 0.3mm.
 
 ## Problems/Questions/Dilemas
 1. Using 0.4mm clearance and wire width blocked the possibilite to have routes between pins.
+
+__________________________________________
+
+**samd11 KiCAD files**: [SAMD11 - KiCAD](../files/week06/samd11.zip){: samd11}
+
+**xino 6x6 KiCAD files**: [XINO 6x6 - KiCAD](../files/week06/xino6x6-onlyconnections0.4.zip){: xino6x6}
+
+**xino 6x6 fabrication files**: [XINO - svg](../files/week06/xino6x6-onlyconnections0.4-Edge_Cuts.zip){: xino6x6-production}

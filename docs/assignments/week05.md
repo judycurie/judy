@@ -3,7 +3,7 @@
 
 |Assignment    |                          |
 | ----------- | ------------------------------------ |
-| *group*       | test the design rules for your 3D printer(s) [link](https://fabacademy.org/2023/labs/ciudadmexico/group%20assignments/3d%20scanning%20and%20printing/)
+| *group*       | test the design rules for your 3D printer(s) [**link**](https://fabacademy.org/2023/labs/ciudadmexico/group%20assignments/3d%20scanning%20and%20printing/)
 | *individual*      | design and 3D print an object (small, few cm3, limited by printer time) that could not be made subtractively, 3D scan an object (and optionally print it) |
 
 
@@ -20,6 +20,7 @@
 The assymptotic gridshells can work as kinetic structures, if the joint allows it. Inspired by work done by Eike Schling (video above), which I saw at the Design Symposium Modelling in September 2022,  I attempted to design my own kinetic joint for the model structure.
 
 ![](../images/week05/Screenshot 2023-02-26 150229a.png)
+
 **Fig.** The GRP lamellas were connected by hand (b) with 3d printed sleeves and M3 bolts (c). The sleeves are batch-printed (a) with a Form 3 Stereolithography (SLA) printer. A second, rigid sleeve ( d) is used as internal restraint. [(Eike & Schikore, 2022)](https://eikeschling.com/2022/09/23/morphology-of-kinetic-asymptotic-grids/)
 
 I started from reading more about preseted above project. The kinetic joints, which Schling named "sleeves", where printed with SLA and connected using 3M 20mm bolts:
@@ -47,7 +48,7 @@ Preparation of the static 3D models let me figure out the right parameters that 
 </video>
 
 ```
-__author__ = "judyt"
+__author__ = "judycurie"
 __version__ = "2023.02.24"
 
 import rhinoscriptsyntax as rs
@@ -116,8 +117,6 @@ The model of the kinetic joint cannot be made substarctively with a 3-axis machi
 
 ## 3D printing
 
-
-
 I prepered a custom Python script for the generation of the 3D joint model. I generated 3 models to test with different design parameters.
 
 ![](../images/week05/v5x-fab.jpg)
@@ -132,7 +131,7 @@ I prepared the file for printing exporting the .stl files directly from Rhino. T
 
 **Material:** PLA grey
 
-**Printer Settings:** (Default): [exact settings](week05-print.md)
+**Printer Settings:** (Default): [exact settings](../files/week05-print.md)
 
 **Printing file:** as in the below picture.
 
@@ -169,7 +168,8 @@ As I arrived to the Mexico City, my luggage lost one of the small plastic legs (
 
 The result of the 3D scan was not enough to make a print out of it. I was trying to increase the scan quality by increasing the resolution to 1mm and power of the laser to 100%. Despite the efforts still the resulting mesh was too rought to be used as input for printing.
 
-
+![](../images/week05/WhatsApp Image 2023-02-27 at 22.46.45.jpeg)
+**Fig.** Scanning failure model.
 
 
 ## Further work
@@ -209,6 +209,10 @@ The result of the 3D scan was not enough to make a print out of it. I was trying
 
 ## Problems/Questions/Dilemas
 
-- The scanner was scanning also the background, therefore aquiring the mesh of the scanned object some "manual" post-processing was required.
+- The scanner was scanning also the background, therefore aquiring the mesh of the scanned object some "manual" post-processing is required.
 
 - Printing such small elements as a kinetic joint on FDM-PLA printer is a bit tricky.
+
+__________________________________________
+
+**design files for 3D print**: [Connector Models - Rhino/stl/gcode](../files/week05/230224_ConnectorModels.zip){: Connector Models}
