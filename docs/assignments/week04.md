@@ -11,6 +11,12 @@
 Reading the morse light signals from RP2040.
 ![](../images/week04/photo-of-the-week4.png)
 
+## Take aways from the group Assignment
+[Group Assignment](https://fabacademy.org/2023/labs/ciudadmexico/group%20assignments/embeddedd%20programming/).
+
+ - arduino based on C is generally faster, although it loads slower to the board than MicroPython
+ - its hard to smoothly swich programming the board between diffent architectures
+
 
 ##Intro to electronics
 

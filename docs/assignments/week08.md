@@ -3,7 +3,7 @@
 
 |Assignment    |                          |
 | ----------- | ------------------------------------ |
-| *group*       | characterize the design rules for your in-house PCB production process; extra credit: send a PCB out to a board house [link](https://fabacademy.org/2023/labs/ciudadmexico/group%20assignments/electronics-production/)|
+| *group*       | characterize the design rules for your in-house PCB production process; extra credit: send a PCB out to a board house [**link**](https://fabacademy.org/2023/labs/ciudadmexico/group%20assignments/electronics-production/)|
 | *individual*      |  make and test the development board that you designed to interact and communicate with an embedded microcontroller; extra credit: make it with another process|
 
 
@@ -155,3 +155,9 @@ tim.init(period=1000, mode=Timer.PERIODIC, callback=fun)
 2. You can sort of feel, when the tool goes to deep - there are too many cut out dust.
 3. For connecting RP2040 to MicroPython, the bootload button needs to be pressed while connecting the board.
 4. Does diode has so much resistance that is doesnt show continuity?
+
+__________________________________________
+
+**desing files**: [Xino - KiCAD](../files/week08/xxinoc-kicad.zip){: Xino - KiCAD}
+
+**production files**: [Xino - SVG](../files/week08/xxinoc-production.zip){: Xino - Xino - SVG}

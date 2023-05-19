@@ -11,6 +11,12 @@
 
 ![](../images/week03/photo-of-the-week3.png)
 
+## Take aways from the group Assignment
+[Group Assignment](https://fabacademy.org/2023/labs/ciudadmexico/group%20assignments/computer%20controlled%20cutting/).
+
+ - always measure the real thickness of the material
+ - each new material needs new testing for choosing optimal Settings
+
 ## Simulation & Reality
 
 <video width="960"  controls>

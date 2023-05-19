@@ -10,6 +10,12 @@
 
 ![](../images/week06/photo-of-the-week6.png)
 
+## Take aways from the group Assignment
+[Group Assignment](https://fabacademy.org/2023/labs/ciudadmexico/group%20assignments/electronics%20design/).
+
+ - USB gives 5V current
+ - continuity is the key
+ 
 
 ## Basic Knowledge Refreshement
 

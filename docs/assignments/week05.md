@@ -12,6 +12,13 @@
 
 ![](../images/week05/photo-of-the-week5.png)
 
+## Take aways from the group Assignment
+[Group Assignment](https://fabacademy.org/2023/labs/ciudadmexico/group%20assignments/3d%20scanning%20and%20printing/).
+
+ - there are special test prints files for testing 3D printers [like this one](https://www.thingiverse.com/thing:1363023)
+ - it is worth to consider the vertical vs horizontal positioning of the piece
+ - it's hard to rely on smaller precision than 1mm (as small imperfections make elements not fit)
+
 ## 3D Kinetic Joint Design
 
 <iframe width="960" height="315" src="https://videopress.com/v/6qmRjpjx" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>

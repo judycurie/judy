@@ -2,7 +2,7 @@
 
 |Assignment    |                          |
 | ----------- | ------------------------------------ |
-| *group*       | do your lab's safety training; test runout, alignment, fixturing, speeds, feeds, materials, and toolpaths for your machine [link](https://fabacademy.org/2023/labs/ciudadmexico/group%20assignments/machining/)|
+| *group*       | do your lab's safety training; test runout, alignment, fixturing, speeds, feeds, materials, and toolpaths for your machine [**link**](https://fabacademy.org/2023/labs/ciudadmexico/group%20assignments/machining/)|
 | *individual*      | make (design+mill+assemble) something big (~meter-scale); extra credit: don't use fasteners or glue; extra credit: include curved surfaces|
 
 
@@ -13,8 +13,9 @@
 
 ## Lecture Notes
 
-Shapeoko 3 xxl working area is 830mm x850mm.
-Chairigami - cardboard products.
+- Shapeoko 3 xxl working area is 830mm x850mm.
+
+- Chairigami - cardboard products.
 
 ## Take aways from the group Assignment
 [Group Assignment](https://fabacademy.org/2023/labs/ciudadmexico/group%20assignments/machining/).
@@ -206,3 +207,7 @@ Before production the following steps had to be taken:
 5. The flex pattern require more research - perhaps the back part can be connected in the middle for more stability.
 6. Planning for the toolpath requires more thought to stabilize the flex part during cutting without nails.
 7. Some of polylines should be connected to enable machine cut the whole layout as one step of depth.
+
+__________________________________________
+
+**desing & production files**: [CNC-Deckchair - Rhino/GH](../files/week07/CNC-Deckchair.zip){: CNC-Deckchair}
