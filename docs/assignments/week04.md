@@ -3,14 +3,13 @@
 
 |Assignment    |                          |
 | ----------- | ------------------------------------ |
-| *group*       |  compare the performance and development workflows for other architectures [link](https://fabacademy.org/2023/labs/ciudadmexico/group%20assignments/embeddedd%20programming/)
+| *group*  [**link**](https://fabacademy.org/2023/labs/ciudadmexico/group%20assignments/embeddedd%20programming/)    |  compare the performance and development workflows for other architectures
 | *individual*      | browse through the data sheet for your microcontroller; program a microcontroller development board; to interact (with local input &/or output) and communicate (remotely); extra credit: use different languages &/or development environments |
-
 
 
 ## Photo of the week
 Reading the morse light signals from RP2040.
-![](../images/week04/WhatsApp Image 2023-02-22 at 07.11.34.jpeg)
+![](../images/week04/photo-of-the-week4.png)
 
 
 ##Intro to electronics
@@ -23,8 +22,6 @@ Rico also recommended a youtube video - A simple guide to electronic components 
 
 
 ##RP2040 data sheet
-
-
 
 ![](../images/week04/xinfront.jpg)
 ![](../images/week04/Seeed-XIAO-RP2040-Pinout.jpg)
