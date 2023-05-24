@@ -27,11 +27,25 @@
 - [ ] *how should we evaluate it?*
 - [ ] detailed schedule
 
-**what it will do?** -
+**what it will do?** - it will be a device for controlling the assembly stage (measuring height), which could be attached to the top of a structure both in the model and real scale. The device will be remotely through Bluetooth communicating with the host device reading the height (and alternatively controlling the assembly device e.g. pumped membrane).
 
-## Links
-- [Sam Calish inflatables](http://fab.cba.mit.edu/classes/863.12/people/calisch/inflate/inflate.html)
-- [how to make inflatables](https://www.instructables.com/Giant-Inflatable-Robot/)
+
+ **inventory of Components and where they come From**
+ | Component   |                          |
+ | ----------- | ------------------------------------ |
+ | 2 x nRFN5240     |   China |
+ | 1 x Plywood 0.6mm flex 1220x1220 | Finland|
+ | 1 x Plywood 0.8mm flex 1220x1220 | Finland|
+
+ **questions to be answered**
+- Should I get plywood from Europe or design the inflatable membrane?
+- Device should monitor the height from the acetometer (difficult to calibrate) or should I use ultrasonic sensor?
+- How to add the sensing of the presence under the pavilion?
+
+ **state of art**
+
+ - [Sam Calish inflatables](http://fab.cba.mit.edu/classes/863.12/people/calisch/inflate/inflate.html)
+ - [how to make inflatables](https://www.instructables.com/Giant-Inflatable-Robot/)
 
 ## Inflatable
 1. Finding a simulation model where the lengths of the disassembled and assembled are almost identical. It required finding the same topology of the points from the simulation model.
