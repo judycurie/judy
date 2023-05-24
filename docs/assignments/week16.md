@@ -31,6 +31,7 @@
 
 
  **inventory of Components and where they come From**
+
  | Component   |                          |
  | ----------- | ------------------------------------ |
  | 2 x nRFN5240     |   China |
@@ -38,8 +39,11 @@
  | 1 x Plywood 0.8mm flex 1220x1220 | Finland|
 
  **questions to be answered**
+
 - Should I get plywood from Europe or design the inflatable membrane?
+
 - Device should monitor the height from the acetometer (difficult to calibrate) or should I use ultrasonic sensor?
+
 - How to add the sensing of the presence under the pavilion?
 
  **state of art**
