@@ -1,4 +1,4 @@
-#**Week03.** Computer-Controlled Cutting
+# **Week03.** Computer-Controlled Cutting
 
 
 |Assignment    |                          |
