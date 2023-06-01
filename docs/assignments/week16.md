@@ -50,6 +50,7 @@
 
  - [Sam Calish inflatables](http://fab.cba.mit.edu/classes/863.12/people/calisch/inflate/inflate.html)
  - [how to make inflatables](https://www.instructables.com/Giant-Inflatable-Robot/)
+ - (https://www.softrobotics.io/)
 
 ## Inflatable
 1. Finding a simulation model where the lengths of the disassembled and assembled are almost identical. It required finding the same topology of the points from the simulation model.

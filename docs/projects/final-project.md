@@ -16,7 +16,7 @@ During Fab Academy I would like to build a stiffness-scaled model and design a d
 ![Final Project Ideas](../images/final-project/final10.png)
 **Fig.** (A) sensing device that can work for the real pavilion and a scaled model.
 
-## **Week 01**
+## **Week 01**- Project Objectives
 Base idea: a 1:10 model from laser cut thin plywood, filling the spaces with the plate panels, 3D print the foundation structures.
 
 IO additions and difficulty level (+++):
@@ -58,7 +58,7 @@ IO additions and difficulty level (+++):
 
 - [ ] 5) a small machine for self-assembly
 
-## **Week 02**
+## **Week 02** - Architectural Design
 
 I reviewed some research papers about asymptotic gridshells.
 
@@ -110,21 +110,21 @@ Two proposal V1 and V2 can be built as a stand-alone structures. However for the
 ![](../images//V1V2-ISO.jpg)
 **Fig 3.** Modular arrangements - isometry.
 
-## **Week 03**
+## **Week 03**- Prototyping Fabrication
 
 I prepared the first model from the thin plywood to test the unrolling script.
 
 
 <iframe width="960" height="315" src="https://youtube.com/embed/Y_U2DWwXKLk" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
-## **Week 04**
+## **Week 04**- Assembly Mechanism Ideas
 
 
 Assembly Mechanism Ideas
 ![](../images//FabAcademy2023 - page 41.png)
 The inflatable one seems like one that could be multi-scale: resemble quite fine the real properties in the scaled model.
 
-## **Week 05**
+## **Week 05**- Rotational Joint Design
 
 I developed a kinetic 3D printed joint that doesn't need glue.
 ![](../images//WhatsApp Image 2023-02-26 at 22.32.21.jpeg)
@@ -134,7 +134,7 @@ I developed a kinetic 3D printed joint that doesn't need glue.
 
 
 Please see the [3D Scanning and Printing Assigment](../assignments/week05.md) for further details.
-## **Week 06**
+## **Week 06** - Structural Analysis: Single vs Double Layer
 
 **Design Workflow**
 Realizing the complexity of the asymptotic gridshell design enabling erection from a flat grid.
@@ -142,6 +142,7 @@ Realizing the complexity of the asymptotic gridshell design enabling erection fr
 ![](../images//eikeworkflow.png)
 
 source: <div class="csl-entry">Schling, E., &#38; Schikore, J. (2022). Morphology of Kinetic Asymptotic Grids. In C. Gengnagel (Ed.), <i>DMS 2022, Towards Radical Regeneration</i> (pp. 374–393). Springer Nature Switzerland.</div>
+
 **Structural Analysis**
 
 Lath: 10cm width, 2x6.5mm thickness (double)
@@ -167,9 +168,7 @@ Material: wood 'birch' E:910[kN/cm2] G12:360[kN/cm2] G3:360[kN/cm2] gamma:4.5[kN
 
 Total mass: 65.752102kg
 
-<video width="960"  controls>
-  <source src="../../images/230329_analysis6.5.mp4" type="video/mp4">
-</video>
+- [model folding](https://youtube.com/embed/Y_U2DWwXKLk)
 **Video** Single layer: Deformation of the structure factorized 0-20: Left - gravity, Right: Wind.
 
 |Analysis|    Gravity                      | Wind 0.365kN/m2|
@@ -187,7 +186,7 @@ Total mass: 65.752102kg
 
 
 
-## **Week 07**
+## **Week 07** - Simulation & Angle Calculation (tolerances indication)
 Simulation of assembly-disassembly with different rotation DOF at joints.
 
 ![](../images//final3.png)
@@ -200,7 +199,7 @@ Simulation of assembly-disassembly with different rotation DOF at joints.
 
 
 
-## **Week08**
+## **Week08** - Feasibility study for artificial muscle folding
 
 Small research on artificial muscles - dielectric elastomer actuators ( Electroactive Polymers)
 
@@ -251,7 +250,7 @@ Trying to find a function of the geodesic wire extension:
 
 
 
-## **Week 09**
+## **Week 09** - Testing Interlocking Connections
 
 As for one-time assembly the kinetic joints might not be necessary and it will be enough to account for the rotation between flat and fully assembled state providing adequate tolerances in slots. However, as the slots are bigger to allow some rotation they also cause the problem of elements sliding from each other in the flat state.
 
@@ -284,7 +283,7 @@ engrave: s80 p70
  - the scaled model needs to be larger than scale 1:18 or 1:10 to be cut with laser and these joints
  - the bump needs to be bigger than kerf on arc cut
 
-##**Week 10**
+##**Week 10** - Structurally Feasible 1:1 model
 
 For the kinetic-actuated assembly with simple joints (cuts in the laths), I have to keep the structure of the asymptotic gridshell from a single layer of asymptotic laths. However, as the structural analyis shows above, the structure is too weak with the single layer plywood laths 6.5mm thick. Increasing thickness is not possible due to the bending (thicker material cannot bend that easily and can easily break- casuing structural failoure). The project assumption is to use kinetic movement for assembly (and maybe dissasembly), prefarably only once in the Life Cycle of the structure - to assemble it on the site. The assembly device should work as assembler of the sttucture and not as a kinetic actuator for the kinetic sculpture. Therefore to keep the single layer of the asymptotic grid (which can be easily assebmled from flat), I added a developable plates, which will be mounted between laths after assembly to check the structureal performance.
 
@@ -305,35 +304,61 @@ For the kinetic-actuated assembly with simple joints (cuts in the laths), I have
   - calculation of the material thickness for 1:5 stiffness scaled model  -> testing the kinetic joints with tolerances - > preparation of the fabrication files
 
 
-##**Week 11**
+##**Week 11** - Sensing ideas
 Some Ideas of the Input Devices for OPTIshell:
 ![](../images/final-project/final8.png)
 
-##**Week 12**
+##**Week 12** - PCB design
 Xino-remote with battery concepts:
 ![](../images/final-project/xino-remote7.png)
 
-##**Week 13**
+##**Week 13** - PCB fabrication
 Setting up BLE communication beetween two nRFN5240.
 
 <video width="960"  controls>
   <source src="../../images/week13/WhatsApp Video 2023-05-03 at 12.55.21.mp4" type="video/mp4">
 </video>
 
-##**Week 14**
+##**Week 14** - Stiffness-scaled model
 Calculating the thickness of plywood for stiffness-scaled model 1:5.
 
 |Analysis Model|   1:1          | 1:5|
 | ----------- | ----------------- |--|
-|Load Case 1.4D|6.4mm x 10cm, single, **5cm** | **1cm**, 0.5mm x 2cm|
-|Load Case 1.4D|6.4mm x 10cm, single + 0.5mm thick plates, **0.19cm** | **0.04cm**, xx|
-|Load Case 1.4D|6.4mmx10cm, double, **1.8cm** |1.0mm x 2cm, **0.34cm**|
+|Load Case 1.4D|6.4mm x 10cm, single, **5cm** | disp.**1cm**, thickness x width: 0.5mm x 20mm|
+|Load Case 1.4D|6.4mm x 10cm, single + 0.5mm thick plates, disp.**0.19cm** | **0.04cm**, xx|
+|Load Case 1.4D|6.4mmx10cm, double, **1.8cm** |thickness x width: 1.0mm x 20mm, disp.**0.34cm**|
 
 **Grasshopper-Karamba Analysis**: [gh -file](../files/final/230510_V2_analysis.gh){: 230510_V2_analysis }
 
 ![](../images/final-project/final9.png)
 **Fig.**. Stiffness scaled model. Left: The real structue laths 6.5mmx100mm double layer, Birch plywood, Right: model 1:5 laths 1mmx20mm, single layer Birch.
 
-##**Week 15**
-Support design for the model.
+##**Week 15** - 3D printed supports
+3D printed support design for the 1:5 model.
 ![](../images/week15/week153.png)
+More about the design and fabrication process: [week15](../assignments/week15.md)
+
+##**Week 16** - Assembly membrane
+Membrane Design resembling the shortening of the diagonals:
+![](../images/week16/untitled.92.jpg)
+![](../images/week16/untitled.93.jpg)
+More about the design process: [week16](../assignments/week16.md)
+
+
+##**Week 17** - IP, Planning
+Materials and planning
+
+Alternative Materials (PET/Aluminium) available in CDMX:https://www.acriplass.com
+
+http://www.acriplass.com/blog/wp-content/uploads/2020/02/ACRIPLAS_MEXICO_CATALOGO_ACRILICOS.pdf
+
+CC - Creative Common License:
+![](../images/final-project/CC.png)
+
+![](../week17.md)
+
+##**Week 18** - Aluminium Model
+Aluminium model 1:5.
+![](../images/week15/week153.png)
+
+More about the design process: [week18](../assignments/week18.md)
