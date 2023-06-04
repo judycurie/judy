@@ -117,6 +117,16 @@ I prepared the first model from the thin plywood to test the unrolling script.
 
 <iframe width="960" height="315" src="https://youtube.com/embed/Y_U2DWwXKLk" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
+**Key take aways:**
+
+ - the material thickness was around 0.88mm, and the slot has 1mm width, not taking into account kerf, allowing on the rotation around 75deg -> this caused difficulty to assemble it in the flat state, but also triggered the self-assembly effect
+ - larger tolerances on joints cause that elements that has few connections required fastening to not fall off from the flat model State
+
+ **Next steps:**
+
+  - accounting for kerf, and the mobility of 60 deg will help in the flat assembly, but decrease the self assembly "willingness"
+  - self-interlocking joint would allow to keep the larger tolerances and prevent from falling of elements in the flat state
+
 ## **Week 04**- Assembly Mechanism Ideas
 
 
@@ -180,7 +190,7 @@ Total mass: 65.752102kg
 
 **Key take aways:**
 
- - double-layer necessary for timber structures
+ - double-layer necessary for timber structures (or alternative stiffening strategies for single layer structure)
 
  - the stiffness scaled model should account for double layer thickness in real pavilion
 
@@ -331,7 +341,7 @@ Calculating the thickness of plywood for stiffness-scaled model 1:5.
 **Grasshopper-Karamba Analysis**: [gh -file](../files/final/230510_V2_analysis.gh){: 230510_V2_analysis }
 
 ![](../images/final-project/final9.png)
-**Fig.**. Stiffness scaled model. Left: The real structue laths 6.5mmx100mm double layer, Birch plywood, Right: model 1:5 laths 1mmx20mm, single layer Birch.
+**Fig.**. Stiffness scaled model. Left: The real structure laths 6.5mmx100mm double layer, Birch plywood, Right: model 1:5 laths 1mmx20mm, single layer Birch.
 
 ##**Week 15** - 3D printed supports
 3D printed support design for the 1:5 model.
@@ -348,7 +358,7 @@ More about the design process: [week16](../assignments/week16.md)
 ##**Week 17** - IP, Planning
 Materials and planning
 
-Alternative Materials (PET/Aluminium) available in CDMX:https://www.acriplass.com
+Alternative Materials (PET/Aluminum) available in CDMX:https://www.acriplass.com
 
 http://www.acriplass.com/blog/wp-content/uploads/2020/02/ACRIPLAS_MEXICO_CATALOGO_ACRILICOS.pdf
 
@@ -357,8 +367,8 @@ CC - Creative Common License:
 
 ![](../week17.md)
 
-##**Week 18** - Aluminium Model
-Aluminium model 1:5.
+##**Week 18** - Aluminum Model
+Aluminum model 1:5.
 ![](../images/week15/week153.png)
 
 More about the design process: [week18](../assignments/week18.md)
