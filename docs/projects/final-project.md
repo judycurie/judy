@@ -323,7 +323,7 @@ Xino-remote with battery concepts:
 ![](../images/final-project/xino-remote7.png)
 
 ##**Week 13** - PCB fabrication
-Setting up BLE communication beetween two nRFN5240.
+Setting up BLE communication between two nRFN5240.
 
 <video width="960"  controls>
   <source src="../../images/week13/WhatsApp Video 2023-05-03 at 12.55.21.mp4" type="video/mp4">
