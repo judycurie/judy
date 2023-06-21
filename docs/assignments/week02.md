@@ -8,6 +8,22 @@
 ## Photo of the week
 ![](../images/week02/photo-of-the-week2.png)
 
+## 2D Initial Design
+Some Ideas of the shape and sensing:
+![](../images/final-project/final8.png)
+**Fig.** Shape and sensing ideas.
+
+Taking into consideration the geometric requirements, 2 subsurfaces were cut out of the minimal surface Enneper 3. The asymptotic curves were found with the custom-scripted component for Grasshopper.
+
+
+![](../images/week02/V1V2-drawings2D.jpg)
+**Fig.** Geometric comparison of the V1 and V2 proposals - top view.
+
+Two proposal V1 and V2 can be built as a stand-alone structures. However for the modular assembly is important for the possibilities to cover large spaces. Some modular arrangements are presented below.
+
+![](../images/week02/V1V2-modularity.jpg)
+**Fig.** Modular arrangements - top view.
+
 ## Model
 I wanted to find geometry concept, that is a cut out of the minimal surface which can be a roofing for 2 cars or a little garden party.
 
@@ -61,4 +77,4 @@ The network of asymptotics was created using a custom script. The surface itself
 ![](../images/week02/Screenshot 2023-02-11 221620x.png)
 __________________________________________
 ## Files
-**design files**: [V1V2 - Rhino/GH](../files/week02/V1V2.zip){: V1V2}
+**design files**: [Rhino/GH](../files/week02/230206_V.gh){: 230206_V}
