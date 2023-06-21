@@ -215,4 +215,10 @@ While the laths were placed on the board directly to each other, they started to
 __________________________________________
 ## Files
 
-**design files**: [V1V2-LinearUnroll - Rhino/GH](../files/week03/230213-V1V2-LinearUnroll.zip){: V1V2-LinearUnroll}
+**design files**:
+
+[V1V2-LinearUnroll - Rhino/GH](../files/week03/230213-V1V2-LinearUnroll.zip){: V1V2-LinearUnroll}
+
+[V1V2-Cutting Files - pdf ](../files/week03/230212_V1V2 - cutting.pdf){: 230212_V1V2 - cutting}
+
+[Vinyl cutter - Sticker - Rhino](../files/week03/230209_Sticker.3dm){: Sticker}
