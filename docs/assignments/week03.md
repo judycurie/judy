@@ -203,12 +203,12 @@ _tagsCrvs = nestedListToDataTree(_tagsCrvs )
 
 Scale and Tolerance problem
 
-I tried add custom shape of the joints, however there was a problem with the units and tolerances. In [m] model the assymptotic cross sections worked correctl, while the cutout line for joints was not planar accrodingly to the software and couldnt be subtructued from the lath outline. While I scaled the model x10 the geometry operation on cutting out from the laths outlines the custom joint outlines worked.
+I tried add custom shape of the joints, however there was a problem with the units and tolerances. In [m] model the asymptotic cross sections worked correctly, while the cutout line for joints was not planar accordingly to the software and couldn't be subtracted from the lath outline. While I scaled the model x10 the geometry operation on cutting out from the laths outlines the custom joint outlines worked.
 ![](../images/week03/w03s02.png)
 
 Jumping out stripes
 
-While the laths were placed on the board directly to each other, they started to stick out from the bed while being cut. Not recommended layout for the stip cutting.
+While the laths were placed on the board directly to each other, they started to stick out from the bed while being cut. Not recommended layout for the stirp cutting.
 
 
 ![](../images/week03/w03-layoutbwno.jpg)

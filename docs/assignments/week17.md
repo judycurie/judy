@@ -15,3 +15,22 @@
 
 ![](../images/week17/week17.png)
 ![](../images/week17/week172.png)
+
+
+## Dissamination Plan
+
+- by 01/06 struture fabricated
+- by 03/06 reading height
+- by 05/06 signaling the height: physically and remote BLE communication with HOST
+- by 08/06 integration of the slave board in the Model
+- by 10/06 integration of the design, additional sensor for presense?
+- by 13/06 video
+
+
+## Drafts of Slide and Video
+referenced from the root directory
+![](../presentation.png)
+
+<video width="960"  controls>
+  <source src="../presentation.mp4" type="video/mp4">
+</video>

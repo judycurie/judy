@@ -61,7 +61,7 @@ git commit -m "some string"
 git push
 ```
 
-![](../images/week1/Screenshot 2023-05-17 080434.png)
+![](../images/week01/Screenshot 2023-05-17 080434.png)
 **git commit -m "..." - works, git commit -m '...' - doesn't work for me**
 
 ![](../images/meme01.png)
