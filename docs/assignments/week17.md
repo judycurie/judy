@@ -29,8 +29,8 @@
 
 ## Drafts of Slide and Video
 referenced from the root directory
-![](../presentation.png)
+![](../images/week17/presentation- draft.png)
 
 <video width="960"  controls>
-  <source src="../presentation.mp4" type="video/mp4">
+  <source src="../../images/week17/presentation- draft.mp4" type="video/mp4">
 </video>
