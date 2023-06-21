@@ -34,16 +34,16 @@ movies availeble on Youtube
 
 ## Design & Fabrication
 
-The beauty of asymptotic gridhshell lies in the ease of fabrication. The 3D laths unroll to  flat straigh strips which can be manufactured by laser, milling or even by hand.
+The beauty of asymptotic gridhshell lies in the ease of fabrication. The 3D laths unroll to  flat starlight strips which can be manufactured by laser, milling or even by hand.
 
 ![](../images/week03/w03-layoutbw.jpg)
 
-To produce below fabrication layout, I prepered a custom Python script for unrolling and labaling of the elements and joints. The code produces layout for the bottom layer of the assymptotics.
+To produce below fabrication layout, I prepared a custom Python script for unrolling and labeling of the elements and joints. The code produces layout for the bottom layer of the asymptotics.
 
 ![](../images/week03/Screenshot 2023-02-13 205314x.png)
-The scipt accounts for the laser beam size (kerf), material thickness, width of the material and tolerances.
+The script accounts for the laser beam size (kerf), material thickness, width of the material and tolerances.
 ![](../images/week03/Screenshot 2023-02-13 211725x.png)
-The joint connection shape can be rectacngular or defined by custom draw curve.
+The joint connection shape can be rectangular or defined by custom draw curve.
 
 ![](../images/week03/Screenshot 2023-02-13 210750x.png)
 ![](../images/week03/Screenshot 2023-02-13 210841x.png)
@@ -53,16 +53,16 @@ The material tests were conducted on 2 machines: Spirit GLS 12-100W CO2 (1) and 
 The sample were cut with constant speed and varying power. The chosen speed is the fastest speed for which with 100% power the material was cut.
 ![](../images/week03/w0309.jpeg)
 
-The model was produces from the 0.8mm Birch Plywod. Based on the sample test the power of 40% was enought to cut the materia. As 5% power does nothing, for engraving the power of 7% was chosen.
+The model was produces from the 0.8mm Birch Plywood. Based on the sample test the power of 40% was enough to cut the material. As 5% power does nothing, for engraving the power of 7% was chosen.
 
 
 ## Model Assembly
-The cut pieces were placed in assebmly order divided into Series A- bottom and Series B- top. The assembly was flat and the elements had to be carefully put into the right slots. The assebmled flat model was erected genetly with hands.
+The cut pieces were placed in assembly order divided into Series A- bottom and Series B- top. The assembly was flat and the elements had to be carefully put into the right slots. The assembled flat model was erected gently with hands.
 ![](../images/week03/week03x3.jpg)
 
 
 ## Vinyl Cutter
-I followed the classy Vinyl cut sticker for my laptop. The vector drawing was prepared in Rhino and scaled to 50mm. After cutting, the trnasculent background needs to be covered with the additional layer.
+I followed the classy Vinyl cut sticker for my laptop. The vector drawing was prepared in Rhino and scaled to 50mm. After cutting, the transcalent background needs to be covered with the additional layer.
 
 ![](../images/week03/week03x.jpg)
 
@@ -70,7 +70,7 @@ I followed the classy Vinyl cut sticker for my laptop. The vector drawing was pr
 
 ## Group assignment
 
-A few materials were considered and their thickness  measured: PET: 1.15mm, proipropylen 0.51mm, and cardboarf 1.45mm. The sameple test was cut on the PET sample (1).
+A few materials were considered and their thickness  measured: PET: 1.15mm, proipropylen 0.51mm, and carboard 1.45mm. The sample test was cut on the PET sample (1).
 ![](../images/week03/week03x2.jpg)
 
 A laser cutter's beam usually has a diameter between 0.1 and 0.3 mm. For the Spirit GLS 12-100W CO2 tested in the FabLab CDMX is 0.1mm (Laser Source, 10.6µm).
@@ -198,7 +198,7 @@ _tagsCrvs = nestedListToDataTree(_tagsCrvs )
 
 
 
-## Conclusions/Problems/Questions/Dilemas
+## Conclusions/Problems/Questions/Dilemmas
 
 
 Scale and Tolerance problem

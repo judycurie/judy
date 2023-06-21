@@ -9,7 +9,7 @@
 ## Photo of the week
 
 ![](../images/week16/photo-of-the-week16.png)
-![Final Project Ideas](../images/final-project/final10.png)
+
 
 ## Lecture Notes
 

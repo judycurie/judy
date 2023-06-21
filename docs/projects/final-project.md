@@ -92,7 +92,7 @@ A small scale roof structure/ a canopy, which can be built without a building pe
 
 ![](../images/MSCA-table.jpg)
 
-**Table 1.** Geometric requirements for asymtotic gridshell.
+**Table 1.** Geometric requirements for asymptotic gridshell.
 
 **Proposals V1 V2**
 
@@ -346,6 +346,20 @@ Calculating the thickness of plywood for stiffness-scaled model 1:5.
 ##**Week 15** - 3D printed supports
 3D printed support design for the 1:5 model.
 ![](../images/week15/week153.png)
+![](../images/week15/week154.png)
+**Fig.** Design of the leg supports in scale 1:5 for plastic robotic extrusion.
+
+**Grasshopper file**: [gh -file](../files/week15/230516-print1.gh){: print1 }
+**Robot Path**: [src-file](../files/week15/230516-print1.src){: print1 }
+
+![](../images/week15/week155.png)
+**Fig.** Initial exitement - thinking its going well!
+
+![](../images/week15/week156.png)
+**Fig.** Huge contraction of plastic and failoure.
+
+
+
 More about the design and fabrication process: [week15](../assignments/week15.md)
 
 ##**Week 16** - Assembly membrane
@@ -367,8 +381,24 @@ CC - Creative Common License:
 
 ![](../week17.md)
 
-##**Week 18** - Aluminum Model
-Aluminum model 1:5.
-![](../images/week15/week153.png)
+##**Week 18** - Acrylic Model
+Acrylic model 1:25.
+The PET30 &PET 40 was not possible to be cut on laser with a detail allowing controllnig the tolerances (slot size for rotation) & bump slot design stopping the stripes from falling, therefore I had to find a scale for the PET20 for which elements has enough stiffness.
 
-More about the design process: [week18](../assignments/week18.md)
+![](../images/final-project/WhatsApp Image 2023-06-13 at 21.08.43 (1).jpeg)
+![](../images/final-project/WhatsApp Image 2023-06-13 at 21.08.43.jpeg)
+
+
+
+<video width="960"  controls>
+  <source src="../..//images/final-project/WhatsApp Video 2023-06-13 at 21.06.10.mp4" type="video/mp4"">
+</video>
+More about the fabrication process: [week18](../assignments/week18.md)
+
+# FINAL
+The final idea scheme:
+![](../images/week16/photo-of-the-week16.png)
+
+<video width="960"  controls>
+  <source src="../../presentation.mp4" type="video/mp4">
+</video>

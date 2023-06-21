@@ -138,7 +138,7 @@ I prepared the file for printing exporting the .stl files directly from Rhino. T
 
 **Material:** PLA grey
 
-**Printer Settings:** (Default): [exact settings](../week05-print.md)
+**Printer Settings:** (Default): [exact settings](../assignments/week05-print.md)
 
 **Printing file:** as in the below picture.
 

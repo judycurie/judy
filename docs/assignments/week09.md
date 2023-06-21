@@ -34,6 +34,11 @@ max. 5.0V x 0.7A = 3.5W
 -  SG90 digital servo: low freq: 5.0V x 0.1A = 0.5W, high freq: 5.0V x 0.3A = 1.5W
 max. 5.0V x 0.5A = 2.5W
 
+|Output Type  |              Sensor            |
+| ----------- | ------------------------------------ |
+| *digital*  (discrete)     |  Alarms, Control relays, Fans, lights, horns, valves, Motor starters, solenoids|
+| *analog* (contiunous)     |   any?|
+
 ## Output devices
 I have started with preparing the below illustration (photo of the week) to have better understaning of the pin layout.
 

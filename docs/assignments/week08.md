@@ -25,6 +25,8 @@
  - min wire width and clearance 0.4mm
  - a tip on calibrating the tool - screw it slightly > put it down > unscrew so that it hits the surface > screw it again
  - workflow how to use mods to generate tool path on the local computer using linux on virtual machine
+ - 1/64in mill for traces & 1/32in mill for boarder
+ - tight the mill from both sides
 
 
 ## Design
@@ -38,8 +40,6 @@ I had to improve the design of the PCB board from the week 6 *Electronics Design
 ![](../images/week08/week75.png)
 **Fig.** Final design -Exporting production graphics KiKad.
 
-files
-[kiCad files](../files/xino.zip){: download }
 
 
 ## Production

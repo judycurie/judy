@@ -36,7 +36,7 @@ Ingestion: Irritating to the mouth, throat and stomach.
 OVERMOLDING
 http://fabacademy.org/archives/2012/students/bas.withagen/cl08asgn.html
 
-![](../images/week12/untitled.84.jpg)
+![](../images/xino-remote/untitled.84.jpg)
 **Fig.** Xino-remote prototype (final board that can work remotely) more here [xino-remote link](https://fabacademy.org/2023/labs/ciudadmexico/students/judyta-cichocka/projects/xino-remote/).
 
 

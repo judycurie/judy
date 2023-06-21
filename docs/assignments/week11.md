@@ -16,13 +16,17 @@
  - digital inputs scale: 0-1
  - analog inputs scale depends on the device but is not binary
 
+ |Input Type  |              Sensor            |
+ | ----------- | ------------------------------------ |
+ | *digital*  (discrete)     |  Selector switches,pushbuttons, thumbwheel switches, Photoelectric eyes, limit switches, circuit breakers, Proximity switches, level switches, Motor starter contacts, Relay contacts, Fans, lights, horns, valves|
+ | *analog* (contiunous)     |   Temperature sensors, CO2 sensors, Pressure sensors, Humidity  sensors, Flow sensors, Potentiometers|
+
 ## Lecture Notes
 
 ![](../images/week11/week11.png)
 ![](../images/week11/week112.png)
 ![](../images/week11/week112.png)
 ![](../images/week11/week113.png)
-
 
 
 
