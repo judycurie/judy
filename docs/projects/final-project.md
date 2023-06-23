@@ -478,6 +478,8 @@ More about step response sensor -> [week14](../assignments/week11.md)
 ![](../images/final-project/220622_6.jpg)
 **PET20 Laser Cut**: [V4 - Rhino](../files/final/V4-S13P100.3dm){: V4-S13P100.3d}
 
+![](../images/final-project/220622_7.jpg)
+**MDF 3mm Laser Cut**: [base - Rhino](../files/final/BASE - lasercut.3dm){: BASE - lasercut.3dm}
 # Final Video
 <video width="960"  controls>
   <source src="../../presentation.mp4" type="video/mp4">
