@@ -112,8 +112,11 @@ Two proposal V1 and V2 can be built as a stand-alone structures. However for the
 
 I prepared the first model from the thin plywood to test the unrolling script.
 
+<video width="960"  controls>
+  <source src="../../files/week03/WhatsApp Video 2023-02-13 at 19.02.52.mp4" type="video/mp4">
+</video>
 
-<iframe width="960" height="315" src="https://youtube.com/embed/Y_U2DWwXKLk" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
 
 **Key take aways:**
 
@@ -391,8 +394,7 @@ The PET30 &PET 40 was not possible to be cut on laser with a detail allowing con
 More about the fabrication process: [week18](../assignments/week18.md)
 
 # FINAL
-This project is licensed under
-Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0)).
+This project is licensed under Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0).
 
 ## Proposed/Intended solution
 ![](../images/final-project/_28.png)
@@ -458,7 +460,7 @@ And after that I checked what I still have working and it was a step response se
 ![](../images/final-project/_60.png)
 ![](../images/final-project/_61.png)
 ![](../images/final-project/_62.png)
-![](../images/final-project/_63.png)
+
 More about step response sensor -> [week14](../assignments/week11.md)
 
 ![](../images/final-project/_63.png)
@@ -499,6 +501,7 @@ PCB
 STEP RESPONSE SENSOR
 **STEP RESPONSE desing files**: [Xino - Step Response KiCAD](../files/week11/xino-step-response-kicad.zip){: Xino - Step Response KiCAD}
 **STEP RESPONSE production files**: [Xino - Step Response - SVG/PNG](../files/week11/xino-step-response-production.zip){: Xino - Step Response - SVG/PNG}
+
 
 # Final Video
 <video width="960"  controls>
