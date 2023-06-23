@@ -5,7 +5,7 @@
 My participation in Fab Academy 2023 is sponsored by European Union  (EU funding: 101033646).
 One of the goals of my OPTIshell research project is to build a prototype of the timber solar canopy structure covered with the PV material.
 More about the project [optishell.io](https://optishell.io/).
-During Fab Academy I would like to build a stiffness-scaled model and design a device for automated assembly.
+During Fab Academy I would like to build a stiffness-scaled model and design a device for informed assembly.
 
 ![Optishell Asymptotic Gridshell Structure Visualization](../images/concept.jpg)
 **Fig.** Conceptual model.
@@ -120,8 +120,8 @@ I prepared the first model from the thin plywood to test the unrolling script.
 
 **Key take aways:**
 
- - the material thickness was around 0.88mm, and the slot has 1mm width, not taking into account kerf, allowing on the rotation around 75deg -> this caused difficulty to assemble it in the flat state, but also triggered the self-assembly effect
- - larger tolerances on joints cause that elements that has few connections required fastening to not fall off from the flat model State
+ - the material thickness was around 0.88mm, and the slot had 1mm width, not taking into account kerf, allowing on the rotation around 75deg -> this caused difficulty to assemble it in the flat state, but also triggered the self-assembly effect
+ - larger tolerances on joints cause that elements that has few connections required fastening to not fall off from the flat model state
 
  **Next steps:**
 
@@ -296,7 +296,7 @@ engrave: s80 p70
 
 ##**Week 10** - Structurally Feasible 1:1 model
 
-For the kinetic-actuated assembly with simple joints (cuts in the laths), I have to keep the structure of the asymptotic gridshell from a single layer of asymptotic laths. However, as the structural analyis shows above, the structure is too weak with the single layer plywood laths 6.5mm thick. Increasing thickness is not possible due to the bending (thicker material cannot bend that easily and can easily break- casuing structural failoure). The project assumption is to use kinetic movement for assembly (and maybe dissasembly), prefarably only once in the Life Cycle of the structure - to assemble it on the site. The assembly device should work as assembler of the sttucture and not as a kinetic actuator for the kinetic sculpture. Therefore to keep the single layer of the asymptotic grid (which can be easily assebmled from flat), I added a developable plates, which will be mounted between laths after assembly to check the structureal performance.
+For the kinetic-actuated assembly with simple joints (cuts in the laths), I have to keep the structure of the asymptotic gridshell from a single layer of asymptotic laths. However, as the structural analyis shows above, the structure is too weak with the single layer plywood laths 6.5mm thick. Increasing thickness is not possible due to the bending (thicker material cannot bend that easily and can easily break- casuing structural failoure). The project assumption is to use kinetic movement for assembly (and maybe dissasembly), prefarably only once in the Life Cycle of the structure - to assemble it on the site. The assembly device should work as assembler of the sttucture and not as a kinetic actuator for the kinetic sculpture. Therefore to keep the single layer of the asymptotic grid (which can be easily assebmled from flat), I added a developable plates, which will be mounted between laths after assembly to check the structural performance.
 
 ![](../images/final-project/230401-optishell.png)
 ![](../images/final-project/230401-optishell2.png)
@@ -308,7 +308,7 @@ For the kinetic-actuated assembly with simple joints (cuts in the laths), I have
 
 **Key take aways:**
 
- - assuming the 1:1 gridshell structure with filling developable plates the structural performance is
+ - assuming the 1:1 gridshell structure with filling developable plates the structural performance is satisfactory
 
  **Next steps:**
 
@@ -319,9 +319,19 @@ For the kinetic-actuated assembly with simple joints (cuts in the laths), I have
 Some Ideas of the Input Devices for OPTIshell:
 ![](../images/final-project/final8.png)
 
+**Key take aways:**
+
+ - if the xino-remote boards work correctly: 1 SLAVE with battery which can be attached wherever and 1 HOST reading data from SLAVE and connected to the computer which can read data or pass instructions, in the basic desing with xiao nRF52840 the 6DOF sensor and microphone are embedded, however having these 2 boards talking remotely, gives a lot of oportunities to make additional senses to the pavilion :)
+
 ##**Week 12** - PCB design
 Xino-remote with battery concepts:
 ![](../images/final-project/xino-remote7.png)
+
+**Key take aways:**
+
+ - only the smallest battery can be fitted into the pcb outline -> I ordered EEMB Lithium Polymer Batería 3.7V 250mAh 502030 [here](https://www.amazon.com.mx/gp/product/B08FD3V6TF/ref=ppx_od_dt_b_asin_title_s00?ie=UTF8&psc=1)
+ - maybe it would be worth considering pins vertical (to allow attachment from one side)
+ - it would be helpful to have a waterproof case (so it can be really attached to the outside structure)
 
 ##**Week 13** - PCB fabrication
 Setting up BLE communication between two nRFN5240.
@@ -329,6 +339,12 @@ Setting up BLE communication between two nRFN5240.
 <video width="960"  controls>
   <source src="../../images/week13/WhatsApp Video 2023-05-03 at 12.55.21.mp4" type="video/mp4">
 </video>
+
+**Key take aways:**
+
+ - making a whole in the slave board was successful and let the battery to be connected from the other side
+ - making the GDN on the whole surface of the PCB (and not seperated path) was a bad idea, the copper stips after fabrication can touch the surface and in general is more likely to make a short touching excidentally the ground parts
+ - BLE communication is easy (or maybe only possible) only between 2 boards of the same type -> trying communicate XIAO nRF5240 and XIAO ESP32C3 through Bluethooth was not straightfoward and I didnt manage to do it within considerable timeframe
 
 ##**Week 14** - Stiffness-scaled model
 Calculating the thickness of plywood for stiffness-scaled model 1:5.
@@ -343,6 +359,10 @@ Calculating the thickness of plywood for stiffness-scaled model 1:5.
 
 ![](../images/final-project/final9.png)
 **Fig.**. Stiffness scaled model. Left: The real structure laths 6.5mmx100mm double layer, Birch plywood, Right: model 1:5 laths 1mmx20mm, single layer Birch.
+
+**Key take aways:**
+
+ - considering stiffness-scaling, already for 1:5 scale, I need a very thin plywood of 0.8mm-1mm, therefore the 1:5 scale was considered as suitable for prototype
 
 ##**Week 15** - 3D printed supports
 3D printed support design for the 1:5 model.
@@ -359,39 +379,81 @@ Calculating the thickness of plywood for stiffness-scaled model 1:5.
 ![](../images/week15/week156.png)
 **Fig.** Huge contraction of plastic and failoure.
 
-
-
 More about the design and fabrication process: [week15](../assignments/week15.md)
 
+**Key take aways:**
+
+
+- this process is not aplicable to not rotational forms and it was a complete waste of time trying to print in this way the linear supports  
+
+
 ##**Week 16** - Assembly membrane
+After trying to make a list of materials and where to get them -> I discovered that there is no way (really no way) to find thin plywood in Mexico. I considered ordering it from the US, or even Finland or Poland, but the amount for the model needed (like 1 board for 1:5 protoype) and even if 4 boards to allow the mistakes, the costs and taxes, and effort is not proportional to the amount I need. Therefore after reviewing if I can make it from aluminium sheets, as this is also common for real structures, the thinnest alluminum 0.5mm is already very stiff, what would mean the model would be bigger than 1:5, and no possibility to cut the aluminium in local fab or with the aluminium provider offering cutting services, I looked for alternative ways to errect resembling shape. Desingning a membrane which can errect the structure and potetially stay on the structure after assembly is a great idea. I managed to calculate the inflatable surfaces of the membrane to reseamle exaclty the shortenning and extending of the diagonals of the grid.
+
 Membrane Design resembling the shortening of the diagonals:
 ![](../images/week16/untitled.92.jpg)
 ![](../images/week16/untitled.93.jpg)
 More about the design process: [week16](../assignments/week16.md)
 
+**Key take aways:**
+
+- although it is a great idea and I would really like to make it, I have the same problem as with gridstrucutre -> I dont know what material and where to find it and if I find it on time, and even if I find it -> I nevered made inflatable with laser and I have no idea how long it can take me to produce it
+- I need a air pump -> following the Neil's advice I reviewd this: https://www.softrobotics.io/, aware about ticking clock for the final project, I gave a shot and emailed them asking if I can borrow one unit for the course time or if there is a chance they can send me the components for assembly of it, however I was left without reply
+- **no inflatable membrane for the final project**
 
 ##**Week 17** - IP, Planning
-Materials and planning
 
-Alternative Materials (PET/Aluminum) available in CDMX:https://www.acriplass.com
+I had to really quickly find replacement material for thin plywood, that can be used to produce asymptotic gridshell model. Alternative Materials (PET/Aluminum) available in CDMX: [acriplast](https://www.acriplass.com) with following materials: [material catalogue](http://www.acriplass.com/blog/wp-content/uploads/2020/02/ACRIPLAS_MEXICO_CATALOGO_ACRILICOS.pdf)
 
-http://www.acriplass.com/blog/wp-content/uploads/2020/02/ACRIPLAS_MEXICO_CATALOGO_ACRILICOS.pdf
+![](../images/final-project/acriplast.jpeg)
+**Fig.** The creative facade design and very kind service eating ice-cream made me think, the acrylic model will be great :).
 
 CC - Creative Common License:
 ![](../images/final-project/CC.png)
 
-![](../week17.md)
+
+**Key take aways:**
+
+-  I touched the thinnest aluminium sheets available and realize they are too stiff for any model scale
+- I have a lot of PET20, PET30, PET40- > and now this is the only option -> I need to make a laser tests and choose a scale for the model
+- **finding the scale for the acrylic thickness**
+- I have also reviewed CC licenses and chose: Attribution-NonCommercial 4.0 International (CC BY-NC- 4.0).
+
 
 ##**Week 18** - Acrylic Model
-Acrylic model 1:25.
-The PET30 &PET 40 was not possible to be cut on laser with a detail allowing controllnig the tolerances (slot size for rotation) & bump slot design stopping the stripes from falling, therefore I had to find a scale for the PET20 for which elements has enough stiffness.
+I design and produce samples to assess the kerf and posible precision of cutting for PET20, PET30, PET40.
+Obviously the best precision was for the thinnest PET20.
+
+![](../images/final-project/WhatsApp Image 2023-06-13 at 21.10.10.jpeg)
+**Fig.** Self-interlocing joint test PET20 V4 with tolerance allowing flat assembly (50-90deg) - it worked well :).
+
+The PET30 &PET 40 was not possible to be cut on laser with a detail allowing controllnig the tolerances (slot size for rotation) & bump slot design stopping the stripes from falling, **therefore I had to find a scale for the PET20** for which elements has enough stiffness.
+I made first the model 1:10 from PET20 - it was to slender.
+
+
+
+
+![](../images/final-project/WhatsApp Image 2023-06-06 at 21.55.13.jpeg)
+I assembled also model 1:20, that was still not stiff enough.
+The next attempt was successful: **PET20 1:25 scale** -> elements had enough stiffness and could be cut with satisfactory precision so that the self locking joints hold the laths.
+
+After 2 hours of removing carefully elements from the acrylic sheet without breaking:
 
 ![](../images/final-project/WhatsApp Image 2023-06-13 at 21.08.43 (1).jpeg)
+After 5 hours of cleaning elements with aceton and assembling the flat structure:
 ![](../images/final-project/WhatsApp Image 2023-06-13 at 21.08.43.jpeg)
 
 
 
 More about the fabrication process: [week18](../assignments/week18.md)
+
+**Key take aways:**
+
+-  I hate cutting plastic
+- it is great that asyptotic gridshell work so well as a system, but also it makes it almost impossible to evaluate performance of structure based on 2 laths connected - > only assembling the whole model the scale and/or thickness could be evaluated :(
+- Selected laser parameters:
+    - **PET-G 20 0.55mm**: Overall: S11P100: Divided: ->S10P100/S11P100 - long Lines ->S13P100 - details
+    - **PET-G 30 0.74mm**: Overall: S10P100: Divided: ->S10P100/S09P100 - long Lines ->S11P100 - details
 
 # FINAL
 This project is licensed under Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0).
