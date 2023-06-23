@@ -397,7 +397,35 @@ More about the fabrication process: [week18](../assignments/week18.md)
 
 # FINAL
 The final idea scheme:
-![](../images/week16/photo-of-the-week16.png)
+![](../images/final-project/_28.png)
+
+## Boards and communication
+<video width="960"  controls>
+  <source src="../../images/week13/WhatsApp Video 2023-05-03 at 12.55.21.mp4" type="video/mp4">
+</video>
+
+## Reading height - 6DOF
+This code calulates the position of the device based on the acceleration.
+![](../images/week14/Screenshot 2023-05-09 14.33.08.png)
+**Fig.** nRF52840 reading the position.
+
+More : [week14](../assignments/week14.md)- HOST: Reading the IMU data for serial communication.
+
+#**FAIL**
+![](../images/final-project/_30.png)
+While integrating the pcbs to the model, something went wrong and xiao nRF5240 stopped responding...
+
+It turned out there was a short on the HOST board. I had this problem before, which I fixed, but apparently some scraps caused short again...
+As I can replace MCU in the HOST board I put my second XIAO nRF5240 and also fired this one.
+
+I panicked. And after that I checked what I still have working and it was a step response sensore and RP2040 programmed -> [week14](../assignments/week11.md)
+
+##Implemented solution
+
+![](../images/final-project/_32.png)
+**Fig.** The implemented solution scheme.
+![](../images/final-project/_33.png)
+**Fig.** The implemented solution design.
 
 <video width="960"  controls>
   <source src="../../presentation.mp4" type="video/mp4">
