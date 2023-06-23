@@ -1,4 +1,4 @@
-# Final Project Ideas
+# Ideas
 
 ## LaserCut Parameter Selector
 
