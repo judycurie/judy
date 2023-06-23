@@ -334,11 +334,10 @@ Xino-remote with battery concepts:
  - it would be helpful to have a waterproof case (so it can be really attached to the outside structure)
 
 ##**Week 13** - PCB fabrication
-Setting up BLE communication between two nRFN5240.
-
-<video width="960"  controls>
-  <source src="../../images/week13/WhatsApp Video 2023-05-03 at 12.55.21.mp4" type="video/mp4">
-</video>
+![](../images/week13/week135.png)
+**Fig.** Xino-remote pcb prototypes fabricated: left: with ground, right: without ground.
+![](../images/week13/week1312.png)
+**Fig.** Xino-remote with nRF5240 and recharchable battery. Left- connected to computer -> the green charging diode lit up. Right: after uploading the file to turn on the inbuilt LED and disconnecting from USB-C, the XINO Remote works.
 
 **Key take aways:**
 
@@ -454,19 +453,134 @@ More about the fabrication process: [week18](../assignments/week18.md)
 - Selected laser parameters:
     - **PET-G 20 0.55mm**: Overall: S11P100: Divided: ->S10P100/S11P100 - long Lines ->S13P100 - details
     - **PET-G 30 0.74mm**: Overall: S10P100: Divided: ->S10P100/S09P100 - long Lines ->S11P100 - details
-
-# FINAL
+________________________________________________________
+# FINAL PROJECT - Intended solution
 This project is licensed under Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0).
 
 ## Proposed/Intended solution
 ![](../images/final-project/_28.png)
 **Fig.** The final idea scheme.
 
-### Acrylic kinetic model
+### Prototyping Assembly System  - Acrylic kinetic model 1:25 PET20
+This material is so thin and delicate that the Fish Line the finest I think I could have found (Prueba de 80 libras), bought [here](https://www.amazon.com.mx/dp/B0000AY6K0?ref=ppx_yo2ov_dt_b_product_details&th=1&psc=1) was stronger than the grishell material. Therefore putting it as the geodesic arcs and pushing (extending from bottom) allowed for easy assembly movement.
+
 <video width="960"  controls>
   <source src="../..//images/final-project/WhatsApp Video 2023-06-13 at 21.06.10.mp4" type="video/mp4"">
 </video>
+**Fig.** PET20 - 0.55m thickness, scale 1:25, V4, rotational slots 50-90deg. All lines cut S11P100.
+
 More about the fabrication process: [week18](../assignments/week18.md)
+
+
+
+### Reading height - 6DOF
+In Interface and Application Programming week [week 14](../assignments/week14.md) I attempted to assess the position based on the accelometer embedded in 6DOF of the XIAO nRF52840. First of all, the accolometer was very sensitive - showing acceleration even when XIAO was steady lying on the desk. I tried to calibrate it, but without success (in less modern sensors its somehow easier to access the calibration settings). Anyhow I managed to overcome it introducing measearing of the acceleation only if the significan movement is detected.
+
+```
+
+This code calulates the position of the device based on the acceleration only when significant movement detected.
+
+
+#include "LSM6DS3.h"
+#include "Wire.h"
+#include <SPI.h>
+
+//Create an instance of class LSM6DS3
+LSM6DS3 myIMU(I2C_MODE, 0x6A);    //I2C device address 0x6A
+
+// Set initial values for position, velocity, and time
+float position[3] = {0, 0, 0};
+float velocity[3] = {0, 0, 0};
+unsigned long timestamp;
+const float accelerationThreshold = 2.5; // threshold of significant in G's
+
+// Define constants for integration
+const float SAMPLING_INTERVAL = 0.01; // in seconds
+const float GRAVITY = 9.81; // in m/s^2
+
+void setup() {
+    // put your setup code here, to run once:
+    Serial.begin(9600);
+    while (!Serial);
+    //Call .begin() to configure the IMUs
+    if (myIMU.begin() != 0) {
+        Serial.println("Device error");
+    } else {
+        Serial.println("Device OK!");
+    }
+
+  // Set the range of the accelerometer to +/- 16g
+  //myIMU.A_SCALE_16G;
+
+  // Set the output data rate of the accelerometer to 104 Hz
+  //myIMU.setAccelDataRate(LSM6DS_RATE_104_HZ);
+
+  // Set initial timestamp
+  timestamp = millis();
+}
+
+void loop() {
+  // Read the acceleration data from the LSM6DS3 sensor
+
+  float x = myIMU.readFloatAccelX();
+  float y = myIMU.readFloatAccelY();
+  float z = myIMU.readFloatAccelZ();
+
+  float aSum = fabs(x) + fabs(y) + fabs(z);
+  if (aSum >= accelerationThreshold) {
+  //Serial.print(x);
+  //Serial.print("   ");
+  // Calculate the elapsed time since the last iteration
+    unsigned long current_time = millis();
+    float elapsed_time = (current_time - timestamp) / 1000.0;
+
+  // Calculate the change in velocity due to acceleration
+    float delta_vx = x * GRAVITY * elapsed_time;
+    float delta_vy = y * GRAVITY * elapsed_time;
+    float delta_vz = z * GRAVITY * elapsed_time;
+  //Serial.print(delta_vx);
+  //Serial.print("   ");
+  // Update the velocity
+    velocity[0] += delta_vx;
+    velocity[1] += delta_vy;
+    velocity[2] += delta_vz;
+
+  // Calculate the change in position due to velocity
+    float delta_px = velocity[0] * elapsed_time;
+    float delta_py = velocity[1]* elapsed_time;
+    float delta_pz = velocity[2]* elapsed_time;
+  //Serial.print(delta_px);
+  //Serial.print("   ");
+  // Update the position
+    position[0] += delta_px;
+    position[1] += delta_py;
+    position[2] += delta_pz;
+
+  // Update the timestamp
+    timestamp = current_time;
+
+  }
+
+  // Output the position data
+  //Serial.print("Position (x, y, z): ");
+  Serial.print(position[0]);
+  Serial.print(", ");
+  Serial.print(position[1]);
+  Serial.print(", ");
+  Serial.println(position[2]);
+
+  // Wait for the next iteration
+  delay(SAMPLING_INTERVAL * 1000);
+  position[0] =0;
+  position[1] =0;
+  position[2]= 0;
+}
+```
+
+Although the results still needed to be calibrated to resemble real units. This was working enought to pass information to the HOST pcb through the BLE and the thresehold value for the height could be determined epirically (as not sure what was the unit in SI measured).
+
+
+More : [week14](../assignments/week14.md)-  Reading the IMU data for serial communication.
 
 ### Boards and communication
 
@@ -475,30 +589,28 @@ More about the fabrication process: [week18](../assignments/week18.md)
 </video>
 **Video.** Two nRF52840 communicaing via BLA: SLAVE board with battery.
 
-### Reading height - 6DOF
-This code calulates the position of the device based on the acceleration.
-![](../images/week14/Screenshot 2023-05-09 14.33.08.png)
-**Fig.** nRF52840 reading the position.
-
-More : [week14](../assignments/week14.md)-  Reading the IMU data for serial communication.
+Now it was enough to mount the SLAVE pcb on the model and read through BLE the height value measurement.
 
 
+#**FAIL****FAIL****FAIL****FAIL****FAIL****FAIL****FAIL**
+# PINCHE MURPHY!
 
-#**FAIL**
-
-
+While integrating the pcbs to the model, something went wrong and xiao nRF5240 stopped responding...
 
 ![](../images/final-project/_30.png)
-While integrating the pcbs to the model, something went wrong and xiao nRF5240 stopped responding...
+
 
 It turned out there was a short on the HOST board. I had this problem before, which I fixed, but apparently some scraps caused a short again...
 As I could replace MCU in the HOST board, therefore I put my second XIAO nRF5240 and also fired this one.
 
 **I panicked.**
 
-And after that I checked what I still have working and it was a step response sensore and RP2040 programmed -> [week14](../assignments/week11.md)
+And after that I checked what I still have working and it was a step response sensore and RP2040 programmed -> [week14](../assignments/week11.md).
 
-##Implemented solution
+
+____________________________________________________
+
+# FINAL PROJECT - Implemented solution
 
 ![](../images/final-project/_32.png)
 **Fig.** The implemented solution scheme.
@@ -521,34 +633,39 @@ And after that I checked what I still have working and it was a step response se
 
 ![](../images/final-project/_60.png)
 ![](../images/final-project/_61.png)
+In this picture I still have working XIAO nRF52840, but after firing it and fixing the copper trash causing the shorts, it was replaced with RP2040.
 ![](../images/final-project/_62.png)
 
 More about step response sensor -> [week14](../assignments/week11.md)
 
 ![](../images/final-project/_63.png)
-**Fig.** The electronics connectivity.
+**Fig.** The electronics connectivity (**NOT FIXED AND ARRANGED YET**). After mounting it to the ring and top board, and connecting the ring to the model, its not possible to take a picture of the fixed arrangement without demounting -> I didnt risk demounting it again before the final presentation to take a picture of fixed electronics.
+
 ## BOM
-|Material   |    Amount/Count   | Price/unit|Cost|
-| ----------- | ----------------|------|----|
-|PET 20 |0.154 m2 = 0.23 x 1PANEL 1.22mx1.22m| $11.60/unit|$2.66|
-| MDF 3mm | 0.9m2 = 3 x PANEL 0.61 X 1.22 M |$4.79/unit|$14.37|
-| Fishing Line    | 2m =  0.025 x 1 roll 80m|$11.60/unit| $0.29|
-| Copper wire   0,1mm| 8m =  0.66 x 1 roll 12m| $1.74/unit| $1.16|
-| PCB Proto Board FR1| 1 copper board 15x15cm |$1.24/unit |$1.24|
-|Seeed Studio XIAO RP2040|x1|$5.00/unit|$5.00|
-|0Ω resistor|x1|$0.09/unit|$0.09|
-|499 Ω resistor|x1|$0.09/unit|$0.09|
-|1kΩ resistor|x1|$0.09/unit|$0.09|
-|LED|x2|$0.35/unit|$0.70|
-|Button|x1|$1.00/unit|$1.00|
-|Female 1 row horizontal header|x3|$0.15/unit|$0.45|
-|Male 2 row vertical header|x1|$0.15/unit|$0.15|
-|1MΩ resistor|x2|$0.09/unit|$0.18|
-|**Total**|||**$27.47**|
+|Part|Material   |    Amount/Count   | Price/unit|Cost|
+|---| ----------- | ----------------|------|----|
+|GRIDSHELL|PET 20 |0.154 m2 = 0.23 x 1PANEL 1.22mx1.22m| $11.60/unit|$2.66|
+|GRIDSHELL| Fishing Line    | 2m =  0.025 x 1 roll 80m|$11.60/unit| $0.29|
+|GRIDSHELL| Copper wire   0,1mm| 8m =  0.66 x 1 roll 12m| $1.74/unit| $1.16|
+|BASE| MDF 3mm | 0.9m2 = 3 x PANEL 0.61 X 1.22 M |$4.79/unit|$14.37|
+|XINO HOST, STEP RESPONSE	| PCB Proto Board FR1| 1 copper board 15x15cm |$1.24/unit |$1.24|
+|XINO HOST|Seeed Studio XIAO RP2040|x1|$5.00/unit|$5.00|
+|XINO HOST|0Ω resistor|x1|$0.09/unit|$0.09|
+|XINO HOST|499 Ω resistor|x1|$0.09/unit|$0.09|
+|XINO HOST|1kΩ resistor|x1|$0.09/unit|$0.09|
+|XINO HOST|LED|x2|$0.35/unit|$0.70|
+|XINO HOST|Button|x1|$1.00/unit|$1.00|
+|XINO HOST|Female 1 row horizontal header|x3|$0.15/unit|$0.45|
+|STEP RESPONSE|Male 2 row vertical header|x1|$0.15/unit|$0.15|
+|STEP RESPONSE|1MΩ resistor|x2|$0.09/unit|$0.18|
+|**Total**||||**$27.47**|
 
 ## Production files
 ![](../images/final-project/220622_6.jpg)
 KINETIC GRIDSHELL MODEL 1:25
+
+ENGRAVE LAYER: S80P65, Piority 1 and with 2 CUT LAYER: CUT1 for details:S13P100 Priority 2, and CUT2 - long Lines S11P100,Piority 3.
+
 **PET20 Laser Cut**: [V4 - Rhino](../files/final/V4-S13P100.3dm){: V4-S13P100.3d}
 
 ![](../images/final-project/220622_7.jpg)
