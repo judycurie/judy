@@ -10,8 +10,6 @@ During Fab Academy I would like to build a stiffness-scaled model and design a d
 ![Optishell Asymptotic Gridshell Structure Visualization](../images/concept.jpg)
 **Fig.** Conceptual model.
 
-![Final Project Ideas](../images/final.jpg)
-**Fig.** (A)ssembly device? - Final project dilemma.
 
 ![Final Project Ideas](../images/final-project/final10.png)
 **Fig.** (A) sensing device that can work for the real pavilion and a scaled model.
@@ -460,26 +458,48 @@ And after that I checked what I still have working and it was a step response se
 ![](../images/final-project/_60.png)
 ![](../images/final-project/_61.png)
 ![](../images/final-project/_62.png)
-
+![](../images/final-project/_63.png)
 More about step response sensor -> [week14](../assignments/week11.md)
 
 ![](../images/final-project/_63.png)
 **Fig.** The electronics connectivity.
 ## BOM
-|Analysis     |    Amount/Count                   | Price|
-| ----------- | ----------------------------------|--|
-|PET 20 |0.154 m2 | 0.9D + 1.0W|
-| MDF 3mm | 1.8 | 2.87|
-| Fishing Line    | 2m | 49|
-| Copper wire   | 8m | 49|
-| PCB |
+|Material   |    Amount/Count   | Price/unit|Cost|
+| ----------- | ----------------|------|----|
+|PET 20 |0.154 m2 = 0.23 x 1PANEL 1.22mx1.22m| $11.60/unit|$2.66|
+| MDF 3mm | 0.9m2 = 3 x PANEL 0.61 X 1.22 M |$4.79/unit|$14.37|
+| Fishing Line    | 2m =  0.025 x 1 roll 80m|$11.60/unit| $0.29|
+| Copper wire   0,1mm| 8m =  0.66 x 1 roll 12m| $1.74/unit| $1.16|
+| PCB Proto Board FR1| 1 copper board 15x15cm |$1.24/unit |$1.24|
+|Seeed Studio XIAO RP2040|x1|$5.00/unit|$5.00|
+|0Ω resistor|x1|$0.09/unit|$0.09|
+|499 Ω resistor|x1|$0.09/unit|$0.09|
+|1kΩ resistor|x1|$0.09/unit|$0.09|
+|LED|x2|$0.35/unit|$0.70|
+|Button|x1|$1.00/unit|$1.00|
+|Female 1 row horizontal header|x3|$0.15/unit|$0.45|
+|Male 2 row vertical header|x1|$0.15/unit|$0.15|
+|1MΩ resistor|x2|$0.09/unit|$0.18|
+|**Total**|||**$27.47**|
 
 ## Production files
 ![](../images/final-project/220622_6.jpg)
+KINETIC GRIDSHELL MODEL 1:25
 **PET20 Laser Cut**: [V4 - Rhino](../files/final/V4-S13P100.3dm){: V4-S13P100.3d}
 
 ![](../images/final-project/220622_7.jpg)
+BASE WITH RING
 **MDF 3mm Laser Cut**: [base - Rhino](../files/final/BASE - lasercut.3dm){: BASE - lasercut.3dm}
+
+![](../images/final-project/f-pcb.png)
+PCB
+**Xino Board 2 with ground plane** [board2 - with  ground plane - kiCad + fabrication files](../files/230426-xino-remote-kicad-fabrication-files.zip){: 230426-xino-remote-kicad-fabrication-files }
+
+![](../images/final-project/f-step-response.png)
+STEP RESPONSE SENSOR
+**STEP RESPONSE desing files**: [Xino - Step Response KiCAD](../files/week11/xino-step-response-kicad.zip){: Xino - Step Response KiCAD}
+**STEP RESPONSE production files**: [Xino - Step Response - SVG/PNG](../files/week11/xino-step-response-production.zip){: Xino - Step Response - SVG/PNG}
+
 # Final Video
 <video width="960"  controls>
   <source src="../../presentation.mp4" type="video/mp4">
