@@ -390,43 +390,95 @@ The PET30 &PET 40 was not possible to be cut on laser with a detail allowing con
 
 
 
+More about the fabrication process: [week18](../assignments/week18.md)
+
+# FINAL
+This project is licensed under
+Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0)).
+
+## Proposed/Intended solution
+![](../images/final-project/_28.png)
+**Fig.** The final idea scheme.
+
+### Acrylic kinetic model
 <video width="960"  controls>
   <source src="../..//images/final-project/WhatsApp Video 2023-06-13 at 21.06.10.mp4" type="video/mp4"">
 </video>
 More about the fabrication process: [week18](../assignments/week18.md)
 
-# FINAL
-The final idea scheme:
-![](../images/final-project/_28.png)
+### Boards and communication
 
-## Boards and communication
 <video width="960"  controls>
-  <source src="../../images/week13/WhatsApp Video 2023-05-03 at 12.55.21.mp4" type="video/mp4">
+  <source src="../..//images/week13/WhatsApp Video 2023-05-03 at 12.55.21.mp4" type="video/mp4">
 </video>
+**Video.** Two nRF52840 communicaing via BLA: SLAVE board with battery.
 
-## Reading height - 6DOF
+### Reading height - 6DOF
 This code calulates the position of the device based on the acceleration.
 ![](../images/week14/Screenshot 2023-05-09 14.33.08.png)
 **Fig.** nRF52840 reading the position.
 
-More : [week14](../assignments/week14.md)- HOST: Reading the IMU data for serial communication.
+More : [week14](../assignments/week14.md)-  Reading the IMU data for serial communication.
+
+
 
 #**FAIL**
+
+
+
 ![](../images/final-project/_30.png)
 While integrating the pcbs to the model, something went wrong and xiao nRF5240 stopped responding...
 
-It turned out there was a short on the HOST board. I had this problem before, which I fixed, but apparently some scraps caused short again...
-As I can replace MCU in the HOST board I put my second XIAO nRF5240 and also fired this one.
+It turned out there was a short on the HOST board. I had this problem before, which I fixed, but apparently some scraps caused a short again...
+As I could replace MCU in the HOST board, therefore I put my second XIAO nRF5240 and also fired this one.
 
-I panicked. And after that I checked what I still have working and it was a step response sensore and RP2040 programmed -> [week14](../assignments/week11.md)
+**I panicked.**
+
+And after that I checked what I still have working and it was a step response sensore and RP2040 programmed -> [week14](../assignments/week11.md)
 
 ##Implemented solution
 
 ![](../images/final-project/_32.png)
 **Fig.** The implemented solution scheme.
+
 ![](../images/final-project/_33.png)
 **Fig.** The implemented solution design.
 
+![](../images/final-project/_34.png)
+**Fig.** The implemented solution design.
+## How it works?
+![](../images/final-project/_35.png)
+
+![](../images/final-project/_36.png)
+![](../images/final-project/_37.png)
+![](../images/final-project/_38.png)
+<video width="960"  controls>
+  <source src="../../images/final-project/WhatsApp Video 2023-06-23 at 02.54.05.mp4" type="video/mp4">
+</video>
+## Electronics Integration
+
+![](../images/final-project/_60.png)
+![](../images/final-project/_61.png)
+![](../images/final-project/_62.png)
+
+More about step response sensor -> [week14](../assignments/week11.md)
+
+![](../images/final-project/_63.png)
+**Fig.** The electronics connectivity.
+## BOM
+|Analysis     |    Amount/Count                   | Price|
+| ----------- | ----------------------------------|--|
+|PET 20 |0.154 m2 | 0.9D + 1.0W|
+| MDF 3mm | 1.8 | 2.87|
+| Fishing Line    | 2m | 49|
+| Copper wire   | 8m | 49|
+| PCB |
+
+## Production files
+![](../images/final-project/220622_6.jpg)
+**PET20 Laser Cut**: [V4 - Rhino](../files/final/V4-S13P100.3dm){: V4-S13P100.3d}
+
+# Final Video
 <video width="960"  controls>
   <source src="../../presentation.mp4" type="video/mp4">
 </video>
