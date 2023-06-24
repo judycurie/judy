@@ -457,6 +457,9 @@ ________________________________________________________
 # FINAL PROJECT - Intended solution
 This project is licensed under Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0).
 
+“© Judy Curie, 2023
+This work may be reproduced, modified, distributed, performed and displayed for any purpose, but must acknowledge "project name". Copyright is retained and must be preserved. The work is provided as is; no warranty is provided, and users accept all liability.”
+
 ## Proposed/Intended solution
 ![](../images/final-project/_28.png)
 **Fig.** The final idea scheme.
@@ -479,7 +482,8 @@ In Interface and Application Programming week [week 14](../assignments/week14.md
 ```
 
 This code calulates the position of the device based on the acceleration only when significant movement detected.
-
+“© Judy Curie, 2023
+This work may be reproduced, modified, distributed, performed and displayed for any purpose, but must acknowledge "project name". Copyright is retained and must be preserved. The work is provided as is; no warranty is provided, and users accept all liability.”
 
 #include "LSM6DS3.h"
 #include "Wire.h"
@@ -640,6 +644,70 @@ More about step response sensor -> [week14](../assignments/week11.md)
 
 ![](../images/final-project/_63.png)
 **Fig.** The electronics connectivity (**NOT FIXED AND ARRANGED YET**). After mounting it to the ring and top board, and connecting the ring to the model, its not possible to take a picture of the fixed arrangement without demounting -> I didnt risk demounting it again before the final presentation to take a picture of fixed electronics.
+## Programming
+```
+# code translated from Arduino examples provided by:
+#tx_rx03  Robert Hart Mar 2019( https://roberthart56.github.io/SCFAB/SC_lab/Sensors/tx_rx_sensors/index.html)
+# And
+# Adrián Torres Omaña, Fab Academy 2023 (http://fabacademy.org/2020/labs/leon/students/adrian-torres/fabxiao.html#step)
+
+“© Judy Curie, 2023
+This work may be reproduced, modified, distributed, performed and displayed for any purpose, but must acknowledge "project name". Copyright is retained and must be preserved. The work is provided as is; no warranty is provided, and users accept all liability.”
+
+
+from machine import Pin, ADC
+import time
+from ws2812 import WS2812
+import utime
+
+power = machine.Pin(11,machine.Pin.OUT)
+power.value(1)
+result = 0 # variable for the result of the tx_rx measurement.
+analog_pin = ADC(29) # Pin A1 of the XIA0 RP2040 or ESP32-C3
+tx_pin = Pin(28, Pin.OUT) # Pin D2 of the XIAO RP2040 or ESP32-C3
+led = WS2812(12,1)#WS2812(pin_num,led_count)
+led_top = Pin(0, Pin.OUT) #pin number for the model top diode
+
+def tx_rx():
+    # Function to execute rx_tx algorithm and return a value
+    # that depends on coupling of two electrodes.
+    # Value returned is a long integer.
+
+    N_samples = 100 # Number of samples to take. Larger number slows it down, but reduces scatter.
+
+    sum = 0
+    for i in range(N_samples):
+        tx_pin.on() # Step the voltage high on conductor 1.
+        read_high = analog_pin.read_u16()# Measure response of conductor 2.
+        time.sleep_us(100) # Delay to reach steady state.
+        tx_pin.off() # Step the voltage to zero on conductor 1.
+        read_low = analog_pin.read_u16() # Measure response of conductor 2.
+        diff = read_high - read_low # Desired answer is the difference between high and low.
+        sum += diff # Sums up N_samples of these measurements.
+
+    return sum # End of tx_rx function.
+
+r= []
+while True:
+    result = tx_rx()
+    result = int((result - 22000) * (1024/(79000 - 22000))) # Mapping the values of the two copper plates, it will depend on their size.
+    print(result)
+    if result >200: #when the electrodes touched or almost touched in while monted in the model
+        led_top.value(1)
+    else:
+        led_top.value(0)
+    r.append(result)
+    time.sleep_ms(10)
+    c = int((result-800)/350*255)
+
+    color = [255-c,200-c,150-c] # optional color blinking for RGB LED in XIAO RP2040 -> changes colors when electrodes are changing distance between each other, WHITE when they are touched
+    #print(color)
+
+    led.pixels_fill(color)
+    led.pixels_show()
+
+```
+
 
 ## BOM
 |Part|Material   |    Amount/Count   | Price/unit|Cost|
