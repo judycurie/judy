@@ -387,7 +387,7 @@ More about the design and fabrication process: [week15](../assignments/week15.md
 
 
 ##**Week 16** - Assembly membrane
-After trying to make a list of materials and where to get them -> I discovered that there is no way (really no way) to find thin plywood in Mexico. I considered ordering it from the US, or even Finland or Poland, but the amount for the model needed (like 1 board for 1:5 protoype) and even if 4 boards to allow the mistakes, the costs and taxes, and effort is not proportional to the amount I need. Therefore after reviewing if I can make it from aluminium sheets, as this is also common for real structures, the thinnest alluminum 0.5mm is already very stiff, what would mean the model would be bigger than 1:5, and no possibility to cut the aluminium in local fab or with the aluminium provider offering cutting services, I looked for alternative ways to errect resembling shape. Desingning a membrane which can errect the structure and potetially stay on the structure after assembly is a great idea. I managed to calculate the inflatable surfaces of the membrane to reseamle exaclty the shortenning and extending of the diagonals of the grid.
+After trying to make a list of materials and where to get them -> I discovered that there is no way (really no way) to find thin plywood in Mexico. I considered ordering it from the US, or even Finland or Poland, but the amount for the model needed (like 1 board for 1:5 prototype) and even if 4 boards to allow the mistakes, the costs and taxes, and effort is not proportional to the amount I need. Therefore after reviewing if I can make it from aluminium sheets, as this is also common for real structures, the thinnest aluminum 0.5mm is already very stiff, what would mean the model would be bigger than 1:5, and no possibility to cut the aluminium in local fab or with the aluminium provider offering cutting services, I looked for alternative ways to errect resembling shape. Desingning a membrane which can errect the structure and potetially stay on the structure after assembly is a great idea. I managed to calculate the inflatable surfaces of the membrane to reseamle exaclty the shortenning and extending of the diagonals of the grid.
 
 Membrane Design resembling the shortening of the diagonals:
 ![](../images/week16/untitled.92.jpg)
@@ -454,30 +454,25 @@ More about the fabrication process: [week18](../assignments/week18.md)
     - **PET-G 20 0.55mm**: Overall: S11P100: Divided: ->S10P100/S11P100 - long Lines ->S13P100 - details
     - **PET-G 30 0.74mm**: Overall: S10P100: Divided: ->S10P100/S09P100 - long Lines ->S11P100 - details
 ________________________________________________________
-# FINAL PROJECT - Intended solution
+## **FINAL PROJECT**
+
+
 This project is licensed under Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0).
 
 “© Judy Curie, 2023
-This work may be reproduced, modified, distributed, performed and displayed for any purpose, but must acknowledge "project name". Copyright is retained and must be preserved. The work is provided as is; no warranty is provided, and users accept all liability.”
+This work may be reproduced, modified, distributed, performed and displayed for any purpose, but must acknowledge "MOREvLESS". Copyright is retained and must be preserved. The work is provided as is; no warranty is provided, and users accept all liability.”
 
-## Proposed/Intended solution
+### **FINAL PROJECT Proposed/Intended solution**
 ![](../images/final-project/_28.png)
 **Fig.** The final idea scheme.
 
-### Prototyping Assembly System  - Acrylic kinetic model 1:25 PET20
-This material is so thin and delicate that the Fish Line the finest I think I could have found (Prueba de 80 libras), bought [here](https://www.amazon.com.mx/dp/B0000AY6K0?ref=ppx_yo2ov_dt_b_product_details&th=1&psc=1) was stronger than the grishell material. Therefore putting it as the geodesic arcs and pushing (extending from bottom) allowed for easy assembly movement.
-
-<video width="960"  controls>
-  <source src="../..//images/final-project/WhatsApp Video 2023-06-13 at 21.06.10.mp4" type="video/mp4"">
-</video>
-**Fig.** PET20 - 0.55m thickness, scale 1:25, V4, rotational slots 50-90deg. All lines cut S11P100.
-
-More about the fabrication process: [week18](../assignments/week18.md)
 
 
 
-### Reading height - 6DOF
-In Interface and Application Programming week [week 14](../assignments/week14.md) I attempted to assess the position based on the accelometer embedded in 6DOF of the XIAO nRF52840. First of all, the accolometer was very sensitive - showing acceleration even when XIAO was steady lying on the desk. I tried to calibrate it, but without success (in less modern sensors its somehow easier to access the calibration settings). Anyhow I managed to overcome it introducing measearing of the acceleation only if the significan movement is detected.
+
+**Reading height - 6DOF**
+
+In Interface and Application Programming week [week 14](../assignments/week14.md) I attempted to assess the position based on the accelometer embedded in 6DOF of the XIAO nRF52840. First of all, the accolometer was very sensitive - showing acceleration even when XIAO was steady lying on the desk. I tried to calibrate it, but without success (in less modern sensors its somehow easier to access the calibration settings). Anyhow I managed to overcome it introducing measuring of the acceleration only if the significant movement is detected.
 
 ```
 
@@ -581,23 +576,22 @@ void loop() {
 }
 ```
 
-Although the results still needed to be calibrated to resemble real units. This was working enought to pass information to the HOST pcb through the BLE and the thresehold value for the height could be determined epirically (as not sure what was the unit in SI measured).
+Although the results still needed to be calibrated to resemble real units. This was working enough to pass information to the HOST pcb through the BLE and the threshold value for the height could be determined empirically (as not sure what was the unit in SI measured).
 
 
 More : [week14](../assignments/week14.md)-  Reading the IMU data for serial communication.
 
-### Boards and communication
+**Boards and communication**
 
 <video width="960"  controls>
   <source src="../..//images/week13/WhatsApp Video 2023-05-03 at 12.55.21.mp4" type="video/mp4">
 </video>
-**Video.** Two nRF52840 communicaing via BLA: SLAVE board with battery.
+**Video.** Two nRF52840 communicating via BLA: SLAVE board with battery.
 
 Now it was enough to mount the SLAVE pcb on the model and read through BLE the height value measurement.
 
 
-#**FAIL****FAIL****FAIL****FAIL****FAIL****FAIL****FAIL**
-# PINCHE MURPHY!
+###**FAIL-FAIL-FAIL-FAIL-FAIL-FAIL-FAIL-PINCHE MURPHY!**
 
 While integrating the pcbs to the model, something went wrong and xiao nRF5240 stopped responding...
 
@@ -609,12 +603,12 @@ As I could replace MCU in the HOST board, therefore I put my second XIAO nRF5240
 
 **I panicked.**
 
-And after that I checked what I still have working and it was a step response sensore and RP2040 programmed -> [week14](../assignments/week11.md).
+And after that I checked what I still have working and it was a step response sensor and RP2040 programmed -> [week14](../assignments/week11.md).
 
 
 ____________________________________________________
 
-# FINAL PROJECT - Implemented solution
+### **FINAL PROJECT - Implemented solution**
 
 ![](../images/final-project/_32.png)
 **Fig.** The implemented solution scheme.
@@ -622,29 +616,72 @@ ____________________________________________________
 ![](../images/final-project/_33.png)
 **Fig.** The implemented solution design.
 
+
+
+
+**How it works?**
 ![](../images/final-project/_34.png)
-**Fig.** The implemented solution design.
-## How it works?
 ![](../images/final-project/_35.png)
 
 ![](../images/final-project/_36.png)
 ![](../images/final-project/_37.png)
 ![](../images/final-project/_38.png)
+
+
+**Prototyping Assembly System  - Acrylic kinetic model 1:25 PET20**
+
+This material is so thin and delicate that the Fish Line the finest I think I could have found (Prueba de 80 libras), bought [here](https://www.amazon.com.mx/dp/B0000AY6K0?ref=ppx_yo2ov_dt_b_product_details&th=1&psc=1) was stronger than the grishell material. Therefore putting it as the geodesic arcs and pushing (extending from bottom) allowed for easy assembly movement.
+
 <video width="960"  controls>
-  <source src="../../images/final-project/WhatsApp Video 2023-06-23 at 02.54.05.mp4" type="video/mp4">
+  <source src="../..//images/final-project/WhatsApp Video 2023-06-13 at 21.06.10.mp4" type="video/mp4"">
 </video>
-## Electronics Integration
+
+**Fig.** PET20 - 0.55m thickness, scale 1:25, V4, rotational slots 50-90deg. All lines cut S11P100.
+
+More about the fabrication process: [week18](../assignments/week18.md)
+
+**Base design & Production**
+
+Production of the base required testing the material - MDF 3mm (3.05mm). All samples were cut with recommeded by workshop  CUT layer = S1.6P90, ENGRAVE layer - S85P60.
+
+![](../images/final-project/_71.png)
+**Fig.** Testing dimensions for the base seperators - the connection should be tight enought to not require glueing.  
+
+![](../images/final-project/_73.png)
+**Fig.** Evaluating kerf. Kerf with  S1.6P90 was 0.055mm.
+
+![](../images/final-project/_72.png)
+**Fig.** Testing connection between ring and seperators - connection should allow the free vertical movement, but should prevent movement in the XY plane.
+
+- CUT settings: S1.6P90
+- tight connection 2.8mm width (resulting as 2.91mm after cutting)
+- vertical movement connection - 3.2mm (resulting in 3.26-3.30mm after cutting)
+- holes for the fishing line mount: 2.2mm (resulting in 2.31mm after cutting)
+
+![](../images/final-project/x2.jpg)
+**Fig.** Lasercut files for testing and base.
+
+<video width="960"  controls>
+  <source src="../../images/final-project/WhatsApp Video 2023-06-25 at 17.04.38.mp4" type="video/mp4">
+</video>
+**Fig.** Manual testing of the mechanisms of the acrylic gridshell model, base connections, and ring movement.
+
+**Electronics Integration**
+
+PCB board design and production:  [week13](../assignments/week13.md)
 
 ![](../images/final-project/_60.png)
 ![](../images/final-project/_61.png)
 In this picture I still have working XIAO nRF52840, but after firing it and fixing the copper trash causing the shorts, it was replaced with RP2040.
 ![](../images/final-project/_62.png)
 
-More about step response sensor -> [week14](../assignments/week11.md)
+More about step response sensor -> [week11](../assignments/week11.md)
 
 ![](../images/final-project/_63.png)
 **Fig.** The electronics connectivity (**NOT FIXED AND ARRANGED YET**). After mounting it to the ring and top board, and connecting the ring to the model, its not possible to take a picture of the fixed arrangement without demounting -> I didnt risk demounting it again before the final presentation to take a picture of fixed electronics.
-## Programming
+
+**Programming**
+
 ```
 # code translated from Arduino examples provided by:
 #tx_rx03  Robert Hart Mar 2019( https://roberthart56.github.io/SCFAB/SC_lab/Sensors/tx_rx_sensors/index.html)
@@ -708,8 +745,14 @@ while True:
 
 ```
 
+**How it works together?**
+<video width="960"  controls>
+  <source src="../../images/final-project/WhatsApp Video 2023-06-23 at 02.54.05.mp4" type="video/mp4">
+</video>
 
-## BOM
+
+**BOM**
+
 |Part|Material   |    Amount/Count   | Price/unit|Cost|
 |---| ----------- | ----------------|------|----|
 |GRIDSHELL|PET 20 |0.154 m2 = 0.23 x 1PANEL 1.22mx1.22m| $11.60/unit|$2.66|
@@ -728,7 +771,9 @@ while True:
 |STEP RESPONSE|1MΩ resistor|x2|$0.09/unit|$0.18|
 |**Total**||||**$27.47**|
 
-## Production files
+**Production files**
+
+
 ![](../images/final-project/220622_6.jpg)
 KINETIC GRIDSHELL MODEL 1:25
 
@@ -736,7 +781,7 @@ ENGRAVE LAYER: S80P65, Piority 1 and with 2 CUT LAYER: CUT1 for details:S13P100 
 
 **PET20 Laser Cut**: [V4 - Rhino](../files/final/V4-S13P100.3dm){: V4-S13P100.3d}
 
-![](../images/final-project/220622_7.jpg)
+![](../images/final-project/x2.jpg)
 BASE WITH RING
 **MDF 3mm Laser Cut**: [base - Rhino](../files/final/BASE - lasercut.3dm){: BASE - lasercut.3dm}
 
@@ -746,11 +791,13 @@ PCB
 
 ![](../images/final-project/f-step-response.png)
 STEP RESPONSE SENSOR
-**STEP RESPONSE desing files**: [Xino - Step Response KiCAD](../files/week11/xino-step-response-kicad.zip){: Xino - Step Response KiCAD}
+**STEP RESPONSE design files**: [Xino - Step Response KiCAD](../files/week11/xino-step-response-kicad.zip){: Xino - Step Response KiCAD}
 **STEP RESPONSE production files**: [Xino - Step Response - SVG/PNG](../files/week11/xino-step-response-production.zip){: Xino - Step Response - SVG/PNG}
 
 
-# Final Video
+## FINAL SLIDE & VIDEO
+![](../../presentation.png)
+
 <video width="960"  controls>
   <source src="../../presentation.mp4" type="video/mp4">
 </video>
