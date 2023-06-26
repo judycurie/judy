@@ -373,21 +373,21 @@ Calculating the thickness of plywood for stiffness-scaled model 1:5.
 **Robot Path**: [src-file](../files/week15/230516-print1.src){: print1 }
 
 ![](../images/week15/week155.png)
-**Fig.** Initial exitement - thinking its going well!
+**Fig.** Initial excitement - thinking its going well!
 
 ![](../images/week15/week156.png)
-**Fig.** Huge contraction of plastic and failoure.
+**Fig.** Huge contraction of plastic and failure.
 
 More about the design and fabrication process: [week15](../assignments/week15.md)
 
 **Key take aways:**
 
 
-- this process is not aplicable to not rotational forms and it was a complete waste of time trying to print in this way the linear supports  
+- this process is not applicable to not rotational forms and it was a complete waste of time trying to print in this way the linear supports  
 
 
 ##**Week 16** - Assembly membrane
-After trying to make a list of materials and where to get them -> I discovered that there is no way (really no way) to find thin plywood in Mexico. I considered ordering it from the US, or even Finland or Poland, but the amount for the model needed (like 1 board for 1:5 prototype) and even if 4 boards to allow the mistakes, the costs and taxes, and effort is not proportional to the amount I need. Therefore after reviewing if I can make it from aluminium sheets, as this is also common for real structures, the thinnest aluminum 0.5mm is already very stiff, what would mean the model would be bigger than 1:5, and no possibility to cut the aluminium in local fab or with the aluminium provider offering cutting services, I looked for alternative ways to errect resembling shape. Desingning a membrane which can errect the structure and potetially stay on the structure after assembly is a great idea. I managed to calculate the inflatable surfaces of the membrane to reseamle exaclty the shortenning and extending of the diagonals of the grid.
+After trying to make a list of materials and where to get them -> I discovered that there is no way (really no way) to find thin plywood in Mexico. I considered ordering it from the US, or even Finland or Poland, but the amount for the model needed (like 1 board for 1:5 prototype) and even if 4 boards to allow the mistakes, the costs and taxes, and effort is not proportional to the amount I need. Therefore after reviewing if I can make it from aluminum sheets, as this is also common for real structures, the thinnest aluminum 0.5mm is already very stiff, what would mean the model would be bigger than 1:5, and no possibility to cut the aluminum in local fab or with the aluminium provider offering cutting services, I looked for alternative ways to errect resembling shape. Desingning a membrane which can errect the structure and potetially stay on the structure after assembly is a great idea. I managed to calculate the inflatable surfaces of the membrane to reseamle exaclty the shortenning and extending of the diagonals of the grid.
 
 Membrane Design resembling the shortening of the diagonals:
 ![](../images/week16/untitled.92.jpg)
@@ -396,8 +396,8 @@ More about the design process: [week16](../assignments/week16.md)
 
 **Key take aways:**
 
-- although it is a great idea and I would really like to make it, I have the same problem as with gridstrucutre -> I dont know what material and where to find it and if I find it on time, and even if I find it -> I nevered made inflatable with laser and I have no idea how long it can take me to produce it
-- I need a air pump -> following the Neil's advice I reviewd this: https://www.softrobotics.io/, aware about ticking clock for the final project, I gave a shot and emailed them asking if I can borrow one unit for the course time or if there is a chance they can send me the components for assembly of it, however I was left without reply
+- although it is a great idea and I would really like to make it, I have the same problem as with gridstrucutre -> I don't know what material and where to find it and if I find it on time, and even if I find it -> I never made inflatable with laser and I have no idea how long it can take me to produce it
+- I need a air pump -> following the Neil's advice I reviewed this: https://www.softrobotics.io/, aware about ticking clock for the final project, I gave a shot and emailed them asking if I can borrow one unit for the course time or if there is a chance they can send me the components for assembly of it, however I was left without reply
 - **no inflatable membrane for the final project**
 
 ##**Week 17** - IP, Planning
@@ -801,3 +801,9 @@ STEP RESPONSE SENSOR
 <video width="960"  controls>
   <source src="../../presentation.mp4" type="video/mp4">
 </video>
+
+
+This project is licensed under Attribution-NonCommercial 4.0 International (CC BY-NC 4.0).
+
+“© Judy Curie, 2023
+This work may be reproduced, modified, distributed, performed and displayed for any purpose, but must acknowledge "MOREvLESS". Copyright is retained and must be preserved. The work is provided as is; no warranty is provided, and users accept all liability.”

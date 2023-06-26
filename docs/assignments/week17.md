@@ -34,9 +34,11 @@
 
 
 ## Drafts of Slide and Video
-referenced from the root directory
+this slide and video were referenced in the final directory for the presentation:
 ![](../images/week17/presentation- draft.png)
 
 <video width="960"  controls>
   <source src="../../images/week17/presentation- draft.mp4" type="video/mp4">
 </video>
+
+Now the final video and slide are in the root directory and these files are referenced from the files for week 17. 

@@ -8,7 +8,7 @@
 
 ## Photo of the week
 
-![](../images/week12/photo-of-the-week1212.png)
+![](../images/week12/photo-of-the-week12.png)
 
 ## Take aways from the group Assignment
 [Group Assignment](https://fabacademy.org/2023/labs/ciudadmexico/group%20assignments/molding%20and%20casting/).
@@ -48,6 +48,7 @@ Preparations:
 The following materials were availabe for the assigment and for testing:
 
 ![](../images/week12/55da9b7f-c4b3-4011-a7f8-2a0e320c7c03.jpg)
+**Fig.** The materials available in the local stock for molding and casting week.
 
 
 For the test I used the Resin - RESINA PP-70*60.
@@ -71,26 +72,44 @@ Technical data:
 **Fig.** All the equipment : resin, spray, catalyst, mold, mixing sticks, measure cups, paper on the table and floor.
 
 ![](../images/week12/week1210.png).
-**Fig.** Left:Mold with the poured mixture. Right: the casted shape taken out from the mold. 
+**Fig.** Left:Mold with the poured mixture. Right: the casted shape taken out from the mold.
 
 ## Mold Modeling
+
+For the mold fabrication we were given the block of wax of dimensions: 92x152x38mm. Weight: 453g.
+![](../images/week12/74-023.jpg)
+**Fig.** The green hard wax block for the mold fabriation.
 
 I prepered the model for the mold in Rhino and Grasshopper (files at the bottom of the page).
 
 
 ![](../images/week12/week126.png)
+**Fig.** Modeling the mold with Grasshopper bounding boxes.
 ![](../images/week12/week127.png)
+**Fig.** Left: the final mold, center: mold with the lego buttons and the pcb with protection cases for pins and usb-c, right: how the protected pcb should fit to the mold.
 ![](../images/week12/week128.png)
+**Fig.** The expected result taken out after resin is cured (around 24 hours).
 
 ## Mold Fabrication
+The mold had to been machine in two passes: rough cut  + three-axis finish cut. For both passes the same tool was used flat mill 0.25in:
+
 ![](../images/week12/tool1.png)
+**Fig.** The tool parameters for mold machining.
 ![](../images/week12/tool2.png)
-**rough cut**
+**Fig.** The tool feed & speed for mold machining.
+
+**The first pass: rough cut**
 ![](../images/week12/week1211.png)
+**Fig.** Generating the tool path for the rough cut.
 ![](../images/week12/week1212.png)
-**three-axis finish cut**
+**Fig.** Machining and result after the rough pass.
+
+**The second pass: three-axis finish cut**
+To achive the curved surfaces another pass was required using 3-d toolpath:
 ![](../images/week12/week1213.png)
+**Fig.** Generating the tool path for the finishing pass.
 ![](../images/week12/week1214.png)
+**Fig.** The final result after the finishing pass.
 
 ## Casting
 
@@ -112,7 +131,11 @@ The resin was mixed with the proporiton 1 drop of catalyst K-2000 for 50ml of re
 
 
 ![](../images/week12/week1223.png)
+**Fig.** The mixed ingredients: Resin 70-60 and catalysit K-2000 (1 drop per 50ml of resin).
+
 ![](../images/week12/week1215.png)
+**Fig.** Sharing (not scooping) for 8 minutes in both clockwise and counterclockwise direction.
+
 **TO AVOID BUBBLES*:
 
 - I made a test before making the mold to inspect how to prevent BUBBLES
@@ -128,6 +151,8 @@ The resin was mixed with the proporiton 1 drop of catalyst K-2000 for 50ml of re
 The mold was pressed with a weight block to secure well fit.
 I had a bit of resin mixture spare after pouring to the pcb mold, therefore I used to to make a second layer in the test mold with embedded metal items.
 ![](../images/week12/WhatsApp Image 2023-04-26 at 06.15.54.jpeg)
+**Fig.** The machined mold with the pcb pressed with the weght block - left for curing. As I had a bit of the mixture left, I added gold pins and remaing liquid to the test cast :).
+
 
 
 
