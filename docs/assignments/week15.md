@@ -156,7 +156,7 @@ Bottom cone geometry generated with the script, with 5mm offset (XY distance bet
 - 1 layer - 300C, 20% speed
 - 2- end layer, 300C, 40% speed
 
-**Robot path - vase walls only **: [src-file](../files/week15/vase.src){: robot path vase walls only }
+**Robot path - vase walls only**: [src-file](../files/week15/vase.src){: robot path vase walls only }
 
 ## Final Video
 <video width="960"  controls>
@@ -171,3 +171,16 @@ Bottom cone geometry generated with the script, with 5mm offset (XY distance bet
 - amount of extruded platic varies depending on the speed of the robot arm (the extrusion speed constant)
 - below 240C temperature extrusion makes problems for extruder
 - if the lengt of consequitive layers is small (less than 10-15cm) with 20 or 40% of speed, the plastic is still to liquid to form base for the next layer
+
+____________________________
+## Files
+The 3D base:
+
+**Grasshopper file**: [gh -file](../files/week15/230516-print1.gh){: print1 }
+**Robot Path**: [src-file](../files/week15/230516-print1.src){: print1 }
+
+The vase:
+**Design & path generation**: [gh-file](../files/week15/SIN-VASE_JC_MASTER.gh){: final design }
+
+**Robot path - vase with bottom**: [src-file](../files/week15/bottom.src){: robot path vase with bottom }
+**Robot path - vase walls only**: [src-file](../files/week15/vase.src){: robot path vase walls only }

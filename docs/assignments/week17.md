@@ -32,13 +32,21 @@
 - BLE communication between SLAVE and HOST can be lost/not working -> focus on the physical signal
 - PCBs destroyed (connecting wrong the cables from battery?) -> reading the height with other sensors available
 
+## licensed
+This project is licensed under Attribution-NonCommercial 4.0 International (CC BY-NC 4.0).
+
+CC - Creative Common License:
+![](../images/final-project/CC.png)
+
+“© Judy Curie, 2023
+This work may be reproduced, modified, distributed, performed and displayed for any purpose, but must acknowledge "MOREvLESS". Copyright is retained and must be preserved. The work is provided as is; no warranty is provided, and users accept all liability.”
 
 ## Drafts of Slide and Video
-this slide and video were referenced in the final directory for the presentation:
+This slide and video were referenced in the final directory for the presentation:
 ![](../images/week17/presentation- draft.png)
 
 <video width="960"  controls>
   <source src="../../images/week17/presentation- draft.mp4" type="video/mp4">
 </video>
 
-Now the final video and slide are in the root directory and these files are referenced from the files for week 17. 
+Now the final video and slide are in the root directory and these files are referenced from the files for week 17.
