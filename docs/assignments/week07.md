@@ -168,24 +168,72 @@ After some trial and error process, the final design looked like:
 
 ## Production
 
+### Health & safety
+
+User preparation:
+
+- avoid loose clothing or wearing jewelery -> use gown or overalls
+- wear safety classes
+- keep safe distance from the machine
+
+Noise different from cutting material meanss something is off. What can go wrong:
+- the spindle can break
+- spindle can hit the clamps or wood screws used for fixing material
+
+- stop machine with the emergency button
+- stop the vaccum
+- inspect the dust collector bag
+
+The spindle and material are getting hot during the milling process - this can cause that the dust from fabrication can be put on fire. If any smoke is comming out:
+
+- close the dust bag to reduce the accsess to oxygen
+- if the smoke doesnt stop and fire grows, use the fire extinhuisher
+- if situation gets out of control -> call the university guards -> ultimately direcly call the fire brigade
+
 ### Setting up g-code file.
-**Material:** Medium-Density Fiberboard (MDF) of 18mm
-
-**Tool:** 4.7mm diameter
-
-**Step vertical:** 19mm/6
 
 For the milling a tool of diameter 4.7mm was used. It had to be accounted in the path planning and material waste.
 
 ![](../images/week07/drawing.png)
-**Fig.** 1. Basic lines. 2. Thin lines  - tool inside, thick ones - tool in the center of the line. 3. Waste (black) vs design material (white).
+**Fig.** 1.(left) Basic lines. 2.(center) Thin lines  - tool inside, thick ones - tool in the center of the line. 3.(right)-  Waste (black) vs design material (white).
+
+
+- **Software**: VCurve PRO
+- **Material:** Medium-Density Fiberboard (MDF) of 18mm,  4 by 8 ft
+- **Tool:** 4.7mm diameter ( ¼” straight 1 flute)
+- **Passes**: material thickness/6 : 19mm/6 = 3.17mm . 6 passes with step vertical  3.2mm per pass
+- **RPM**: 11000rpm
+- **Speed**: 58mm/s
+
+- **Job1 (Trajectorias)** - cutting the holes - above settings; tool inside
+- **Job2  (Trajectorias)** - cutting the outline - above settings;  tool in the center of the line
+
+![](../images/week07/week73.png)
+
+
+### Fixing MDF Board
+The CNC clamps  Asia Robótica were used to fix the MDF board on the outline. Durnig the process, we had to stop the machine to fix flexible spiral parts, that started to move after milling with the timber nails.
+
+![](../images/week07/week77.png)
+**Fig.** 1.(left) CNC clamps - Asia Robotica. 2.(center) After cutting the middle part - it was moving too much and required additional fixing with the wood nails. 3.(right)- fixturing places with timber nails.
+
+
 ### Setting up machine.
+
+AXYZ CNC ROUTER 4008 · Work area. 1220x2440mm · Power: 220V/380V, 400Hz, 24000RPM. [Data sheet AXYZ Series](http://www.pmcgroup.co.za/downloads/AXYZ/AXYZSeries_US_Electronic.pdf).
+
+![](../images/week07/week76.png)
+
 Before production the following steps had to be taken:
 
   1. Warm up the spindle.
-  2. Set the origin  - F10.
+  2. Set the XY origin (corner of the material board offseted to avoid collisions with clamps)  - F10.
   3. Set the bed level (surface of the spoilboard )- F24.
   4. Set the material surface level -F20.
+  5. Adjust the material surface level- F23.
+
+
+
 ### Milling process.
 ![](../images/week07/week72.png)
 **Fig.** Machining process. The flex parts had to be stabilize with the nails.
@@ -201,12 +249,11 @@ Before production the following steps had to be taken:
 ![](../images/week07/WhatsApp Image 2023-03-15 at 01.41.01x.jpeg)
 ## Problems/Questions/Dilemas
 1. The main frames of the deckchar should be directly connected for stability.
-2. The flexible parts
-3. This design could be adjusted to work as onced-assembled furniture. The foldable design would rather require hinges, as with material fatigue the bend parts would eventually break.
-4. The more layers would have the plywood - the better (for flexible parts).
-5. The flex pattern require more research - perhaps the back part can be connected in the middle for more stability.
-6. Planning for the toolpath requires more thought to stabilize the flex part during cutting without nails.
-7. Some of polylines should be connected to enable machine cut the whole layout as one step of depth.
+2. This design could be adjusted to work as onced-assembled furniture. The foldable design would rather require hinges, as with material fatigue the bend parts would eventually break.
+3. The more layers would have the plywood - the better (for flexible parts).
+4. The flex pattern require more research - perhaps the back part can be connected in the middle for more stability -> seperating the g-code in more jobs cutting first part of the pattern lines, and and the end the second part -> or installing the bridges.
+5. Planning for the toolpath requires more thought to stabilize the flex part during cutting without nails.
+6. Some of polylines should be connected to enable machine cut the whole layout as one step of depth.
 
 __________________________________________
 ## Files
