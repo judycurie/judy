@@ -40,7 +40,7 @@ State of art:
 
 **What will you design?**
 
-- I will desing a kinetic model of a asymptotic gridshell with attached sensor working on battery, measuing height and communitcaint with the host board (-> for further control of the output assembly sytem - developed in later spirals)
+- I will design a kinetic model of a asymptotic gridshell with attached sensor working on battery, measuring height and communicating with the host board (-> for further control of the output assembly system - developed in later spirals)
 
 **What materials and components will be used? Where will come from?How much will they cost?**
 inventory of Components and where they come From
@@ -48,6 +48,7 @@ inventory of Components and where they come From
  |Part|Material   |    Amount/Count   | Price/unit|Cost|
  |---| ----------- | ----------------|------|----|
  |GRIDSHELL|[Plywood 0.8mm flex](https://thinplywood.com/product/koskiply-birch/) |0.154 m2 = 0.23 x 1PANEL 1.22mx1.22m| $38.60/unit|$8.74|
+ |GRIDSHELL|[PLY for 3D printing(lab)](https://www.amazon.com/dp/B08896J53G/ref=vp_d_pb_TIER4_p13sem_lp_B01FJY0DXU_pd?_encoding=UTF8&pf_rd_p=ebd086b2-5b0a-4767-b804-485a41c19814&pf_rd_r=A2GZNFWTVDXHXM3ST7D7&pd_rd_wg=bkvgL&pd_rd_i=B08896J53G&pd_rd_w=WijZw&content-id=amzn1.sym.ebd086b2-5b0a-4767-b804-485a41c19814&pd_rd_r=5aaf2395-d57a-45d5-88b6-e513c4e621c9)|0.26cm3(one connector)x 252 = 66cm3 -> 1.25g/cm3 x 66cm3 = 82.5g -> 82.5/1000*330m (1.75mm PLA) = 27.5m| $21.92/unit|$1.82|
  |BASE| [MDF 3mm](https://www.sodimac.com.mx/sodimac-mx/product/448761/mdf-delgado-30-mm-122-x-244-cm/448761/) | 2m2 = 4 x PANEL 0.61 X 1.22 M |$4.79/unit|$19.16|
  |XINO HOST, XINO SLAVE	| PCB Proto Board FR1 (lab)| 2 copper board 15x15cm |$1.24/unit |$2.48|
  |XINO HOST, XINO SLAVE|[Seeed Studio XIAO nRFN5240](https://www.seeedstudio.com/Seeed-XIAO-BLE-Sense-nRF52840-p-5253.html) |2|$15.99/unit|$32.00|
@@ -58,44 +59,45 @@ inventory of Components and where they come From
  |XINO HOST, XINO SLAVE (lab)|Button|x2|$1.00/unit|$2.00|
  |XINO HOST, XINO SLAVE (lab)|Female 1 row horizontal header|x6|$0.15/unit|$0.90|
 |XINO SLAVE|[recharchable battery 3.7V](https://www.amazon.com.mx/gp/product/B08FD3V6TF/ref=ppx_od_dt_b_asin_title_s00?ie=UTF8&psc=1) |x1|$23.33/unit|$23.33|
- |**Total**||||**$87.37**|
+ |**Total**||||**$89.19**|
 
 **What parts and systems will be made?**
 
-- asympritic gridhsell models
-- 2 pcbs communicatin remotely
+- asymptotic gridshell model allowing kinetic movement
+- 2 pcbs communicating remotely
+- a base integrating the electronics and model
 
 
 **What processes will be used?**
 
-- gridshell model: laser cutting + (3D printing)
-- PCB boards - CNC Machining
-- BASE - CNC Cutting
+- gridshell model: 2D &3D design, laser cutting with kinetic toleracnce or use of 3D printed kinetic connectors
+- PCB boards -  Electronics design and production, Embedded microcontroller interfacing and programming, CNC Machining
+- BASE - 2D and 3D design, System integration and packaging, laser cutting
 
 
 **What questions need to be answered?**
+
 - Should I get plywood from Europe or design the inflatable membrane?
-
 - Device should monitor the height from the acetometer (difficult to calibrate) or should I use ultrasonic sensor?
-
 - How to add the sensing of the presence under the pavilion?
 
 **How will it be evaluated?**
-- The design of the gridhshell structure is the most difficult and demading, it works as a mechanism.
-The project is highly economical and material efficient and doesnt need glues or additional fasteners.  It should be evaluated as a design study on asymptotic gridshells and possible assembly ssystems and designed method of their control.
+
+- The design of the gridhshell structure is the most difficult and demanding, it works as a mechanism.
+The project is highly economical and material efficient and doesn't need glues or additional fasteners.  It should be evaluated as a design study on asymptotic gridshells and a proposal for the electronic assembly control system that be proven to work on the model, but can be used in the real structures as well.
 
 
 
 
 
+____________________________________________
+
+**As I discovered I cannot get thin plywood locally, I spent some time this week of finding altrenative way to resemble the gridshell shape that can be actuated and can embedded the proposed HOST & SLAVE system for the assembly control.**
 
 
 
 
-
-
-
-## Inflatable
+## Inflatable Membrane
 1. Finding a simulation model where the lengths of the disassembled and assembled are almost identical. It required finding the same topology of the points from the simulation model.
 ![](../images/week16/week164.png)
 2. Finding planes (panels) which could be inflated.
