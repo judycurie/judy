@@ -127,11 +127,11 @@ To make the overmolding for the pcb I had to prepare the board to avoid resing g
 **Fig.**.Fiitng the PCB with covers (check) and spraying the mold.
 
 ### Mixing
-The resin was mixed with the proporiton 1 drop of catalyst K-2000 for 50ml of resin liquid.
+The resin was mixed with the proporiton 1 drop of catalyst K-2000 for 10ml of resin liquid. The measure in software volume of mixture was 17.5ml, therefore I prepared 20ml of resin liquid with 2 drops of catalyst to be mixted.
 
 
 ![](../images/week12/week1223.png)
-**Fig.** The mixed ingredients: Resin 70-60 and catalysit K-2000 (1 drop per 50ml of resin).
+**Fig.** The mixed ingredients: Resin 70-60 and catalysit K-2000 (1 drop per 10ml of resin).
 
 ![](../images/week12/week1215.png)
 **Fig.** Sharing (not scooping) for 8 minutes in both clockwise and counterclockwise direction.
