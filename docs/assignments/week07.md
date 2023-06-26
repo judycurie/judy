@@ -198,9 +198,10 @@ For the milling a tool of diameter 4.7mm was used. It had to be accounted in the
 **Fig.** 1.(left) Basic lines. 2.(center) Thin lines  - tool inside, thick ones - tool in the center of the line. 3.(right)-  Waste (black) vs design material (white).
 
 
-- **Software**: VCurve PRO
+
+- **Software**: VCarve PRO
 - **Material:** Medium-Density Fiberboard (MDF) of 18mm,  4 by 8 ft
-- **Tool:** 4.7mm diameter ( ¼” straight 1 flute)
+- **Tool:** 4.77mm diameter ( 3/16in straight 1 flute)
 - **Passes**: material thickness/6 : 19mm/6 = 3.17mm . 6 passes with step vertical  3.2mm per pass
 - **RPM**: 11000rpm
 - **Speed**: 58mm/s
@@ -208,8 +209,15 @@ For the milling a tool of diameter 4.7mm was used. It had to be accounted in the
 - **Job1 (Trajectorias)** - cutting the holes - above settings; tool inside
 - **Job2  (Trajectorias)** - cutting the outline - above settings;  tool in the center of the line
 
-![](../images/week07/week73.png)
+![](../images/week07/week710.png)
+**Fig.** Left: VCarve Pro - Job Setup. Right: VCarve Pro - Toolpath Oprations - Profile Toolpath (for both job 1 &2).
 
+
+![](../images/week07/week711.png)
+**Fig.** Left: VCarve Pro - Tool Edit. Right: VCarve Pro - Sepcify Passes Depth).
+
+![](../images/week07/week712.png)
+**Fig.** Left: Job1 - Settings. Right:Job2 - Settings.
 
 ### Fixing MDF Board
 The CNC clamps  Asia Robótica were used to fix the MDF board on the outline. Durnig the process, we had to stop the machine to fix flexible spiral parts, that started to move after milling with the timber nails.
@@ -238,7 +246,7 @@ Before production the following steps had to be taken:
 ![](../images/week07/week72.png)
 **Fig.** Machining process. The flex parts had to be stabilize with the nails.
 
-![](../images/week07/week712.png)
+![](../images/week07/week722.png)
 **Fig.** Final part (left), final part assembled (right).
 
 ## Final Pictures
@@ -255,6 +263,14 @@ Before production the following steps had to be taken:
 5. Planning for the toolpath requires more thought to stabilize the flex part during cutting without nails.
 6. Some of polylines should be connected to enable machine cut the whole layout as one step of depth.
 
+## License
+
+
+This project is licensed under Attribution-NonCommercial 4.0 International (CC BY-NC 4.0).
+
+“© Judy Curie, 2023
+This work may be reproduced, modified, distributed, performed and displayed for any purpose, but must acknowledge "CNC Deckchair". Copyright is retained and must be preserved. The work is provided as is; no warranty is provided, and users accept all liability.”
+
 __________________________________________
 ## Files
-**desing & production files**: [CNC-Deckchair - Rhino/GH](../files/week07/CNC-Deckchair.zip){: CNC-Deckchair}
+**desing & production files**: [CNC-Deckchair - Rhino/GH, DWG, CRV](../files/week07/CNC-Deckchair.zip){: CNC-Deckchair}
