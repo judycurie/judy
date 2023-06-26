@@ -457,7 +457,7 @@ ________________________________________________________
 ## **FINAL PROJECT**
 
 
-This project is licensed under Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0).
+This project is licensed under Attribution-NonCommercial 4.0 International (CC BY-NC 4.0).
 
 “© Judy Curie, 2023
 This work may be reproduced, modified, distributed, performed and displayed for any purpose, but must acknowledge "MOREvLESS". Copyright is retained and must be preserved. The work is provided as is; no warranty is provided, and users accept all liability.”
