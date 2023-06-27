@@ -680,7 +680,13 @@ More about step response sensor -> [week11](../assignments/week11.md)
 ![](../images/final-project/_63.png)
 **Fig.** The electronics connectivity (**NOT FIXED AND ARRANGED YET**). After mounting it to the ring and top board, and connecting the ring to the model, its not possible to take a picture of the fixed arrangement without demounting -> I didnt risk demounting it again before the final presentation to take a picture of fixed electronics.
 
+![](../images/final-project/WhatsApp Image 2023-06-27 at 12.36.07 (2).jpeg)
+![](../images/final-project/WhatsApp Image 2023-06-27 at 12.36.07.jpeg)
+![](../images/final-project/WhatsApp Image 2023-06-27 at 12.33.38.jpeg)
+
 **Programming**
+
+
 
 ```
 # code translated from Arduino examples provided by:
