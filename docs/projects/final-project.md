@@ -681,8 +681,13 @@ More about step response sensor -> [week11](../assignments/week11.md)
 **Fig.** The electronics connectivity (**NOT FIXED AND ARRANGED YET**). After mounting it to the ring and top board, and connecting the ring to the model, its not possible to take a picture of the fixed arrangement without demounting -> I didnt risk demounting it again before the final presentation to take a picture of fixed electronics.
 
 ![](../images/final-project/WhatsApp Image 2023-06-27 at 12.36.07 (2).jpeg)
+**Fig.** The model with demonted top board.
+
 ![](../images/final-project/WhatsApp Image 2023-06-27 at 12.36.07.jpeg)
+**Fig.** The electronics arranged on the top board.
+
 ![](../images/final-project/WhatsApp Image 2023-06-27 at 12.33.38.jpeg)
+**Fig.** All assembled - interior view.
 
 **Programming**
 

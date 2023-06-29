@@ -62,10 +62,24 @@ The cut pieces were placed in assembly order divided into Series A- bottom and S
 
 
 ## Vinyl Cutter
-I followed the classy Vinyl cut sticker for my laptop. The vector drawing was prepared in Rhino and scaled to 50mm. After cutting, the transcalent background needs to be covered with the additional layer.
+I followed the classy Vinyl cut sticker for my laptop. The vector drawing was prepared in Rhino and scaled to 50mm. For cutting the **GCC PUMA III Vinyl cutter** was used wit the follow settings:
 
-![](../images/week03/week03x.jpg)
+- Impresion de control [g]: 85
+- Veloc. [cm/s]: 30
+- Anchura de material [mm]: 610
+- Longitud [mm]: 700
 
+![](../images/week03/week034.jpg)
+![](../images/week03/week035.jpg)
+
+
+After cutting, the transcalent background needs to be covered with the additional layer.
+
+![](../images/week03/week036.jpg)
+
+The sticker with the cover layer was placed on my laptop lid. After making sure that the vinyl part sticks well and removing the transculent layer, the looked perfect :).
+
+![](../images/week03/week037.jpg)
 
 
 ## Group assignment
