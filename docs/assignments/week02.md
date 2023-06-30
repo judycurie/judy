@@ -14,15 +14,29 @@ Some Ideas of the shape and sensing:
 **Fig.** Shape and sensing ideas.
 
 ![](../images/week02/week2.png)
-**Fig.** 2D design in plan: 1. Two carpark places, 2. The outline for the supports, 3. Placing support lines, so that 2 cars can access the space under the structure. 
-
-Taking into consideration the geometric requirements, 2 subsurfaces were cut out of the minimal surface Enneper 3. The asymptotic curves were found with the custom-scripted component for Grasshopper.
+**Fig.** 2D design in plan: 1. Two carpark places, 2. The outline for the supports, 3. Placing support lines, so that 2 cars can access the space under the structure.
 
 
-![](../images/week02/V1V2-drawings2D.jpg)
-**Fig.** Geometric comparison of the V1 and V2 proposals - top view.
+
+![](../images/week02/Screenshot 2023-06-29 223232.png)
+**Fig.** In-Design: fitting to the 2D drawing a car view.
+
+![](../images/week02/Screenshot 2023-06-29 223753.png)
+**Fig.** In-Design: fitting to the 2D drawing a car view -> Seeting up Transparency -> Multiply.
+
+![](../images/week02/Screenshot 2023-06-29 224036.png)
+**Fig.** In-Design: fitting to the 2D drawing a car view -> Copying the car layer.
+
+![](../images/week02/week22.png)
+**Fig.** Exported from In-Design image showing how two Tesla cars can be parked under the planned structure.
 
 Two proposal V1 and V2 can be built as a stand-alone structures. However for the modular assembly is important for the possibilities to cover large spaces. Some modular arrangements are presented below.
+![](../images/week02/V1V2-drawings2D.jpg)
+
+
+**Fig.** Geometric comparison of the V1 and V2 proposals - top view.
+Taking into consideration the geometric requirements, 2 subsurfaces were cut out of the minimal surface Enneper 3. The asymptotic curves were found with the custom-scripted component for Grasshopper.
+
 
 ![](../images/week02/V1V2-modularity.jpg)
 **Fig.** Modular arrangements - top view.
