@@ -13,6 +13,9 @@ Some Ideas of the shape and sensing:
 ![](../images/final-project/final8.png)
 **Fig.** Shape and sensing ideas.
 
+![](../images/week02/week2.png)
+**Fig.** 2D design in plan: 1. Two carpark places, 2. The outline for the supports, 3. Placing support lines, so that 2 cars can access the space under the structure. 
+
 Taking into consideration the geometric requirements, 2 subsurfaces were cut out of the minimal surface Enneper 3. The asymptotic curves were found with the custom-scripted component for Grasshopper.
 
 
