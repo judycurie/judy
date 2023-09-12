@@ -662,8 +662,10 @@ Production of the base required testing the material - MDF 3mm (3.05mm). All sam
 **Fig.** Lasercut files for testing and base.
 
 <video width="960"  controls>
-  <source src="../../images/final-project/WhatsApp Video 2023-06-25 at 17.04.38.mp4" type="video/mp4">
+  <source src="../../images/final-project/v-manual-testing.mp4" type="video/mp4">
 </video>
+
+
 **Fig.** Manual testing of the mechanisms of the acrylic gridshell model, base connections, and ring movement.
 
 **Electronics Integration**
