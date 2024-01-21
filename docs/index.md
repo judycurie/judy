@@ -1,21 +1,24 @@
-# Home
+![](images/banner5.jpg)
 
-![](./images/week01/main.jpg)
-**Fig.1.** Inframe pavilion. Boston. 2019. Credit @judycurie. [**Read more**](https://judytacichocka.wixsite.com/inframe)
+A framework for the multi-objective optimization of timber gridshells under structural and energy-based criteria.
 
-## **Hello, digital world!** | Hello, physical world! 
-by
-### **Judy Curie** | Judyta Cichocka
+EU funding: 101033646
+
+The aim of the project is to develop a holistic framework for the design and multi-criteria optimization of solar timber gridshells to maximize energy efficiency with minimal material use. OPTIshell will demonstrate the benefits of Architectural Design Optimization (ADO) through the optimization and construction of a timber solar canopy structure covered with the perovskite modules – CarPort 4.0. The development and testing of multi-criteria optimization are one of the most important lines of research in Architectural Design Optimization, and OPTIshell will provide evidence of the ecological and financial benefits of using it in the AEC practice.
+
+![](images/Banner4.jpg)
+##OPTISHELL
+
+OPTIshell timber gridshell deliver the best structural-energy performance at a minimal cost while providing outstanding aesthetics.
+OPTIshell is an asymptotic gridshell based on a minimal surface. The structure is fabricated with planar straight strips of material with no waste and assembled from a flat bi-directional grid.
+
+![](images/banner3.jpg)
+
+##GOLDFISH
+
+GOLDfish is a multi-objective optimizer written for Grasshopper dedicated to solving design problems with constraints. The optimizer is based on the Constrained Multi-swarm Particle Swarm Optimization Without Velocity (CMPSOWV), which is one of the most robust algorithms for solving engineering design problems.
+
+Previous research about optimization in gridshell design.
 
 
-
-
-![](./images/ffp-background.jpg)
-## Fab Foundation Poland
-This course is meant to be a great start to the [Fab Foundation Poland]( https://fabfoundation.pl) - a Polish daugther of the [Fab Foundation]((https://fabfoundation.org/)). The Fab Foundation Poland aims to brige the digital divine and conduct applied research into digital design & fabrication. The actions of the Fab Foundation Poland are primarly aimed for people living currently in Poland: Poles, Ukraininans and other people needing community, new job skills or a digitally fabricated house! 
-
-My participation in Fab Academy 2023 is sponsored by Eurepean Union (EU funding: 101033646).
-
-
-
-
+![](images/banner1.jpg)

@@ -1,5 +1,5 @@
 # Replace the text below to customize your site
-site_name: Judy Curie - Fab Academy
+site_name: OPTIshell
 site_description: Fab Academy documentation site for Judy Curie
 site_author: Judy Curie
 copyright: Copyright 2023 Judy Curie - Creative Commons Attribution Non Commercial
@@ -26,13 +26,13 @@ theme:
     primary: white
     accent: cyan
   font:
-    # See available fonts at https://fonts.google.com/  
+    # See available fonts at https://fonts.google.com/
     # My favourites: Inconsolata,  IBM Plex Mono, Chakra Petch, Exo, Didact Gothic, Exo
     text: Exo
     code: Ubuntu Mono
-  
-  logo: images/logo.svg
-  favicon: images/logoW.svg
+
+  logo: images/icon.jpg
+  favicon: images/icon.jpg
   features:
     - navigation.tabs
     - navigation.instant
